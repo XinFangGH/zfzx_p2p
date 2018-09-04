@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+        name="com.hurong.credit.model.user.BpDicArea"
+        table="bp_dic_area"
+        select-before-update="false"
+        dynamic-update="true"
+        dynamic-insert="true"
+        optimistic-lock="all"
+    >
+		<id
+            name="AreaCode"
+            column="AreaCode"
+            type="java.lang.String"
+            length="50"
+        >
+            <generator class="assigned"/>
+        </id>
+         <property
+            name="AreaName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="AreaName"
+            length="50"
+            not-null="true"
+            unique="false"
+        />
+        <property
+            name="ParentCode"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="ParentCode"
+            length="50"
+            not-null="true"
+            unique="false"
+        />
+     </class>
+</hibernate-mapping>

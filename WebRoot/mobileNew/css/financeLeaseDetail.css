@@ -1,0 +1,360 @@
+.nav_box{
+    position:fixed;
+    width:100%;
+    height:0.88rem;
+    left:0;
+    top:0;
+    z-index:9;
+}
+
+.nav_box .nav{
+    width:100%;
+    height:0.88rem;
+    line-height:0.88rem;
+    text-align:center;
+    font-size: 0.36rem;
+    color: #FFF;
+    position: relative;
+   /* border-bottom: 1px solid #E7E7E7;*/
+    background-image: linear-gradient(48deg,#5E9EFE  0%, #69B7FF 100%);
+}
+
+.nav_box .nav .back{
+    display: inline-block;
+    position: absolute;
+    left:0.2rem;
+    width:0.22rem;
+    height:0.88rem;
+    background: url(../img/financeLease/baijiantou.png)no-repeat center;
+    background-size:0.22rem  0.4rem;
+}
+
+/*公司简介*/
+.titleNav{
+    width:7.5rem;
+    height:0.50rem;
+    box-sizing: border-box;
+    /*padding:0 0.44rem;*/
+    margin:0 auto 0.3rem;
+    font-weight:bold;
+}
+
+.titleNav span.icon{
+    display: inline-block;
+    width:0.04rem;
+    height:0.24rem;
+    background: #6CA0E6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.titleNav  span.title{
+    display: inline-block;
+    width: 3rem;
+    height:0.50rem;
+    line-height:0.50rem;
+    font-size:0.28rem;
+    color: #1A1A1A;
+    margin-left: 0.1rem;
+}
+.db_pic{
+   width:6.9rem;
+   height:2.44rem;
+}
+.segmentingLine{
+    width: 6.62rem;
+    height:1px;
+    background-color: #EDEDED;
+    margin:0 auto 0.4rem;
+}
+
+/*企业资料 start */
+#enterprise .enterpriseContent{
+    /*width: 6.62rem;*/
+    height:auto;
+    /*margin: 0 auto 0.4rem;*/
+    margin: 0 auto 0.2rem;
+}
+
+#enterprise .enterpriseContent li{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.16rem;
+    /*height:0.6rem;*/
+    /*line-height: 0.6rem;*/
+
+}
+
+#enterprise .enterpriseContent li span:nth-child(1){
+    display: inline-block;
+    width: 30%;
+    float: left;
+    font-size: 0.28rem;
+    color: #9B9B9B;
+}
+
+#enterprise .enterpriseContent li span:nth-child(2){
+    display: inline-block;
+    width: 70%;
+  /*  height:auto;*/
+    font-size:0.28rem;
+    color: #1A1A1A;
+    text-align:justify;
+}
+
+#enterprise .remind{
+    display: inline-block;
+    width: 7.5rem;
+    height:0.34rem;
+    line-height:0.34rem;
+    text-align: center;
+    font-size: 12px;
+    color: #9B9B9B;
+   /* margin-bottom: 1.2rem;*/
+    margin: 1rem auto 0.6rem;
+}
+
+
+/*企业资料 end */
+
+/*出借记录 start*/
+#Loan_record ul{
+    width: 6.68rem;
+    height:auto;
+    margin:0 auto;
+}
+
+#Loan_record ul li{
+    width: 100%;
+    height:1.44rem;
+    border-bottom: 1px dashed #EDEDED;
+    box-sizing: border-box;
+    padding: 0.3rem  0.2rem  0.28rem;
+}
+
+#Loan_record ul li span.times{
+    font-size: 0.24rem;
+    color: #9B9B9B;
+}
+
+#Loan_record ul li p{
+    height:0.4rem;
+    line-height:0.4rem;
+    margin-top: 0.1rem;
+}
+
+#Loan_record ul li p span{
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+#Loan_record ul li p span:nth-child(1){
+    float: left;
+}
+
+#Loan_record ul li p span:nth-child(2){
+    float: right;
+}
+
+/*资料公示 start*/
+#publicity  .paging{
+    display: inline-block;
+    width: 7.5rem;
+    height:0.4rem;
+    line-height:0.4rem;
+    font-size: 0.28rem;
+    color: #6BA9FC;
+    text-align: right;
+    box-sizing: border-box;
+    margin-bottom: 0.24rem;
+    padding-right: 0.68rem;
+}
+
+#publicity  .copyPaging{
+    width:100%;
+    padding:0;
+    text-align: center;
+}
+
+.publicity_pic {
+    width: 100%;
+    height:4.7rem;
+    margin-bottom: 0.6rem;
+}
+
+.copy_publicity_pic{
+    width:100%;
+    /*height:8.84rem;*/
+    height:5.84rem;
+}
+
+.publicity_pic .swiper-slide{
+    width: 5.64rem;
+    height: 4.82rem !important;
+}
+
+.copy_publicity_pic .swiper-slide{
+    box-sizing: border-box;
+    width:5.76rem;
+    /*height:8.84rem !important;*/
+    height:5.84rem !important;
+    padding:0.18rem 0.18rem 0 0.18rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px 0 rgba(146,173,189,0.35);
+    border-radius: 4px;
+}
+
+.publicity_pic .swiper-slide  div.Picture_area{
+    height:3.72rem;
+    overflow: hidden;
+}
+
+.copy_publicity_pic .swiper-slide  div.Picture_area{
+   /* height:7.66rem;*/
+    height:4.66rem;
+   /* width: 5.4rem;*/
+    overflow: hidden;
+   /* display: table-cell;
+    vertical-align: middle;
+    text-align: center;*/
+}
+
+.publicity_pic .swiper-slide  div.Picture_area img{
+    width:  5.4rem;
+  /*  height:4rem;
+    border-radius: 5px;
+    border:1px solid #ccc;*/
+}
+
+.copy_publicity_pic  .swiper-slide  div.Picture_area img{
+    width:  100%;
+    vertical-align: middle;
+}
+
+.publicity_pic .swiper-slide p{
+    display: inline-block;
+    width: 100%;
+    height:0.4rem;
+    margin-top: 0.2rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+.copy_publicity_pic .swiper-slide p{
+    margin-top: 0;
+    height:1rem;
+    line-height: 1rem;
+}
+
+
+    /*资料公示 end*/
+
+/*出借记录 end*/
+
+.footerButton {
+    width: 100%;
+    height:0.98rem;
+    position: fixed;
+   /* position: absolute;*/
+    bottom: 0;
+    left:0;
+    background-color: #fff;
+    box-shadow:0 -1px 6px 0 rgba(155,166,173,0.25);
+}
+
+.footerButton .button{
+    width: 4.88rem;
+    height:0.8rem;
+    line-height: 0.8rem;
+    font-size:0.32rem;
+    color:#ffffff;
+    text-align:center;
+    background-image:linear-gradient(-130deg,#719eff  0% , #69beff 100%);
+    border-radius:100px;
+    margin:0.09rem auto;
+}
+
+/*大事记*/
+ .titleNav span.honor{
+     display: inline-block;
+     width:0.42rem;
+     height:0.38rem;
+     background:url("../img/information/icon/icon_5.png")no-repeat center;
+     background-size:0.42rem 0.38rem;
+     vertical-align: sub;
+ }
+
+#honor .License{
+    width: 100%;
+    height:3.44rem;
+    margin-bottom: 0.8rem;
+    box-sizing: border-box;
+    padding-left:0.3rem;
+    padding-right:0.3rem;
+}
+
+#honor .License .swiper-slide{
+    width: 2.4rem;
+    height:3.44rem;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border:1px solid #ccc;
+}
+
+#honor .License .swiper-slide img{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+
+.titleNav span.history{
+    display: inline-block;
+    width:0.34rem;
+    height:0.44rem;
+    background:url("../img/information/icon/icon_6.png")no-repeat center;
+    background-size:0.34rem 0.44rem;
+    vertical-align: sub;
+}
+
+#honor .developmentHistory{
+    position: relative;
+    width:6.5rem;
+    height:11rem;
+    /*border:1px solid #ccc;*/
+    margin:  0 auto 0.8rem;
+}
+
+#honor .developmentHistory .line{
+    position: relative;
+    width:0.03rem;
+    height:11rem;
+    background-image: linear-gradient(-180deg, #6CA0E6 0%, #6CA0E6 100%);
+}
+
+#honor .developmentHistory .line li{
+    position: relative;
+    left: -0.09rem;
+    width:6.5rem;
+    height: 1.15rem;
+    background: url("../img/information/icon/point.png")no-repeat left top;
+    background-size:0.18rem 0.18rem;
+    box-sizing: border-box;
+    padding-left:0.44rem;
+}
+
+#honor .developmentHistory .line li p:nth-child(1){
+    height: 0.4rem;
+    font-size: 0.28rem;
+    color: #6CA0E6;
+}
+
+#honor .developmentHistory .line li p:nth-child(2),
+#honor .developmentHistory .line li p:nth-child(3){
+    height: 0.34rem;
+    line-height: 0.34rem;
+    font-size:0.24rem;
+    color: #4A4A4A;
+}
+
+

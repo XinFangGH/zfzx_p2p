@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+            name="com.hurong.credit.model.mobile.AppInfo"
+            table="bp_app_info"
+            select-before-update="false"
+            dynamic-update="true"
+            dynamic-insert="true"
+            optimistic-lock="all"
+    >
+        <id
+                name="id"
+                column="id"
+                type="java.lang.Integer"
+                length="20"
+        >
+            <generator class="native"/>
+        </id>
+        <property
+                name="versionCode"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                access="property"
+                column="versionCode"
+                not-null="true"
+                unique="false"
+        />
+        <property
+                name="versionName"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                access="property"
+                column="versionName"
+                not-null="true"
+                unique="false"
+        />
+        <property
+                name="versionContent"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                access="property"
+                column="versionContent"
+                not-null="true"
+                unique="false"
+        />
+        <property
+                name="mustInstall"
+                type="java.lang.Boolean"
+                update="true"
+                insert="true"
+                access="property"
+                column="mustInstall"
+                not-null="true"
+                unique="false"
+        />
+        <property
+                name="downUrl"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                access="property"
+                column="downUrl"
+                not-null="true"
+                unique="false"
+        />
+    </class>
+</hibernate-mapping>

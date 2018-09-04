@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+.main{
+		width:1000px;
+		height:500px; 
+		margin:auto;
+		border:1px;
+	}
+.img1{
+	      background-image:url(../images/userguide/guide-titlebg.png);
+          background-repeat:no-repeat; 
+          float:left; 
+          background-size:auto;
+          width:20px; 
+          height:75px; 
+          margin-left:-15px;
+	}
+.img2{
+	      background-image:url(../images/userguide/guide-titlebg.png);
+          background-repeat:no-repeat;
+          background-position:0 -97px; 
+          float:left; 
+          background-size:auto;
+          width:20px; 
+          height:75px; 
+          margin-left:-15px; 
+	}
+.img3{
+		  background-image:url(../images/userguide/guide-titlebg.png);
+          background-repeat:no-repeat;
+          background-position:0 -187px; 
+          float:left; 
+          background-size:auto;
+          width:20px; 
+          height:75px; 
+          margin-left:-15px; 
+	}
+.img4{
+		  background-image:url(../images/userguide/guide-titlebg.png);
+          background-repeat:no-repeat;
+          background-position:0 -283px; 
+          float:left; 
+          background-size:auto;
+          width:20px; 
+          height:75px; 
+          margin-left:-15px; 
+	}
+.img5{
+		  background-image:url(../images/userguide/guide-titlebg.png);
+          background-repeat:no-repeat;
+          background-position:0 -370px; 
+          float:left; 
+          background-size:auto;
+          width:20px; 
+          height:75px; 
+          margin-left:-15px; 
+	}		
+.ngleft{
+		  width:50%; 
+		  float:left;
+		  height:400px; 
+		  text-align:left;
+	}
+.ngright{
+		  width:50%;
+		  float:left; 
+		  height:400px; 
+		  background-repeat:no-repeat;
+	}				
+.ngtitle{
+          float:left; 
+          width:200px;
+          height:50px; 
+          margin:auto; 
+          margin-left:-5px; 
+          text-align:left;
+          line-height:150%;
+	} 
+ p  {     text-indent:2em;
+		  line-height:150%;
+		  
+    } 	

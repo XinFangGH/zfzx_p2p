@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>升升投 -  app下载</title>
+    <link charset="utf-8" type="text/css" rel="stylesheet" href="mobileNew/css/commen.css"/>
+    <script src="mobileNew/js/jquery-1.11.3.js"></script>
+    <script src="mobileNew/js/fontSize.js"></script>
+   <!--<script src="${base}/mobileNew/js/commen.js"></script>-->
+    <style>
+        .downLoad img{
+            width:100%;
+            display:block;
+        }
+        .downLoad .con2{
+            position:relative;
+        }
+        .downLoad .con2 .a_down{
+            position:absolute;
+            left:10%;
+            top:0;
+            width:80%;
+            height:35%;
+        }
+    </style>
+</head>
+<body>
+<div class="downLoad invite">
+    <img src="mobileNew/img/mypic/downLoad_bg11.jpg" alt="">
+    <div class="con2">
+        <img src="mobileNew/img/mypic/downLoad_bg2.jpg" alt="">
+        <a class="a_down" href="https://www.zxzbol.com/attachFiles/apk/com.zfzx.investor_V1.2.1_764.apk"></a>
+    </div>
+    <div class="modal-box" style="display:none;">
+        <div class="modal"></div>
+        <div class="dialog">
+            <p class="clearfix">
+                <img class="pic" src="/mobileNew/img/mypic/invite_share.png" alt="">
+            </p>
+            <p>点击右上角按钮，然后在弹出菜单栏中点击“浏览器下载”。</p>
+        </div>
+    </div>
+</div>
+<script>
+    function isWeiXinClient() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i)=="micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    $(function(){
+        $('.a_down').click(function(){
+            if( isWeiXinClient()){
+                $('.modal-box').show();
+            }
+        });
+    });
+</script>
+</body>
+</html>

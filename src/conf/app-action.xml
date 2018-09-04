@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+    <!-- 为缺省的Action处理 -->
+    <bean id="BaseAction" class="com.hurong.core.web.action.BaseAction"/>
+    <!--H5 静态信息页面 信息披露 安全保障 服务协议 等-->
+    <bean id="WebPhoneStaticInfoAction" class="com.hurong.credit.action.webPhone.WebPhoneStaticInfoAction" scope="prototype"/>
+
+    <bean id="WebPhoneBidListAction" class="com.hurong.credit.action.webPhone.WebPhoneBidListAction" scope="prototype"></bean>
+    <bean id="WebChangePhoneAction" class="com.hurong.credit.action.webPhone.WebChangePhoneAction" scope="prototype"></bean>
+    <bean id="WebPhoneEmailAction" class="com.hurong.credit.action.webPhone.WebPhoneEmailAction" scope="prototype"></bean>
+    <bean id="WebPhoneThirdAction" class="com.hurong.credit.action.webPhone.WebPhoneThirdAction" scope="prototype"></bean>
+    <bean id="WebConditionAction" class="com.hurong.credit.action.webPhone.WebConditionAction" scope="prototype"></bean>
+    <bean id="WebPhoneCustMember" class="com.hurong.credit.action.webPhone.WebPhoneCustMemberAction" scope="prototype"></bean>
+    <bean id="WebPhoneRegAction" class="com.hurong.credit.action.webPhone.WebPhoneRegAction" scope="prototype"></bean>
+    <bean id="WebBidInfoAction" class="com.hurong.credit.action.webPhone.WebBidInfoAction" scope="prototype"></bean>
+    <bean id="WebPhoneAction" class="com.hurong.credit.action.webPhone.WebPhoneAction" scope="prototype"/>
+    <bean id="WebBidPlanAction" class="com.hurong.credit.action.webPhone.WebBidPlanAction" scope="prototype"/>
+    <bean id="WebFinancePurchaseAction" class="com.hurong.credit.action.webPhone.WebFinancePurchaseAction"
+          scope="prototype"/>
+    <bean id="WebBpCustAction" class="com.hurong.credit.action.webPhone.WebBpCustAction" scope="prototype"/>
+
+    <bean id="BuildHtmlAction" class="com.hurong.credit.action.system.BuildHtmlAction" scope="prototype"/>
+
+    <bean id="GlobalAction" class="com.hurong.credit.action.system.GlobalAction" scope="prototype"/>
+
+
+    <bean id="RegAction" class="com.hurong.credit.action.system.RegAction" scope="prototype"/>
+    <bean id="LoginAction" class="com.hurong.credit.action.system.LoginAction" scope="prototype"/>
+    <bean id="BpFundProjectAction" class="com.hurong.credit.action.creditFlow.project.BpFundProjectAction"
+          scope="prototype"/>
+    <bean id="BorrowerGatherAction" class="com.hurong.credit.action.system.BorrowerGatherAction"
+          scope="prototype"></bean>
+    <bean id="ProductDetailsAction" class="com.hurong.credit.action.system.ProductDetailsAction"
+          scope="prototype"></bean>
+    <!-- start:  Generated for ArticleCategory From Template: app-action.xml.beansvm  -->
+    <bean id="ArticleCategoryAction" class="com.hurong.credit.action.article.ArticleCategoryAction" scope="prototype"/>
+    <!-- end:  Generated for ArticleCategory From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for Article From Template: app-action.xml.beansvm  -->
+    <bean id="ArticleAction" class="com.hurong.credit.action.article.ArticleAction" scope="prototype"/>
+    <!-- end:  Generated for Article From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for P2pFriendlink From Template: app-action.xml.beansvm  -->
+    <bean id="P2pFriendlinkAction" class="com.hurong.credit.action.article.P2pFriendlinkAction" scope="prototype"/>
+    <!-- end:  Generated for P2pFriendlink From Template: app-action.xml.beansvm  -->
+
+    <!-- start:  Generated for SingleAction From Template: app-action.xml.beansvm  -->
+    <bean id="SingleAction" class="com.hurong.credit.action.html.SingleAction" scope="prototype"/>
+    <!-- end:  Generated for SingleAction From Template: app-action.xml.beansvm  -->
+
+    <!-- start:  Generated for BpCustMember From Template: app-action.xml.beansvm  -->
+    <bean id="BpCustMemberAction" class="com.hurong.credit.action.user.BpCustMemberAction" scope="prototype"/>
+    <!-- end:  Generated for BpCustMember From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for CsDicAreaDynam From Template: app-action.xml.beansvm  -->
+    <bean id="CsDicAreaDynamAction" class="com.hurong.credit.action.user.CsDicAreaDynamAction" scope="prototype"/>
+    <!-- end:  Generated for CsDicAreaDynam From Template: app-action.xml.beansvm  -->
+
+    <!-- start:  Generated for BpDicArea From Template: app-action.xml.beansvm  -->
+    <bean id="BpDicAreaAction" class="com.hurong.credit.action.user.BpDicAreaAction" scope="prototype"/>
+    <!-- end:  Generated for BpDicArea From Template: app-action.xml.beansvm  -->
+    <bean id="InvestmentAction" class="com.hurong.credit.action.investment.InvestmentAction" scope="prototype"/>
+    <bean id="BpFinanceApplyUserAction" class="com.hurong.credit.action.financePurchase.BpFinanceApplyUserAction"
+          scope="prototype"/>
+    <bean id="FinancePurchaseAction" class="com.hurong.credit.action.financePurchase.FinancePurchaseAction"
+          scope="prototype"/>
+
+
+    <bean id="AboutAction" class="com.hurong.credit.action.about.AboutAction" scope="prototype"/>
+
+    <bean id="UploadMaterial" class="com.hurong.credit.action.materials.UploadMaterial" scope="prototype"/>
+
+    <bean id="CreateRandomRemate" class="com.hurong.credit.util.CreateRandomRemate" scope="prototype"/>
+
+    <!-- start:  Generated for BpCustLoginlog From Template: app-action.xml.beansvm  -->
+    <bean id="BpCustLoginlogAction" class="com.hurong.credit.action.user.BpCustLoginlogAction" scope="prototype"/>
+    <!-- end:  Generated for BpCustLoginlog From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for IndexShow From Template: app-action.xml.beansvm  -->
+    <bean id="IndexShowAction" class="com.hurong.credit.action.system.IndexShowAction" scope="prototype"/>
+    <!-- end:  Generated for IndexShow From Template: app-action.xml.beansvm  -->
+
+    <bean id="ImageCodeAction" class="com.hurong.credit.action.system.ImageCodeAction" scope="prototype"/>
+
+    <bean id="PayAction" class="com.hurong.credit.action.pay.PayAction" scope="prototype"/>
+    <bean id="BackAction" class="com.hurong.credit.action.pay.BackAction" scope="prototype"/>
+    <bean id="FontAction" class="com.hurong.credit.action.pay.FontAction" scope="prototype"/>
+    <bean id="FontHuiFuAction" class="com.hurong.credit.action.pay.FontHuiFuAction" scope="prototype"/>
+    <bean id="BkHuiFuAction" class="com.hurong.credit.action.pay.BkHuiFuAction" scope="prototype"/>
+
+    <bean id="PlBidAutoAction" class="com.hurong.credit.action.creditFlow.auto.PlBidAutoAction"
+          scope="prototype"></bean>
+
+
+    <!-- 互联网金融  -->
+
+    <!-- start:  Generated for BpBusinessDirPro From Template: app-action.xml.beansvm  -->
+    <bean id="BpBusinessDirProAction"
+          class="com.hurong.credit.action.creditFlow.financingAgency.business.BpBusinessDirProAction"
+          scope="prototype"/>
+    <!-- end:  Generated for BpBusinessDirPro From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for BpBusinessOrPro From Template: app-action.xml.beansvm  -->
+    <bean id="BpBusinessOrProAction"
+          class="com.hurong.credit.action.creditFlow.financingAgency.business.BpBusinessOrProAction" scope="prototype"/>
+    <!-- end:  Generated for BpBusinessOrPro From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for BpPersionDirPro From Template: app-action.xml.beansvm  -->
+    <bean id="BpPersionDirProAction"
+          class="com.hurong.credit.action.creditFlow.financingAgency.persion.BpPersionDirProAction" scope="prototype"/>
+    <!-- end:  Generated for BpPersionDirPro From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for BpPersionOrPro From Template: app-action.xml.beansvm  -->
+    <bean id="BpPersionOrProAction"
+          class="com.hurong.credit.action.creditFlow.financingAgency.persion.BpPersionOrProAction" scope="prototype"/>
+    <!-- end:  Generated for BpPersionOrPro From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for PlBidInfo From Template: app-action.xml.beansvm  -->
+    <bean id="PlBidInfoAction" class="com.hurong.credit.action.creditFlow.financingAgency.PlBidInfoAction"
+          scope="prototype"/>
+    <!-- end:  Generated for PlBidInfo From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for PlBidPlan From Template: app-action.xml.beansvm  -->
+    <bean id="PlBidPlanAction" class="com.hurong.credit.action.creditFlow.financingAgency.PlBidPlanAction"
+          scope="prototype"/>
+    <!-- end:  Generated for PlBidPlan From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for PlBiddingType From Template: app-action.xml.beansvm  -->
+    <bean id="PlBiddingTypeAction"
+          class="com.hurong.credit.action.creditFlow.financingAgency.typeManger.PlBiddingTypeAction" scope="prototype"/>
+    <!-- end:  Generated for PlBiddingType From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for PlBusinessDirProKeep From Template: app-action.xml.beansvm  -->
+    <bean id="PlBusinessDirProKeepAction"
+          class="com.hurong.credit.action.creditFlow.financingAgency.business.PlBusinessDirProKeepAction"
+          scope="prototype"/>
+    <!-- end:  Generated for PlBusinessDirProKeep From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for PlKeepCreditlevel From Template: app-action.xml.beansvm  -->
+    <bean id="PlKeepCreditlevelAction"
+          class="com.hurong.credit.action.creditFlow.financingAgency.typeManger.PlKeepCreditlevelAction"
+          scope="prototype"/>
+    <!-- end:  Generated for PlKeepCreditlevel From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for PlKeepGtorz From Template: app-action.xml.beansvm  -->
+    <bean id="PlKeepGtorzAction"
+          class="com.hurong.credit.action.creditFlow.financingAgency.typeManger.PlKeepGtorzAction" scope="prototype"/>
+    <!-- end:  Generated for PlKeepGtorz From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for PlKeepProtype From Template: app-action.xml.beansvm  -->
+    <bean id="PlKeepProtypeAction"
+          class="com.hurong.credit.action.creditFlow.financingAgency.typeManger.PlKeepProtypeAction" scope="prototype"/>
+    <!-- end:  Generated for PlKeepProtype From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for PlPersionDirProKeep From Template: app-action.xml.beansvm  -->
+    <bean id="PlPersionDirProKeepAction"
+          class="com.hurong.credit.action.creditFlow.financingAgency.persion.PlPersionDirProKeepAction"
+          scope="prototype"/>
+    <!-- end:  Generated for PlPersionDirProKeep From Template: app-action.xml.beansvm  -->
+
+    <!-- start:  Generated for BpMoneyManager From Template: app-action.xml.beansvm  -->
+    <bean id="BpMoneyManagerAction" class="com.hurong.credit.action.financePurchase.BpMoneyManagerAction"
+          scope="prototype"/>
+    <!-- end:  Generated for BpMoneyManager From Template: app-action.xml.beansvm  -->
+
+    <!-- start:  Generated for OaNewsMessage From Template: app-action.xml.beansvm  -->
+    <bean id="OaNewsMessageAction" class="com.hurong.credit.action.message.OaNewsMessageAction" scope="prototype"/>
+    <!-- end:  Generated for OaNewsMessage From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for BankCode From Template: app-action.xml.beansvm  -->
+    <bean id="BankCodeAction" class="com.hurong.credit.action.pay.BankCodeAction" scope="prototype"/>
+    <!-- end:  Generated for BankCode From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for ThirdPayMessage From Template: app-action.xml.beansvm  -->
+    <bean id="ThirdPayMessageAction" class="com.hurong.credit.action.pay.ThirdPayMessageAction" scope="prototype"/>
+    <!-- end:  Generated for ThirdPayMessage From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for BpBidLoan From Template: app-action.xml.beansvm  -->
+    <bean id="BpBidLoanAction" class="com.hurong.credit.action.pay.BpBidLoanAction" scope="prototype"/>
+    <!-- end:  Generated for BpBidLoan From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for PlThirdInterfaceLog From Template: app-action.xml.beansvm  -->
+    <bean id="PlThirdInterfaceLogAction" class="com.hurong.credit.action.thirdInterface.PlThirdInterfaceLogAction"
+          scope="prototype"/>
+    <!-- end:  Generated for PlThirdInterfaceLog From Template: app-action.xml.beansvm  -->
+    <import resource="classpath:com/hurong/credit/action/creditFlow/creditAssignment/xmls/app-action.xml"/>
+    <bean id="PlManageMoneyPlanAction"
+          class="com.hurong.credit.action.financingAgency.manageMoney.PlManageMoneyPlanAction" scope="prototype"></bean>
+    <!-- start:  Generated for WebBankCode From Template: app-action.xml.beansvm  -->
+    <bean id="WebBankCodeAction" class="com.hurong.credit.action.thirdInterface.WebBankCodeAction" scope="prototype"/>
+    <!-- end:  Generated for WebBankCode From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for WebBankcard From Template: app-action.xml.beansvm  -->
+    <bean id="WebBankcardAction" class="com.hurong.credit.action.thirdInterface.WebBankcardAction" scope="prototype"/>
+    <!-- end:  Generated for WebBankcard From Template: app-action.xml.beansvm  -->
+    <bean id="PlManageMoneyPlanBuyinfoAction"
+          class="com.hurong.credit.action.financingAgency.manageMoney.PlManageMoneyPlanBuyinfoAction"
+          scope="prototype"/>
+    <bean id="BpActivityManageAction" class="com.hurong.credit.action.activity.BpActivityManageAction"
+          scope="prototype"/>
+    <bean id="MobileAction" class="com.hurong.credit.action.mobile.MobileAction" scope="prototype"/>
+    <bean id="PlBidSaleAction" class="com.hurong.credit.action.creditFlow.financingAgency.PlBidSaleAction"
+          scope="prototype"/>
+    <bean id="WebBonusRecordAction" class="com.hurong.credit.action.creditFlow.bonusSystem.record.WebBonusRecordAction"
+          scope="prototype"/>
+
+    <bean id="BpCustRedEnvelopeAction" class="com.hurong.credit.action.p2p.redMoney.BpCustRedEnvelopeAction"
+          scope="prototype"/>
+    <bean id="BpCustRedMemberAction" class="com.hurong.credit.action.p2p.redMoney.BpCustRedMemberAction"
+          scope="prototype"/>
+    <bean id="OaNewsMessagerinfoAction" class="com.hurong.credit.action.message.OaNewsMessagerinfoAction"
+          scope="prototype"/>
+
+
+    <!-- start:  Generated for P2pLoanProduct From Template: app-action.xml.beansvm  -->
+    <bean id="P2pLoanProductAction" class="com.hurong.credit.action.p2p.loan.P2pLoanProductAction" scope="prototype"/>
+    <!-- end:  Generated for P2pLoanProduct From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for P2pLoanConditionOrMaterial From Template: app-action.xml.beansvm  -->
+    <bean id="P2pLoanConditionOrMaterialAction"
+          class="com.hurong.credit.action.p2p.loan.P2pLoanConditionOrMaterialAction" scope="prototype"/>
+    <!-- end:  Generated for P2pLoanConditionOrMaterial From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for P2pLoanRate From Template: app-action.xml.beansvm  -->
+    <bean id="P2pLoanRateAction" class="com.hurong.credit.action.p2p.loan.P2pLoanRateAction" scope="prototype"/>
+    <!-- end:  Generated for P2pLoanRate From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for P2pLoanApplyStep From Template: app-action.xml.beansvm  -->
+    <bean id="P2pLoanApplyStepAction" class="com.hurong.credit.action.p2p.loan.P2pLoanApplyStepAction"
+          scope="prototype"/>
+    <!-- end:  Generated for P2pLoanApplyStep From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for P2pLoanBasisMaterial From Template: app-action.xml.beansvm  -->
+    <bean id="P2pLoanBasisMaterialAction" class="com.hurong.credit.action.p2p.loan.P2pLoanBasisMaterialAction"
+          scope="prototype"/>
+    <!-- end:  Generated for P2pLoanBasisMaterial From Template: app-action.xml.beansvm  -->
+    <!-- start:  Generated for PlatDataPublish From Template: app-action.xml.beansvm  -->
+    <bean id="PlatDataPublishAction" class="com.hurong.credit.action.p2p.PlatDataPublishAction" scope="prototype"/>
+    <!-- end:  Generated for PlatDataPublish From Template: app-action.xml.beansvm  -->
+    <bean id="SystemPropertiesAction" class="com.hurong.credit.action.system.SystemPropertiesAction" scope="prototype"/>
+    <import resource="classpath:com/hurong/credit/action/pay/EasyPay/xmls/app-action.xml"/>
+    <import resource="classpath:com/hurong/credit/action/pay/YeePay/app-action.xml"/>
+    <import resource="classpath:com/hurong/credit/action/pay/AllinPay/app-action.xml"/>
+    <import resource="classpath:com/hurong/credit/action/pay/BaoFoo/xmls/app-action.xml"/>
+    <!--<import resource="classpath:com/thirdPayInteface/app-thirdPayAction.xml"/>-->
+    <import resource="classpath:com/thirdPayInterface/app-thirdPayAction.xml"/>
+    <import resource="classpath:com/hurong/credit/action/coupon/xmls/action-coupon.xml"/>
+    <import resource="classpath:com/hurong/credit/action/financeProduct/xmls/action-financeProduct.xml"/>
+    <import resource="classpath:com/hurong/credit/action/creditFlow/finance/compensatory/xmls/appcompensatory-action.xml"/>
+    <!-- start:  Generated for WebBankCodeFudian From Template: app-action.xml.beansvm  -->
+    <bean id="WebBankCodeFudianAction" class="com.hurong.credit.action.credit.thirdInterface.WebBankCodeFudianAction"
+          scope="prototype"/>
+    <!-- end:  Generated for WebBankCodeFudian From Template: app-action.xml.beansvm  -->
+</beans>

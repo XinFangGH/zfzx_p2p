@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules>
+    <module name="team" file="menu-team.xml"/>
+    <module name="guarantee" file="menu-guarantee.xml"/>
+  	<!-- <module name="financing" file="menu-financing.xml"/>
+    <module name="leasefinance" file="menu-leasefinance.xml"/>
+    <module name="pawn" file="menu-pawn.xml"/>
+    -->
+    <module name="public" file="menu-public.xml"/>
+    
+    
+       <!--<module name="flowtasks" file="menu-flowtasks.xml"/>
+	 项目信息库  
+	<module name="projects" file="menu-projects.xml"/>
+	  客户信息库  
+	<module name="customer" file="menu-customer.xml"/>
+	  财务信息库  
+	<module name="finance" file="menu-finance.xml"/>
+	  统计分析库  
+	<module name="analysis" file="menu-analysis.xml"/>
+	  运营管理  
+	<module name="operation" file="menu-operation.xml"/>
+	  系统管理   
+	<module name="setting" file="menu-setting.xml"/>
+	 协同办公 
+	<module name="credit" file="menu-credit.xml"/>
+	
+	--><!-- <module name="myflow" file="menu-myflow.xml"/>
+	<module name="arch" file="menu-arch.xml"/>
+	<module name="archives" file="menu-archives.xml"/>
+	
+	<module name="knowledge" file="menu-knowledge.xml"/>
+		<module name="setting" file="menu-setting.xml"/>
+	<module name="hr" file="menu-hr.xml"/>
+	 -->
+
+	
+</Modules>

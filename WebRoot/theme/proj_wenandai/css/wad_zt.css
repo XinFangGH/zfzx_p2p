@@ -1,0 +1,212 @@
+body,input {margin: 0;padding: 0;/*font-family: "Microsoft YaHei","微软雅黑",Helvetica,Tahoma,Arial,"STXihei","华文细黑","SimSun","宋体","Heiti","黑体","sans-serif";*/font:12px/1.5 tahoma,arial,\5b8b\4f53,SimSun,STSong,sans-serif;color: #ccc;border: 0;}
+ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,em,i,p {padding: 0;margin: 0;list-style: none;font-style: normal;font-weight: normal;}
+#wrap {background: #fff;}
+a,img {border: none;text-decoration: none;}
+img{display: block;}
+/* reset */
+
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wad_ztfooter {
+    background: #555;
+    width: 100%;
+}
+
+.wad_ztfooter .copyright {
+    width: 1001px;
+    height: 20px;
+    margin: 40px auto 0;
+    padding: 20px 0 0;
+    text-align: center;
+    color: #b7b7b7;
+}
+
+.wad_ztfooter .permit {
+    width: 1001px;
+    height: 79px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.wad_ztfooter .permit .logoline li {
+    margin: 10px 30px 0 0;
+    line-height: 40px;
+    color: #b7b7b7;
+    float: left;
+}
+
+.wad_ztfooter .permit .logoline {
+    overflow: hidden;
+    padding: 0 0 0 250px;
+}
+
+.wad_ztfooter .permit .logoline li .weibo {
+    background: url(../images/footer-icons.png);
+    background-position: 0 93px;
+    width: 96px;
+}
+
+.wad_ztfooter .permit .logoline li .logo {
+    display: inline-block;
+    height: 30px;
+    padding: 10px 0 0 0;
+}
+
+.wad_ztfooter .permit .logoline li .weibo:hover { 
+    background-position:0 -117px; width:96px; 
+}
+
+.wad_ztfooter .permit .logoline li .qqweibo:hover { 
+    background-position:165px -117px; width:100px;
+}
+
+.wad_ztfooter .permit .logoline li .weixin:hover { 
+    background-position:-350px -117px; width:40px;
+}
+
+.wad_ztfooter .permit .logoline li .onlineservice:hover {
+    background-position:-511px -117px; width:65px;
+}
+
+.wad_ztfooter .permit .logoline li .onlineservice1:hover {
+    background-position:-576px -117px; width:43px;
+}
+
+.wad_ztfooter .permit .logoline li .onlineservice2:hover {
+    background-position:-618px -117px; width:40px;
+}
+
+.wad_zhuanti {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wad_ztheader {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #cf2939;
+}
+
+.wad_ztheader .wad_ztimg {
+    width: 980px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.wad_ztimg a {
+    height: 260px;
+    display: block;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.wad_ztimg .wad_ztimgf {
+    left: 0;
+    width: 358px;
+}
+
+.wad_ztimg .wad_ztimgt {
+    left: 358px;
+    width: 260px;
+    height: 218px;
+}
+
+.wad_ztimg .wad_ztimgs {
+    right: 0;
+    width: 360px;
+}
+
+.wad_haoli,.wad_haozeng,.wad_dajiang {
+    display: none;
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wad_haoli {
+    display: block;
+    position: relative;
+}
+
+.wad_haoli a {
+    width: 50%;
+    display: block;
+    height: 200px;
+    position: absolute;
+    top: 630px;
+}
+
+.wad_haoli .wad_signup {
+    left: 0;
+}
+
+.wad_haoli .wad_loginin {
+    right: 0;
+}
+
+.wad_haozeng,.wad_dajiang {
+    width: 980px;
+    height: 1667px;
+}
+
+.wad_haozeng a,.wad_dajiang a {
+    display: block;
+    width: 980px;
+    height: 1667px;
+}
+
+.wad_js {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.wad_js img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wad_js .wad_js_link {
+    display: block;
+    width: 100%;
+    height: 1863px;
+    position: relative;
+    cursor: pointer;
+}
+
+.wad_js .wad_kefu {
+    position: fixed;
+    width: 100px;
+    height: 150px;
+    top: 33%;
+    right: 0;
+    background: url(../images/images/kefu.png) no-repeat 50% 50%;
+    background-size: 100px;
+    cursor: pointer;
+}
+
+.wad_headerimg img {
+    width: 100%;
+}
+
+
+.wad_js .wad_jsgonggao {
+    position: absolute;
+    top: 1010px;
+    right: 100px;
+    display: block;
+    width: 100%;
+    height: 58px;
+    z-index: 999;
+}

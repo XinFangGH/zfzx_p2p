@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.wad_boon {width: 100%;margin:0 auto;/*background-color: #11597e;*/padding: 20px 0;}
+.wad_font {font-family: "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+.cw_main,.cw-rule {width:990px;margin:0 auto;background: #fff}
+
+.cw_main .h3 {
+    margin: 20px 0 10px;
+    height: 80px;
+    line-height: 72px;
+    font-weight: 700;
+    border-bottom: 1px solid #2ec0f3;
+    color: #2ec0f3;
+    /*color: #11597e;*/
+    /*color: #f02400;*/
+    font-size: 36px
+}
+
+.cw_main .h3 b {
+    font-size: 72px
+}
+
+.cw_main .h3 small {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.cw_main .h4 {
+    padding: 20px 0 10px;
+    font-size: 30px;
+    color: #666;
+    font-weight: 700
+}
+
+.cw_main p {
+    padding: 5px 0;
+    color: #333;
+}
+
+.cw_main p.strong {
+    color: #0096c4;
+}
+
+.cw_main .friend-tips {
+    font-size: 18px;
+    color: #0096c4;
+    /*color: #fc0;*/
+    background-position: -323px -888px;
+    text-indent: 20px
+}
+
+.cw_main .tmallbao-qa {
+    margin-left: 20px;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 10px;
+    background: #0078b4;
+    /*background: #f02400;*/
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.wad_boon .align-right{text-align: right;}
+.wad_boon .ft14 {font-size: 14px;}
+.wad_boon .cl333{color: #333;}
+.wad_boon table {border-collapse: collapse;border-spacing: 0;}
+.wad_boon .center {text-align: center;}
+
+
+
+
+.cw-rule {
+    overflow: hidden;
+}
+
+.cw-rule p {
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+
+.cw-rule-left {
+    float: left;
+    padding-right: 40px;
+    width: 500px;
+}
+
+.cw-rule-right {
+    float: left;
+    width: 450px;
+}
+
+.cw-rule table {
+    margin: 5px 0;
+    width: 100%;
+    color: #666;
+}
+
+.cw-rule th,.cw-rule td {
+    height: 34px;
+    text-align: center;
+}
+
+.cw-rule thead {
+    background-color: #0078b4;
+    font-size: 14px;
+    width: 490px;
+}
+
+.cw-rule th {
+    border: 1px solid #0078b4;
+}
+
+.cw-rule td {
+    border: 1px solid #0078b4;
+}
+
+.cw-rule tr.strong {
+    color: #2ec0f3;
+}
+
+.cw-rule-active {
+    padding-bottom: 60px;
+    color: #ccc;
+    width: 800px;
+}
+
+.cw-rule-active p {
+    padding-bottom: 3px;
+ 

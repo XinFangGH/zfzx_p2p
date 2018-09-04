@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+           
+    <bean id="csPersonHouseDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.CsPersonHouseDaoImpl" parent="baseDao"/>
+	<bean id="csPersonCarDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.CsPersonCarDaoImpl" parent="baseDao"/>
+	<bean id="personDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.PersonDaoImpl" parent="baseDao"/>
+	<bean id="personRelationDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.PersonRelationDaoImpl" parent="baseDao"/>
+	<bean id="bpCustPersonEducationDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.BpCustPersonEducationDaoImpl" parent="baseDao"/>
+	<bean id="bpCustPersonNegativeSurveyDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.BpCustPersonNegativeSurveyDaoImpl" parent="baseDao"/>
+	<bean id="bpCustPersonPublicActivityDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.BpCustPersonPublicActivityDaoImpl" parent="baseDao"/>
+	<bean id="bpCustPersonWorkExperienceDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.BpCustPersonWorkExperienceDaoImpl" parent="baseDao"/>
+	<bean id="enterpriseDao" class="com.hurong.credit.dao.creditFlow.customer.enterprise.impl.EnterpriseDaoImpl" parent="baseDao"/>
+	
+</beans>

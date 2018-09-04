@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hurong.credit.model.system.product.BpProductParameter"
+		table="bp_product_parameter" select-before-update="false"
+		dynamic-update="false" dynamic-insert="false" optimistic-lock="version">
+		<id name="id" column="id" type="java.lang.Long" length="19">
+			<generator class="native" />
+		</id>
+		<property name="productName" type="java.lang.String" update="true"
+			insert="true" access="property" column="productName" length="255"
+			not-null="false" unique="false" />
+		<property name="borrowerType" type="java.lang.String" update="true"
+			insert="true" access="property" column="borrowerType" length="30"
+			not-null="false" unique="false" />
+		<property name="accrualtype" type="java.lang.String" update="true"
+			insert="true" access="property" column="accrualtype" length="30"
+			not-null="false" unique="false" />
+		<property name="payaccrualType" type="java.lang.String"
+			update="true" insert="true" access="property" column="payaccrualType"
+			length="30" not-null="false" unique="false" />
+		<property name="payintentPeriod" type="java.lang.Integer"
+			update="true" insert="true" access="property" column="payintentPeriod"
+			length="10" not-null="false" unique="false" />
+		<property name="isPreposePayAccrual" type="java.lang.Integer"
+			update="true" insert="true" access="property" column="isPreposePayAccrual"
+			length="10" not-null="false" unique="false" />
+		<property name="isInterestByOneTime" type="java.lang.Integer"
+			update="true" insert="true" access="property" column="isInterestByOneTime"
+			length="10" not-null="false" unique="false" />
+		<property name="isStartDatePay" type="java.lang.String"
+			update="true" insert="true" access="property" column="isStartDatePay"
+			length="30" not-null="false" unique="false" />
+		<property name="payintentPerioDate" type="java.lang.Integer"
+			update="true" insert="true" access="property" column="payintentPerioDate"
+			length="10" not-null="false" unique="false" />
+		<property name="yearAccrualRate" type="java.math.BigDecimal"
+			update="true" insert="true" access="property" column="yearAccrualRate"
+			precision="20" scale="10" not-null="false" unique="false" />
+		<property name="accrual" type="java.math.BigDecimal" update="true"
+			insert="true" access="property" column="accrual" precision="20"
+			scale="10" not-null="false" unique="false" />
+		<property name="dayAccrualRate" type="java.math.BigDecimal"
+			update="true" insert="true" access="property" column="dayAccrualRate"
+			precision="20" scale="10" not-null="false" unique="false" />
+		<property name="sumAccrualRate" type="java.math.BigDecimal"
+			update="true" insert="true" access="property" column="sumAccrualRate"
+			precision="20" scale="10" not-null="false" unique="false" />
+		<property name="productDescribe" type="java.lang.String"
+			update="true" insert="true" access="property" column="productDescribe"
+			length="255" not-null="false" unique="false" />
+		<property name="createTime" type="java.util.Date" update="true"
+			insert="true" access="property" column="createTime" length="40"
+			not-null="false" unique="false" />
+		<property name="productStatus" type="java.lang.Short" update="true"
+			insert="true" access="property" column="productStatus" length="10"
+			not-null="false" unique="false" />
+
+		<property name="useAreaName" type="java.lang.String" update="true"
+			insert="true" access="property" column="useAreaName" length="50"
+			not-null="false" unique="false" />
+		<property name="incomSpeedName" type="java.lang.String"
+			update="true" insert="true" access="property" column="incomSpeedName"
+			length="50" not-null="false" unique="false" />
+		<property name="loanCostName" type="java.lang.String" update="true"
+			insert="true" access="property" column="loanCostName" length="50"
+			not-null="false" unique="false" />
+
+		<property name="useAreaId" type="java.lang.Long" update="true"
+			insert="true" access="property" column="useAreaId" length="5" not-null="false"
+			unique="false" />
+			<property name="incomSpeedId" type="java.lang.Long" update="true"
+			insert="true" access="property" column="incomSpeedId" length="5" not-null="false"
+			unique="false" />
+			<property name="loanCostId" type="java.lang.Long" update="true"
+			insert="true" access="property" column="loanCostId" length="5" not-null="false"
+			unique="false" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Menus id="Mod_customer" text="客户信息库" iconCls="mod-customer"> 
+   <Items id="Customer" text="客户信息库" iconCls="mod-customer"
+		isPublic="false">
+		<Item id="EnterpriseView" iconCls="menu-appuser" text="企业客户">
+				<Function id="_seeAll_qykh" text="查看所有客户" iconCls="btn-detail">
+				</Function>
+				<Function id="_detail_qykh" text="查看" iconCls="btn-detail">
+				</Function>
+				<Function id="_create_qykh" text="添加" iconCls="btn-add">
+				</Function>
+				<Function id="_edit_qykh" text="编辑" iconCls="btn-edit">
+				</Function>
+				<Function id="_editBelongeder_qykh" text="编辑客户所有人" iconCls="btn-edit">
+				</Function>
+				<Function id="_remove_qykh" text="删除" iconCls="btn-delete">
+				</Function>
+				<Function id="_export_qykh" text="导出到excel" iconCls="btn-xls">
+				</Function>
+		</Item>
+		<Item id="PersonView" iconCls="menu-person" text="个人客户">
+				<Function id="_detail_sygrkh" text="查看所有客户" iconCls="btn-detail">
+				</Function>
+				<Function id="_detail_grkh" text="查看" iconCls="btn-detail">
+				</Function>
+				<Function id="_create_grkh" text="增加" iconCls="btn-add">
+				</Function>
+				<Function id="_edit_grkh" text="编辑" iconCls="btn-edit">
+				<Function id="_editBelongeder_grkh" text="编辑客户所有人" iconCls="btn-edit">
+				</Function>
+				</Function>
+				<Function id="_remove_grkh" text="删除" iconCls="btn-delete">
+				</Function>
+				<Function id="_export_grkh" text="导出到excel" iconCls="btn-xls">
+				</Function>
+		</Item>
+		<Item id="AgencyCompanyView" iconCls="menu-person" text="中介公司">
+				<Function id="_detail_sygrkh" text="查看所有客户" iconCls="btn-detail">
+				</Function>
+				<Function id="_detail_grkh" text="查看" iconCls="btn-detail">
+				</Function>
+				<Function id="_create_grkh" text="增加" iconCls="btn-add">
+				</Function>
+				<Function id="_edit_grkh" text="编辑" iconCls="btn-edit">
+				</Function>
+				<Function id="_editBelongeder_grkh" text="编辑客户所有人" iconCls="btn-edit">
+				</Function>
+				<Function id="_remove_grkh" text="删除" iconCls="btn-delete">
+				</Function>
+				<Function id="_export_grkh" text="导出到excel" iconCls="btn-xls">
+				</Function>
+		</Item>
+		<Item id="BankRelationPersonView" iconCls="menu-bank" text="银行客户">
+				<Function id="_detail_syyhkh" text="查看所有客户" iconCls="btn-detail">
+				</Function>
+			 	<Function id="_detail_yhkh" text="查看" iconCls="btn-detail">
+				</Function>
+			 	<Function id="_create_yhkh" text="添加" iconCls="btn-add">
+				</Function>
+				<Function id="_edit_yhkh" text="编辑" iconCls="btn-edit">
+				<Function id="_editBelongeder_yhkh" text="编辑客户所有人" iconCls="btn-edit">
+				</Function>
+				</Function>
+				<Function id="_remove_yhkh" text="删除" iconCls="btn-delete">
+				</Function>
+				<Function id="_export_yhkh" text="导出到excel" iconCls="btn-xls">
+				</Function>
+		</Item>
+		<Item id="CreditRatingManage?type=customer" text="客户资信评估管理" iconCls="menu-creditrating">
+			     <Function id="_zx_see" text="查看" iconCls="updateIcon">
+			         <url>/credit/creditmanagement/creditRatingList.do</url>
+			     </Function>
+			     <Function id="_creditRating_add" text="新建资信评估" iconCls="addIcon">
+				     <url>/credit/creditmanagement/addCreditRatingSub.do</url>
+				     <url>/credit/creditmanagement/addCreditRatingJson.do</url>
+				     <url>/credit/creditmanagement/getScoreGrade.do</url>				     
+			     </Function>
+			     <Function id="_creditRating_delete" text="删除资信评估" iconCls="updateIcon">
+			         <url>/credit/creditmanagement/deleteCreditRating.do</url>
+			     </Function>
+			     <Function id="_creditRating_see" text="查看资信评估" iconCls="deleteIcon">
+			         <url>/credit/creditmanagement/CreditRatingResult.do</url>
+			     </Function>
+			</Item>
+	</Items>
+</Menus>

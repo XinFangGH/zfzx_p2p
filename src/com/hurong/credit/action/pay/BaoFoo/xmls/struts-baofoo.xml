@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="baoFooInterface" extends="struts-default" strict-method-invocation="false" namespace="/baoFoo">
+		<action name="*BaoFooFront" class="BaoFooFrontAction" method="{1}">
+			<result >${successResultValue}</result>
+			<result  name="freemarker" type="freemarker">${successResultValue}</result>
+		</action>
+		<action name="*BaoFooBack" class="BaoFooBackAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+</struts>

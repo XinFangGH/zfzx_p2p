@@ -1,0 +1,30 @@
+#law_List .law_Title{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+#law_List .law_Title .law_Pic span{
+    display: inline-block;
+    width: 143px;
+    height: 4px;
+    margin-bottom: 5px;
+}
+
+#law_List .law_Title .law_Pic span:th{
+    display: inline-block;
+    width: 143px;
+    height: 4px;
+    margin-bottom: 5px;
+}
+/*background-image: url(../images/tanchu/left.png);
+background-repeat: no-repeat;*/
+
+
+
+
+
+
+
+

@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd 
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<aop:aspectj-autoproxy />
+	<context:annotation-config />
+
+	<context:component-scan base-package="com.hurong.credit.service" />
+
+	<tx:annotation-driven transaction-manager="txManager" />
+
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- <bean id="logAspect" class="com.hurong.core.log.LogAspect"/> -->
+
+	<bean id="integralAspect" class="com.hurong.core.integral.IntegralAop" />
+
+	<!-- <bean id="integralAspect" class="com.hurong.core.integral.IntegralAop" /> -->
+	
+	<aop:config>
+		<aop:pointcut id="servicePointCut"
+			expression="execution(* com.hurong.credit.service..*(..))" />
+		<aop:pointcut id="servicePointCut2"
+			expression="execution(* com.hurong.core.service..*(..))" />
+
+
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="servicePointCut" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="servicePointCut2" />
+
+		<!-- <aop:aspect ref="logAspect"> <aop:pointcut id="logPointCut" expression="execution(* 
+			com.hurong.credit.action..*(..))"/> <aop:around pointcut-ref="logPointCut" 
+			method="doSystemLog"/> </aop:aspect> -->
+
+		<!-- <aop:pointcut id="integralAspectPointCut" expression="execution(* 
+			com.hurong.credit.service..*.*(..))"/> -->
+		<aop:aspect ref="integralAspect">
+			<aop:pointcut id="integralAopCut"
+				expression="execution(* com.hurong.credit.service..*.*(..))" />
+			<aop:around pointcut-ref="integralAopCut" method="integralEngine"
+				arg-names="obj" />
+		</aop:aspect>
+
+		<!-- <aop:pointcut id="integralAspectPointCut" expression="execution(* com.hurong.credit.service..*(..))"/> -->
+		
+		<!-- <aop:aspect ref="integralAspect">
+	 		<aop:pointcut id="integralAopCut" expression="execution(* com.hurong.credit.service..*.*(..))" />
+	 		<aop:around pointcut-ref="integralAopCut" method="integralEngine" arg-names="obj" />
+		</aop:aspect>  -->
+		
+	</aop:config>
+
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<!-- <tx:method name="get*" read-only="true"/> <tx:method name="is*" read-only="true"/> 
+				<tx:method name="find*" read-only="true"/> -->
+			<tx:method name="*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+
+	<!-- start: Generated for ArticleCategory From Template: app-service.xml.beansvm -->
+	<bean id="articlecategoryService"
+		class="com.hurong.credit.service.article.impl.ArticleCategoryServiceImpl">
+		<constructor-arg index="0" ref="articlecategoryDao" />
+	</bean>
+	<!-- end: Generated for ArticleCategory From Template: app-service.xml.beansvm -->
+
+
+
+
+
+	<bean id="androidService"
+		  class="com.hurong.credit.service.android.impl.AndroidAppServiceImpl">
+		<constructor-arg index="0" ref="androidAppDao" />
+	</bean>
+	<!-- start: Generated for Article From Template: app-service.xml.beansvm -->
+	<bean id="articleService"
+		class="com.hurong.credit.service.article.impl.ArticleServiceImpl">
+		<constructor-arg index="0" ref="articleDao" />
+	</bean>
+	<!-- end: Generated for Article From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for P2pFriendlink From Template: app-service.xml.beansvm -->
+	<bean id="p2pFriendlinkService"
+		class="com.hurong.credit.service.article.impl.P2pFriendlinkServiceImpl">
+		<constructor-arg index="0" ref="p2pFriendlinkDao" />
+	</bean>
+	<bean id="p2pBannerlinkService"
+		class="com.hurong.credit.service.article.impl.P2pBannerlinkServiceImpl">
+		<constructor-arg index="0" ref="p2pBannerlinkDao" />
+	</bean>
+	<!-- end: Generated for P2pFriendlink From Template: app-service.xml.beansvm -->
+	<bean id="bpCustPersonEducationService"
+		class="com.hurong.credit.service.creditFlow.customer.person.impl.BpCustPersonEducationServiceImpl">
+		<constructor-arg index="0" ref="bpCustPersonEducationDao" />
+	</bean>
+	<!-- start: Generated for BpCustMember From Template: app-service.xml.beansvm -->
+	<bean id="bpCustMemberService"
+		class="com.hurong.credit.service.user.impl.BpCustMemberServiceImpl">
+		<constructor-arg index="0" ref="bpCustMemberDao" />
+	</bean>
+	<!-- end: Generated for BpCustMember From Template: app-service.xml.beansvm -->
+
+
+	<!-- start: Generated for CsDicAreaDynam From Template: app-service.xml.beansvm -->
+	<bean id="csDicAreaDynamService"
+		class="com.hurong.credit.service.user.impl.CsDicAreaDynamServiceImpl">
+		<constructor-arg index="0" ref="csDicAreaDynamDao" />
+	</bean>
+	<!-- end: Generated for CsDicAreaDynam From Template: app-service.xml.beansvm -->
+
+	<!-- start: Generated for BpDicArea From Template: app-service.xml.beansvm -->
+	<bean id="bpDicAreaService"
+		class="com.hurong.credit.service.user.impl.BpDicAreaServiceImpl">
+		<constructor-arg index="0" ref="bpDicAreaDao" />
+	</bean>
+	<!-- end: Generated for BpDicArea From Template: app-service.xml.beansvm -->
+
+	<bean id="MaliciousRecordService"
+		class="com.hurong.credit.service.customer.impl.MaliciousRecordServiceImpl">
+		<constructor-arg index="0" ref="maliciousRecordDAO" />
+	</bean>
+
+	<!-- start: Generated for BpCustLoginlog From Template: app-service.xml.beansvm -->
+	<bean id="bpCustLoginlogService"
+		class="com.hurong.credit.service.user.impl.BpCustLoginlogServiceImpl">
+		<constructor-arg index="0" ref="bpCustLoginlogDao" />
+	</bean>
+	<!-- end: Generated for BpCustLoginlog From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for IndexShow From Template: app-service.xml.beansvm -->
+	<bean id="indexShowService"
+		class="com.hurong.credit.service.system.impl.IndexShowServiceImpl">
+		<constructor-arg index="0" ref="indexShowDao" />
+	</bean>
+	<!-- end: Generated for IndexShow From Template: app-service.xml.beansvm -->
+
+	<bean id="globalTypeService"
+		class="com.hurong.credit.service.system.impl.GlobalTypeServiceImpl">
+		<constructor-arg index="0" ref="globalTypeDao" />
+	</bean>
+
+	<!-- 互联网 金融 -->
+
+	<!-- start: Generated for BpBusinessDirPro From Template: app-service.xml.beansvm -->
+	<bean id="bpBusinessDirProService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.business.impl.BpBusinessDirProServiceImpl">
+		<constructor-arg index="0" ref="bpBusinessDirProDao" />
+	</bean>
+	<!-- end: Generated for BpBusinessDirPro From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for BpBusinessOrPro From Template: app-service.xml.beansvm -->
+	<bean id="bpBusinessOrProService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.business.impl.BpBusinessOrProServiceImpl">
+		<constructor-arg index="0" ref="bpBusinessOrProDao" />
+	</bean>
+	<!-- end: Generated for BpBusinessOrPro From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for BpPersionDirPro From Template: app-service.xml.beansvm -->
+	<bean id="bpPersionDirProService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.persion.impl.BpPersionDirProServiceImpl">
+		<constructor-arg index="0" ref="bpPersionDirProDao" />
+	</bean>
+	<!-- end: Generated for BpPersionDirPro From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for BpPersionOrPro From Template: app-service.xml.beansvm -->
+	<bean id="bpPersionOrProService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.persion.impl.BpPersionOrProServiceImpl">
+		<constructor-arg index="0" ref="bpPersionOrProDao" />
+	</bean>
+	<!-- end: Generated for BpPersionOrPro From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for PlBidInfo From Template: app-service.xml.beansvm -->
+	<bean id="plBidInfoService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.impl.PlBidInfoServiceImpl">
+		<constructor-arg index="0" ref="plBidInfoDao" />
+	</bean>
+	<!-- end: Generated for PlBidInfo From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for PlBidPlan From Template: app-service.xml.beansvm -->
+	<bean id="plBidPlanService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.impl.PlBidPlanServiceImpl">
+		<constructor-arg index="0" ref="plBidPlanDao" />
+	</bean>
+	<!-- end: Generated for PlBidPlan From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for PlBiddingType From Template: app-service.xml.beansvm -->
+	<bean id="plBiddingTypeService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.typeManger.impl.PlBiddingTypeServiceImpl">
+		<constructor-arg index="0" ref="plBiddingTypeDao" />
+	</bean>
+	<!-- end: Generated for PlBiddingType From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for PlBusinessDirProKeep From Template: app-service.xml.beansvm -->
+	<bean id="plBusinessDirProKeepService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.business.impl.PlBusinessDirProKeepServiceImpl">
+		<constructor-arg index="0" ref="plBusinessDirProKeepDao" />
+	</bean>
+	<!-- end: Generated for PlBusinessDirProKeep From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for PlKeepCreditlevel From Template: app-service.xml.beansvm -->
+	<bean id="plKeepCreditlevelService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.typeManger.impl.PlKeepCreditlevelServiceImpl">
+		<constructor-arg index="0" ref="plKeepCreditlevelDao" />
+	</bean>
+	<!-- end: Generated for PlKeepCreditlevel From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for PlKeepGtorz From Template: app-service.xml.beansvm -->
+	<bean id="plKeepGtorzService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.typeManger.impl.PlKeepGtorzServiceImpl">
+		<constructor-arg index="0" ref="plKeepGtorzDao" />
+	</bean>
+	<!-- end: Generated for PlKeepGtorz From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for PlKeepProtype From Template: app-service.xml.beansvm -->
+	<bean id="plKeepProtypeService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.typeManger.impl.PlKeepProtypeServiceImpl">
+		<constructor-arg index="0" ref="plKeepProtypeDao" />
+	</bean>
+	<!-- end: Generated for PlKeepProtype From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for PlPersionDirProKeep From Template: app-service.xml.beansvm -->
+	<bean id="plPersionDirProKeepService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.persion.impl.PlPersionDirProKeepServiceImpl">
+		<constructor-arg index="0" ref="plPersionDirProKeepDao" />
+	</bean>
+	<!-- end: Generated for PlPersionDirProKeep From Template: app-service.xml.beansvm -->
+
+
+	<!-- start: Generated for BpMoneyManager From Template: app-service.xml.beansvm -->
+	<bean id="bpMoneyManagerService"
+		class="com.hurong.credit.service.financePurchase.impl.BpMoneyManagerServiceImpl">
+		<constructor-arg index="0" ref="bpMoneyManagerDao" />
+	</bean>
+	<bean id="bpFinanceApplyUserService"
+		class="com.hurong.credit.service.financePurchase.impl.BpFinanceApplyUserServiceImpl">
+		<constructor-arg index="0" ref="BpFinanceApplyUserDao" />
+	</bean>
+	<bean id="bpFinanceApplyService"
+		class="com.hurong.credit.service.p2p.impl.BpFinanceApplyServiceImpl">
+		<constructor-arg index="0" ref="bpFinanceApplyDao" />
+	</bean>
+
+	<!-- end: Generated for BpMoneyManager From Template: app-service.xml.beansvm -->
+	<bean id="fileFormService"
+		class="com.hurong.credit.service.creditFlow.FileForm.impl.FileFormServiceImpl">
+		<constructor-arg index="0" ref="fileFormDao" />
+	</bean>
+
+	<!-- start: Generated for OaNewsMessage From Template: app-service.xml.beansvm -->
+	<bean id="oaNewsMessageService"
+		class="com.hurong.credit.service.message.impl.OaNewsMessageServiceImpl">
+		<constructor-arg index="0" ref="oaNewsMessageDao" />
+	</bean>
+	<!-- end: Generated for OaNewsMessage From Template: app-service.xml.beansvm -->
+
+	<!-- start: Generated for WebFinanceApplyUploads From Template: app-service.xml.beansvm -->
+	<bean id="webFinanceApplyUploadsService"
+		class="com.hurong.credit.service.materials.impl.WebFinanceApplyUploadsServiceImpl">
+		<constructor-arg index="0" ref="webFinanceApplyUploadsDao" />
+	</bean>
+	<!-- end: Generated for WebFinanceApplyUploads From Template: app-service.xml.beansvm -->
+
+	<!-- start: Generated for BankCode From Template: app-service.xml.beansvm -->
+	<bean id="bankCodeService" class="com.hurong.credit.service.pay.impl.BankCodeServiceImpl">
+		<constructor-arg index="0" ref="bankCodeDao" />
+	</bean>
+	<!-- end: Generated for BankCode From Template: app-service.xml.beansvm -->
+	<!-- start: Generated for ThirdPayMessage From Template: app-service.xml.beansvm -->
+	<bean id="thirdPayMessageService"
+		class="com.hurong.credit.service.pay.impl.ThirdPayMessageServiceImpl">
+		<constructor-arg index="0" ref="thirdPayMessageDao" />
+	</bean>
+	<!-- end: Generated for ThirdPayMessage From Template: app-service.xml.beansvm -->
+	<!-- 金融 中介 投资人配额 -->
+	<bean id="investPersonInfoService"
+		class="com.hurong.credit.service.customer.impl.InvestPersonInfoServiceImpl">
+		<constructor-arg index="0" ref="investPersonInfoDao" />
+	</bean>
+	<!-- start: Generated for BpCustRelation From Template: app-service.xml.beansvm -->
+	<bean id="bpCustRelationService"
+		class="com.hurong.credit.service.customer.impl.BpCustRelationServiceImpl">
+		<constructor-arg index="0" ref="bpCustRelationDao" />
+	</bean>
+	<!-- end: Generated for BpCustRelation From Template: app-service.xml.beansvm -->
+
+	<!-- start: Generated for BpBidLoan From Template: app-service.xml.beansvm -->
+	<bean id="bpBidLoanService" class="com.hurong.credit.service.pay.impl.BpBidLoanServiceImpl">
+		<constructor-arg index="0" ref="bpBidLoanDao" />
+	</bean>
+	<!-- end: Generated for BpBidLoan From Template: app-service.xml.beansvm -->
+	<bean id="bpFundIntentService"
+		class="com.hurong.credit.service.creditFlow.finance.impl.BpFundIntentServiceImpl">
+		<constructor-arg index="0" ref="bpFundIntentDao" />
+	</bean>
+	<bean id="BpFundProjectService"
+		class="com.hurong.credit.service.creditFlow.fund.project.impl.BpFundProjectServiceImpl">
+		<constructor-arg index="0" ref="bpFundProjectDao" />
+	</bean>
+	<!-- 日志接口 -->
+	<bean id="userloginlogsService"
+		class="com.hurong.credit.service.creditFlow.log.impl.UserloginlogsServiceImpl">
+		<constructor-arg index="0" ref="userloginlogsDao" />
+	</bean>
+	<!-- 借款用途 -->
+	<bean id="slSmallloanProjectService"
+		class="com.hurong.credit.service.creditFlow.smallLoan.project.impl.SlSmallloanProjectServiceImpl">
+		<constructor-arg index="0" ref="slSmallloanProjectDao" />
+	</bean>
+
+	<!--客户端 webservice 接口 -->
+
+
+	<!-- 系统 配置 -->
+	<bean id="sysConfigService"
+		class="com.hurong.credit.service.system.impl.SysConfigServiceImpl">
+		<constructor-arg index="0" ref="sysConfigDao" />
+	</bean>
+	<!-- 产品配置 -->
+	<bean id="bpProductParameterService"
+		class="com.hurong.credit.service.system.product.impl.BpProductParameterServiceImpl">
+		<constructor-arg index="0" ref="bpProductParameterDao" />
+	</bean>
+
+	<bean id="dictionaryService"
+		class="com.hurong.credit.service.system.product.impl.DictionaryServiceImpl">
+		<constructor-arg index="0" ref="dictionaryDao" />
+	</bean>
+	<!-- start: Generated for PlThirdInterfaceLog From Template: app-service.xml.beansvm -->
+	<bean id="plThirdInterfaceLogService"
+		class="com.hurong.credit.service.thirdInterface.impl.PlThirdInterfaceLogServiceImpl">
+		<constructor-arg index="0" ref="plThirdInterfaceLogDao" />
+	</bean>
+	<!-- end: Generated for PlThirdInterfaceLog From Template: app-service.xml.beansvm -->
+	<!-- 理财计划 -->
+	<bean id="plManageMoneyPlanService"
+		class="com.hurong.credit.service.financingAgency.manageMoney.impl.PlManageMoneyPlanServiceImpl">
+		<constructor-arg index="0" ref="plManageMoneyPlanDao" />
+	</bean>
+	<bean id="plManageMoneyPlanBuyinfoService"
+		class="com.hurong.credit.service.financingAgency.manageMoney.impl.PlManageMoneyPlanBuyinfoServiceImpl">
+		<constructor-arg index="0" ref="plManageMoneyPlanBuyinfoDao" />
+	</bean>
+	<bean id="plManageMoneyTypeService"
+		class="com.hurong.credit.service.financingAgency.manageMoney.impl.PlManageMoneyTypeServiceImpl">
+		<constructor-arg index="0" ref="plManageMoneyTypeDao" />
+	</bean>
+	<bean id="plMmOrderChildrenOrService"
+		class="com.hurong.credit.service.financingAgency.manageMoney.impl.PlMmOrderChildrenOrServiceImpl">
+		<constructor-arg index="0" ref="plMmOrderChildrenOrDao" />
+	</bean>
+
+	<bean id="plEarlyRedemptionService"
+		class="com.hurong.credit.service.financingAgency.manageMoney.impl.PlEarlyRedemptionServiceImpl">
+		<constructor-arg index="0" ref="plEarlyRedemptionDao" />
+	</bean>
+	<import
+		resource="classpath:com/hurong/credit/service/creditFlow/creditAssignment/xmls/app-service.xml" />
+	<!-- start: Generated for WebBankCode From Template: app-service.xml.beansvm -->
+	<bean id="webBankCodeService"
+		class="com.hurong.credit.service.thirdInterface.impl.WebBankCodeServiceImpl">
+		<constructor-arg index="0" ref="webBankCodeDao" />
+	</bean>
+	<!-- end: Generated for WebBankCode From Template: app-service.xml.beansvm -->
+
+	<bean id="csBankService"
+		class="com.hurong.credit.service.thirdInterface.impl.CsBankServiceImpl">
+		<constructor-arg index="0" ref="csBankDao" />
+	</bean>
+	<!-- start: Generated for WebBankcard From Template: app-service.xml.beansvm -->
+	<bean id="webBankcardService"
+		class="com.hurong.credit.service.thirdInterface.impl.WebBankcardServiceImpl">
+		<constructor-arg index="0" ref="webBankcardDao" />
+	</bean>
+	<!-- end: Generated for WebBankcard From Template: app-service.xml.beansvm -->
+	<!-- 互联网 金融前台展示贷款材料 -->
+
+	<!-- start: Generated for PlWebShowMaterials From Template: app-service.xml.beansvm -->
+	<bean id="plWebShowMaterialsService"
+		class="com.hurong.credit.service.p2p.materials.impl.PlWebShowMaterialsServiceImpl">
+		<constructor-arg index="0" ref="plWebShowMaterialsDao" />
+	</bean>
+	<!-- end: Generated for PlWebShowMaterials From Template: app-service.xml.beansvm -->
+
+	<bean id="ourProcreditAssuretenetService"
+		class="com.hurong.credit.service.creditFlow.assuretenet.impl.OurProcreditAssuretenetServiceImpl">
+		<constructor-arg index="0" ref="ourProcreditAssuretenetDao" />
+	</bean>
+	<bean id="slProcreditAssuretenetService"
+		class="com.hurong.credit.service.creditFlow.assuretenet.impl.SlProcreditAssuretenetServiceImpl">
+		<constructor-arg index="0" ref="slProcreditAssuretenetDao" />
+	</bean>
+
+	<bean id="plBidAutoService"
+		class="com.hurong.credit.service.creditFlow.auto.impl.PlBidAutoServiceImpl">
+		<constructor-arg index="0" ref="plBidAutoDao" />
+	</bean>
+
+	<bean id="ourProcreditMaterialsEnterpriseService"
+		class="com.hurong.credit.service.creditFlow.materials.impl.OurProcreditMaterialsEnterpriseServiceImpl">
+		<constructor-arg index="0"
+			ref="ourProcreditMaterialsEnterpriseDao" />
+	</bean>
+
+	<bean id="bpFundProjectService"
+		class="com.hurong.credit.service.creditFlow.fund.project.impl.BpFundProjectServiceImpl">
+		<constructor-arg index="0" ref="bpFundProjectDao" />
+	</bean>
+	<bean id="slFundIntentService"
+		class="com.hurong.credit.service.creditFlow.finance.impl.SlFundIntentServiceImpl">
+		<constructor-arg index="0" ref="slFundIntentDao" />
+	</bean>
+
+	<bean id="plMmOrderAssignInterestService"
+		class="com.hurong.credit.service.financingAgency.manageMoney.impl.PlMmOrderAssignInterestServiceImpl">
+		<constructor-arg index="0" ref="plMmOrderAssignInterestDao" />
+	</bean>
+
+	<bean id="csPersonHouseService"
+		class="com.hurong.credit.service.creditFlow.customer.person.impl.CsPersonHouseServiceImpl">
+		<constructor-arg index="0" ref="csPersonHouseDao" />
+	</bean>
+
+	<bean id="csPersonCarService"
+		class="com.hurong.credit.service.creditFlow.customer.person.impl.CsPersonCarServiceImpl">
+		<constructor-arg index="0" ref="csPersonCarDao" />
+	</bean>
+
+	<bean id="personService"
+		class="com.hurong.credit.service.creditFlow.customer.person.impl.PersonServiceImpl">
+		<constructor-arg index="0" ref="personDao" />
+	</bean>
+
+
+	<bean id="personRelationService"
+		class="com.hurong.credit.service.creditFlow.customer.person.impl.PersonRelationServiceImpl">
+		<constructor-arg index="0" ref="personRelationDao" />
+	</bean>
+	<bean id="bpCustPersonNegativeSurveyService"
+		class="com.hurong.credit.service.creditFlow.customer.person.impl.BpCustPersonNegativeSurveyServiceImpl">
+		<constructor-arg index="0" ref="bpCustPersonNegativeSurveyDao" />
+	</bean>
+	<bean id="bpCustPersonPublicActivityService"
+		class="com.hurong.credit.service.creditFlow.customer.person.impl.BpCustPersonPublicActivityServiceImpl">
+		<constructor-arg index="0" ref="bpCustPersonPublicActivityDao" />
+	</bean>
+	<bean id="bpCustPersonWorkExperienceService"
+		class="com.hurong.credit.service.creditFlow.customer.person.impl.BpCustPersonWorkExperienceServiceImpl">
+		<constructor-arg index="0" ref="bpCustPersonWorkExperienceDao" />
+	</bean>
+	<bean id="slEarlyRepaymentRecordService"
+		class="com.hurong.credit.service.creditFlow.smallLoan.finance.impl.SlEarlyRepaymentRecordServiceImpl">
+		<constructor-arg index="0" ref="slEarlyRepaymentRecordDao" />
+	</bean>
+	<bean id="plBidSaleService"
+		class="com.hurong.credit.service.creditFlow.financingAgency.impl.PlBidSaleServiceImpl">
+		<constructor-arg index="0" ref="plBidSaleDao" />
+	</bean>
+	
+	<bean id="bpActivityManageService"
+		class="com.hurong.credit.service.activity.impl.BpActivityManageServiceImpl">
+		<constructor-arg index="0" ref="bpActivityManageDao" />
+	</bean>
+
+	<bean id="bpCustRedEnvelopeService"
+		class="com.hurong.credit.service.p2p.redMoney.impl.BpCustRedEnvelopeServiceImpl">
+		<constructor-arg index="0" ref="bpCustRedEnvelopeDao" />
+	</bean>
+	<bean id="bpCustRedMemberService"
+		class="com.hurong.credit.service.p2p.redMoney.impl.BpCustRedMemberServiceImpl">
+		<constructor-arg index="0" ref="bpCustRedMemberDao" />
+	</bean>
+
+	<import
+		resource="classpath:com/hurong/credit/service/coupon/xmls/service-coupon.xml" />
+
+   	 
+   	 	<!--    会员等级设置service配置-->
+     <bean id="memberGradeSetService" class="com.hurong.credit.service.creditFlow.bonusSystem.gradeSet.impl.MemberGradeSetServiceImpl">
+   	 	<constructor-arg index="0" ref="memberGradeSetDao"/>
+   	 </bean>
+   	 
+	 <bean id="webBonusSettingService" class="com.hurong.credit.service.creditFlow.bonusSystem.setting.impl.WebBonusSettingServiceImpl">
+   	 	<constructor-arg index="0" ref="webBonusSettingDao"/>
+   	 </bean>
+	 <bean id="webBonusRecordService" class="com.hurong.credit.service.creditFlow.bonusSystem.record.impl.WebBonusRecordServiceImpl">
+   	 	<constructor-arg index="0" ref="webBonusRecordDao"/>
+   	 </bean>
+   	 <!-- 积分接口 -->
+   	 <bean id="integralManage" class="com.hurong.core.integral.IntegralManageImpl"></bean>
+   	 <bean id="oaNewsMessagerinfoService" class="com.hurong.credit.service.message.impl.OaNewsMessagerinfoServiceImpl">
+   	 	<constructor-arg index="0" ref="oaNewsMessagerinfoDao"/>
+   	 </bean>
+   	 <bean id="enterpriseService" class="com.hurong.credit.service.creditFlow.customer.enterprise.impl.EnterpriseServiceImpl">
+   	 	<constructor-arg index="0" ref="enterpriseDao"/>
+   	 </bean>
+   	 
+   	 
+<!-- start:  Generated for P2pLoanProduct From Template: app-service.xml.beansvm  -->
+	 <bean id="p2pLoanProductService" class="com.hurong.credit.service.p2p.loan.impl.P2pLoanProductServiceImpl">
+   	 	<constructor-arg index="0" ref="p2pLoanProductDao"/>
+   	 </bean>
+<!-- end:  Generated for P2pLoanProduct From Template: app-service.xml.beansvm  -->
+<!-- start:  Generated for P2pLoanConditionOrMaterial From Template: app-service.xml.beansvm  -->
+	 <bean id="p2pLoanConditionOrMaterialService" class="com.hurong.credit.service.p2p.loan.impl.P2pLoanConditionOrMaterialServiceImpl">
+   	 	<constructor-arg index="0" ref="p2pLoanConditionOrMaterialDao"/>
+   	 </bean>
+<!-- end:  Generated for P2pLoanConditionOrMaterial From Template: app-service.xml.beansvm  -->
+<!-- start:  Generated for P2pLoanRate From Template: app-service.xml.beansvm  -->
+	 <bean id="p2pLoanRateService" class="com.hurong.credit.service.p2p.loan.impl.P2pLoanRateServiceImpl">
+   	 	<constructor-arg index="0" ref="p2pLoanRateDao"/>
+   	 </bean>
+<!-- end:  Generated for P2pLoanRate From Template: app-service.xml.beansvm  -->
+<!-- start:  Generated for P2pLoanApplyStep From Template: app-service.xml.beansvm  -->
+	 <bean id="p2pLoanApplyStepService" class="com.hurong.credit.service.p2p.loan.impl.P2pLoanApplyStepServiceImpl">
+   	 	<constructor-arg index="0" ref="p2pLoanApplyStepDao"/>
+   	 </bean>
+<!-- end:  Generated for P2pLoanApplyStep From Template: app-service.xml.beansvm  -->
+<!-- start:  Generated for P2pLoanBasisMaterial From Template: app-service.xml.beansvm  -->
+	 <bean id="p2pLoanBasisMaterialService" class="com.hurong.credit.service.p2p.loan.impl.P2pLoanBasisMaterialServiceImpl">
+   	 	<constructor-arg index="0" ref="p2pLoanBasisMaterialDao"/>
+   	 </bean>
+<!-- end:  Generated for P2pLoanBasisMaterial From Template: app-service.xml.beansvm  -->
+<!-- start:调用第三方生成日志 -->       
+     <bean id="thirdPayRecordService" class="com.thirdPayInterface.ThirdPayLog.service.impl.ThirdPayRecordServiceImpl">
+   	 	<constructor-arg index="0" ref="thirdPayRecordDao"/>
+   	 </bean>
+<!-- end:调用第三方生成日志 -->
+<!-- start:调用第三方生成日志 -->       
+     <bean id="thirdPayLogService" class="com.thirdPayInterface.ThirdPayLog.service.impl.ThirdPayLogServiceImpl">
+   	 	<constructor-arg index="0" ref="thirdPayLogDao"/>
+   	 </bean>
+<!-- end:调用第三方生成日志 -->
+
+   	 <!-- 站岗资金 -->
+	<import resource="classpath:com/hurong/credit/service/financeProduct/xmls/serice-financeProduct.xml"/>
+	<import resource="classpath:com/hurong/credit/service/creditFlow/finance/compensatory/xmls/appcompensatory-service.xml"/>
+<!-- start:  Generated for PlatDataPublish From Template: app-service.xml.beansvm  -->
+	 <bean id="platDataPublishService" class="com.hurong.credit.service.p2p.impl.PlatDataPublishServiceImpl">
+   	 	<constructor-arg index="0" ref="platDataPublishDao"/>
+   	 </bean>
+<!-- end:  Generated for PlatDataPublish From Template: app-service.xml.beansvm  -->
+<!-- start:  Generated for WebBankCodeFudian From Template: app-service.xml.beansvm  -->
+	 <bean id="webBankCodeFudianService" class="com.hurong.credit.service.credit.thirdInterface.impl.WebBankCodeFudianServiceImpl">
+   	 	<constructor-arg index="0" ref="webBankCodeFudianDao"/>
+   	 </bean>
+<!-- end:  Generated for WebBankCodeFudian From Template: app-service.xml.beansvm  -->
+</beans>

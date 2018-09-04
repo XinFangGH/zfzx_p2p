@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="publicInterceptor" location="0,0" size="0,0" />
+  <package name="system" location="0,0" size="0,0">
+    <action name="*BuildHtml" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*Global" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*SystemProperties" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="article" location="0,0" size="0,0">
+    <action name="*Article" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*ArticleCategory" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*P2pFriendlink" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="material" location="0,0" size="0,0">
+    <action name="*Material" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="p2p" location="0,0" size="0,0">
+    <action name="*P2pFriendlink" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*PlatDataPublish" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="default" location="0,0" size="0,0">
+    <action name="defaultAction" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*reg" location="0,0" size="0,0">
+      <result name="freemarker" />
+      <result name="success" />
+    </action>
+    <action name="*login" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="login" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="index" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*create" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*Code" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="train" location="0,0" size="0,0" />
+  <package name="user" location="0,0" size="0,0">
+    <action name="*BpCustMember" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="message" />
+      <result name="freemarker" />
+      <result name="freemarker2" />
+    </action>
+    <action name="*Area" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="html" location="0,0" size="0,0">
+    <action name="*Single" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+  </package>
+  <package name="financePurchase" location="0,0" size="0,0">
+    <action name="*FinancePurchase" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="finance" />
+      <result name="message" />
+      <result name="freemarker" />
+      <result name="loanAuthorize" />
+      <result name="success" />
+    </action>
+    <action name="*Area" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*applyUser" location="0,0" size="0,0">
+      <result name="finance" />
+      <result name="message" />
+      <result name="success" />
+    </action>
+  </package>
+  <package name="investment" location="0,0" size="0,0">
+    <action name="*Investment" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="about" location="0,0" size="0,0">
+    <action name="*About" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="toLinks" />
+      <result name="toPartners" />
+    </action>
+  </package>
+  <package name="thirdInterface" location="0,0" size="0,0">
+    <action name="*WebBankCode" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*WebBankcard" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+  </package>
+  <package name="pay" location="0,0" size="0,0">
+    <action name="*BpBidLoan" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*Pay" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*Back" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*Font" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*FontHuiFu" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*BkHuiFu" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*BankCode" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+  </package>
+  <package name="financingAgency" location="0,0" size="0,0">
+    <action name="*PlBidInfo" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*PlManageMoneyPlanBuyinfo" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*PlBidPlan" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+      <result name="bidPlan" />
+      <result name="showNull" />
+    </action>
+    <action name="*PlManageMoneyPlan" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+      <result name="moneyPlan" />
+    </action>
+    <action name="*PlBidAuto" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+      <result name="moneyPlan" />
+    </action>
+    <action name="*PlBidSale" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+  </package>
+  <package name="financingAgencyBusiness" location="0,0" size="0,0">
+    <action name="*BpBusinessDirPro" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*BpBusinessOrPro" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*PlBusinessDirProKeep" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="financingAgencyPersion" location="0,0" size="0,0">
+    <action name="*PlPersionDirProKeep" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*BpPersionDirPro" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*BpPersionOrPro" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="message" location="0,0" size="0,0">
+    <action name="*OaNewsMessage" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*OaNewsMessagerinfo" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="financingAgencyTypeManger" location="0,0" size="0,0">
+    <action name="*PlBiddingType" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*PlKeepCreditlevel" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*PlKeepGtorz" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*PlKeepProtype" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="mobile" location="0,0" size="0,0">
+    <action name="*Mobile" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+  </package>
+  <package name="mobilegather" location="0,0" size="0,0">
+    <action name="*_BGAction" location="0,0" size="0,0">
+      <result name="freemarker" />
+      <result name="success" />
+    </action>
+  </package>
+  <package name="mobileProduct" location="0,0" size="0,0">
+    <action name="*_PDAction" location="0,0" size="0,0">
+      <result name="freemarker" />
+    </action>
+  </package>
+  <package name="bonusSystem" location="0,0" size="0,0">
+    <action name="*WebBonusRecord" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+  </package>
+  <package name="BpActivityManage" location="0,0" size="0,0">
+    <action name="*BpActivityManage" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+  </package>
+  <package name="BpCustRed" location="0,0" size="0,0">
+    <action name="*BpCustRedEnvelope" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="*BpCustRedMember" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="loan" location="0,0" size="0,0">
+    <action name="*P2pLoanProduct" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*P2pLoanConditionOrMaterial" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*P2pLoanRate" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*P2pLoanApplyStep" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+    <action name="*P2pLoanBasisMaterial" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="freemarker" />
+    </action>
+  </package>
+</Struts2Diagram>
+

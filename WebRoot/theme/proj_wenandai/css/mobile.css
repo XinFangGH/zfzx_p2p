@@ -1,0 +1,1710 @@
+@charset "UTF-8";
+body,input {margin: 0;padding: 0;font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";font-size:12px;line-height:1.5;text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;-moz-font-feature-settings: "liga", "kern";color: #ccc;border: 0;}
+ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,em,i,p {padding: 0;margin: 0;list-style: none;font-style: normal;font-weight: normal;}
+#wrap {background: #efefef;}
+a,img {border: none;text-decoration: none;}
+img{display: block;}
+/* reset */
+
+/*bar导航*/
+    .wad_header {
+        box-shadow: 0 0 1px #999;
+    }
+
+    .wad_topbar {
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        border-top: 2px solid #2770b8;
+        overflow: hidden;
+    }
+
+    .wad_logo {
+        background: url(../images/mobile/logo.png) no-repeat 10px 50%;
+        background-size: 100px;
+        width: 132px;
+        height: 50px;
+        display: block;
+        float: left;
+    }
+
+    .wad_topbar .wad_bak {
+        width: 15%;
+        float: left;
+        height: 50px;
+        background: url(../images/mobile/bak.png) no-repeat 21% 50%;
+        background-size: 10px;
+
+    }
+    
+    .wad_topbar em {
+        font-size: 18px;
+        color: #000;
+        line-height: 50px;
+        height: 50px;
+        float: left;
+        text-align: center;
+        width: 70%;
+    }
+
+    .wad_allnav {
+        background: url(../images/mobile/nav.png) no-repeat right 50%;
+        background-size: 28px;
+        float: right;
+        width: 12%;
+        height: 50px;
+        margin-right: 3%;
+    }
+
+    /*slider导航*/
+    .wad_slidernav {
+        width: 100%;
+        padding: 10px 0;
+        background: #0097c6;
+        border-top: 2px solid #efefef;
+        display: none;
+    }
+
+    .wad_huanying {
+        font-size: 12px;
+        color: #666;
+        text-align: left;
+        height: 40px;
+        line-height: 30px;
+        padding-left: 5px;
+    }
+
+    .wad_nav {
+        line-height: 38px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .wad_nav p {
+        width: 25%;
+        text-align: center;
+        float: left;
+        height: 90px;
+    }
+
+    .wad_nav a {
+        color: #fff;
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        /*height: 30px;*/
+        line-height: 30px;
+        background: #0097c6;
+    }
+
+    .wad_nav img {
+        width: 64px;
+        /*height: 90px;*/
+        margin: 0 auto;
+    }
+
+/*图片滑动*/
+
+    .wad_hdtupian {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: auto;
+    }
+
+    .wad_yuandian {
+        height: 30px;
+        line-height: 30px;
+        background: #fff;
+    }
+
+    .wad_yuandian .hongp {
+        float: left;
+        text-indent: 10px;
+        color: #777;
+    }
+
+    .hongp li {
+        float: left;
+        display: none;
+    }
+
+    .hongp .current {
+        display: block;
+    }
+
+    .wad_yuandian .hongd {
+        float: right;
+    }
+
+    .wad_yuandian a{
+        padding: 0 2px;
+        font-size: 14px;
+        font-family: "arial";
+    }
+
+    .hongd .current {
+        color: #f9aa33;
+    }
+
+
+    .wad_tubtn {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .wad_tubtn button {
+        width: 30%;
+        float: left;
+        height: 50px;
+        display: none;
+    }
+
+    .wad_tubtn button:nth-child(2) {
+        float: right;
+    }
+
+    .swipe {
+        overflow: hidden;
+        visibility: hidden;
+        position: relative;
+    }
+    .swipe-wrap {
+        overflow: hidden;
+        position: relative;
+    }
+    .swipe-wrap > div {
+        float:left;
+        width:100%;
+        position: relative;
+    }
+
+    .swipe-wrap img {
+        width: 100%;
+    }
+
+/*footer样式*/
+    .footer {
+        width: 100%;
+        height: 110px;
+        background: #fff;
+        margin-top: 10px;
+        padding-top: 15px;
+    }
+
+    .version {
+        text-align: center;
+    }
+
+    .version a {
+        line-height: 40px;
+        background: #efefef;
+        color: #676767;
+        margin: 0 3px;
+        padding: 10px 7%;
+    }
+
+    .footer_banquan {
+        text-align: center;
+         margin-top: 0; 
+        line-height: 18px;
+        background: #fff;
+        padding-bottom: 5px;
+    }
+
+
+    .footer_bottom {
+        height: 56px;
+        width: 92%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer_bottom .wad_lianxi a {
+        display: inline-block;
+        width: 50%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size:14px;
+        color:#666;
+    }
+
+    .footer_bottom .wad_lianxi img {
+        width: 20px;
+        vertical-align: middle;
+        display: inline-block;
+        padding-right:5px;
+    }
+
+/*投标样式和标的样式*/
+    .wad_content ul {
+        padding: 0 3%;
+        overflow: hidden;
+        margin: 20px 0; 
+    }
+
+    .wad_content li {
+        margin-bottom: 15px;
+    }
+
+    .wad_wcont {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        background: #fff;
+
+        box-shadow: 0 1px #EBEBEB;
+        /*border-radius: 2px;*/
+        border: 1px solid;
+        border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+        margin: 0 -1px;
+    }
+
+    .wad_wcont .wad_fcon {
+        float: left;
+        /*height: 110px;*/
+        padding: 2%;
+        width: 96%;
+        overflow: hidden;
+    }
+
+    /*进度条*/
+    .wad_graph{
+        position: relative;
+        background-color: #F0EFEF;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .wad_yanse {
+        background-color: #0099df;
+        width: 80%;
+        position:relative;
+        text-align: left;
+        color: #ffffff;
+        height: 28px;
+        line-height: 28px;
+        font-family: Arial;
+        display: block;
+        text-indent: 10px;
+    }
+
+    .wad_wcont img {
+        height: 50px;
+        text-align: left;
+        float: left;
+        margin: 6px 0 0;
+    }
+
+
+
+    /*li的左侧*/
+    .wad_fcon h2 {
+        font-size: 14px;
+        color: #333;
+        line-height: 62px;
+        height: 50px;
+        border-bottom: 1px dotted #ccc;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .wad_fcon .wad_xxmes {
+        overflow: hidden;
+        height: 72px;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .wad_fcon .wad_jine,.wad_fcon .wad_lilv,.wad_fcon .wad_qixian {
+        width: 43.8%;
+        text-align: center;
+        float: left;
+        height: 60px;
+    }
+    .wad_xxmes i {
+        display: block;
+        font-size: 22px;
+        color: #000;
+        font-weight: normal;
+    }
+
+    .wad_xxmes em {
+        font-size: 10px;
+        color: #000;
+        padding-left: 3px;
+    }
+
+    .wad_xxmes .wad_jines {
+        font-size: 12px;
+        color: #999;
+    }
+
+    .wad_xxmes .wad_lilv {
+        width: 28%;
+    }
+
+    .wad_lilv i {
+        color: #c10000;
+    }
+
+    .wad_lilv em {
+        font-weight: bolder;
+        color: #c10000;
+    }
+
+    .wad_xxmes .wad_qixian {
+        width: 28%;
+    }
+
+    .wad_jiekr {
+        height: 30px;
+        line-height: 40px;
+        color: #999;
+        text-indent: 0;
+        font-size: 14px;
+        text-align: left;
+        text-indent: 10px;
+    }
+
+
+    /*投标的样式附加*/
+
+    .wad_fcon .wad_tbxxms {
+        width: 85%;
+    }
+
+    .wad_fcon .wad_tbgraph {
+        width: 66%;
+    }
+
+    .wad_toubiaoye {
+        width: 25%;
+        height: 100px;
+        margin-top: -29px;
+        border-radius: 2px;
+        background: url(../images/mobile/icon_10.png) no-repeat 90% 50%;
+        background-size: 62px;
+        position: absolute;
+        top: 50%;
+        right: 2%;
+    }
+    
+    
+    .wad_toubiaobg {
+        width: 25%;
+        height: 100px;
+        margin-top: -29px;
+        border-radius: 2px;
+        background: url(../images/mobile/man.png) no-repeat 90% 50%;
+        background-size: 62px;
+        position: absolute;
+        top: 50%;
+        right: 2%;
+    }
+
+/*css弹出层样式*/
+    .box-target {
+        position: fixed;
+        top: -100%;
+        width: 100%;
+        background: rgba(0,0,0,.7);
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        overflow: hidden;
+    }
+
+    .box-target:target {
+        opacity: 1;
+        top: 0;
+        bottom: 0;
+    }
+
+
+    .box-target .neirong {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-height: 0%;
+        max-width: 0%;
+        box-shadow: 0 0 8px rgba(0,0,0,.3);
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        transform:scale(1,1);
+        /*  
+        transition: .5s ease-in-out;
+        border: 3px solid #fff;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        */
+    }
+    .box-target:target .neirong {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .box-target:target .neirong span {
+        color: #000;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -66px;
+        margin-left: -120px;
+        padding: 20px;
+        background: #fff;
+        display: block;
+        border-radius: 2px;
+    }
+
+    .box-close {
+        top: 5%;
+    }
+
+    .box-close {
+        display: block;
+        width: 50px;
+        height: 50px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #139dd7;
+        color: #fff;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        transition: .5s ease-in-out;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        border-radius: 2px;
+    }
+
+    .box-close:before, .box-close:after {
+        content: " ";
+        display: block;
+        height: 30px;
+        width: 1px;
+        background: #fff;
+        position: absolute;
+        left: 25px;
+        top: 10px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+    }
+
+
+    .box-close:after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+    }
+
+/*footer弹出层*/
+    .bottom_box_target {
+        position: fixed;
+        width: 100%;
+        height: 38px;
+        opacity: 0;
+        bottom: 0;
+        right: 0;
+        overflow: visible;
+    }
+
+    .bottom_box_target:target {
+        opacity: 1;
+
+    }
+
+    .bottom_box_target .news {
+        margin: auto;
+        max-height: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        transform: scale(1,1);
+        border-top: 2px solid #000;
+        text-align: center;
+        line-height: 38px;
+    }
+
+
+    .bottom_box_target:target .news span {
+        color: #000;
+        font-size: 14px;
+        display: block;
+        border-radius: 2px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        width: 100%;
+        background: #fff;
+    }
+
+    .bottom_box_up em {
+        display: block;
+        width: 26px;
+        height: 26px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #000;
+        color: #fff;
+        position: absolute;
+        top: -21px;
+        right: 5%;
+        transition: .5s ease-in-out;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        border-radius: 28px;
+        border: 1px solid #000;
+        box-shadow: 0 1px 2px #000;
+    }
+
+    .bottom_box_up em:after {
+        content: " ";
+        display: block;
+        height: 10px;
+        width: 30px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 22px;
+    }
+
+    .bottom_box_close {
+        display: block;
+        width: 22px;
+        height: 22px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #000;
+        color: #fff;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        border-radius: 24px;
+        border: 2px solid #fff;
+    }
+
+    .bottom_box_close:before, .bottom_box_close:after {
+        content: " ";
+        display: block;
+        height: 10px;
+        width: 1px;
+        background: red;
+        position: absolute;
+        left: 50%;
+        top: 4px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+    }
+
+    .bottom_box_close:after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+    }
+
+/*个人中心*/
+
+      
+    .wad_yonghu_header {
+        background: #f2f2f2;
+        box-shadow:  0 -1px 0 #ccc;
+        margin-bottom: 15px;
+    }
+
+    .wad_yonghu_header p {
+        margin: 0 3%;
+        font-size: 16px;
+        color: #666;
+        width: 90%;
+        line-height: 44px;
+        padding: 0 2%;
+        overflow: hidden;
+    }
+
+    .wad_yonghu p:nth-child(2) {
+        padding: 0 0 2%;
+    }
+
+    .wad_yonghu_header p:nth-child(2) a {
+        float: left;
+        padding: 0 10px;
+        height: 32px;
+        background: #ccc;
+        text-align: center;
+        line-height: 32px;
+        margin: 5px;
+        color: #666;
+        border-radius: 2px;
+    }
+
+    .wad_yonghu_header p a.current {
+        background: hsl(200,100%,50%);
+        color: #fff;
+    }
+
+
+    .wad_yonghuming {
+        text-align: left;
+        float: left;
+        text-indent: 10px;
+    }
+
+    .wad_tuichu {
+        text-align: right;
+        float: right;
+        color: red;
+        padding-right: 10px;
+    }
+    .wad_contentgeren ul {
+        overflow: hidden;
+        background: #fff;
+        width: 100%;
+    }
+    
+    .wad_contentgeren li {
+        padding: 0 5%;
+        background: #fff;
+    }
+
+    .wad_contentgeren .wad_shouyi {
+        overflow: hidden;
+        background: #00a0ea;
+        padding: 0 5% 5%;
+    }
+
+    .wad_shouyi span {
+        font-size: 14px;
+        float: left;
+        padding-left: 25px;
+        color: #fff;
+    }
+
+    .wad_shouyi a {
+        float: right;
+        color: #fff;
+        width: 10%;
+        text-align: right;
+    }
+
+    .wad_syjeheader {
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        overflow: hidden;
+        background: url(../images/mobile/nian.png) no-repeat 0 49%;
+        background-size: 18px;
+    }
+
+    .wad_shouyijine {
+        font-size: 46px;
+        text-align: left;
+        line-height: 84px;
+        height: 84px;
+        width: 100%;
+        /*text-indent: 25px;*/
+        color: #fff;
+    }
+
+    .wad_contentgeren .wad_touzi {
+        background: #fff;
+        height: 80px;
+    }
+
+    .wad_touzi .wad_syjeheader {
+        background: none;
+        /*margin-top: 10px;*/
+        height: auto;
+    }
+
+    .wad_touzi span {
+        padding-left: 0;
+        color: #fff;
+    }
+
+    .wad_touzi .wad_shouyijine {
+        font-size: 40px;
+        color: #00a0ea;
+        line-height: 44px;
+        height: 44px;
+    }
+
+    .wad_contentgeren .wad_xiangxizichan {
+        background: #eceeef;
+        overflow: hidden;
+    }
+
+
+    .wad_xiangxizichan span {
+        width: 100%;
+        float: left;
+        height: 48px;
+        text-align: center;
+        margin: 10px -1px 0px;
+        border-bottom: 1px dotted #ccc;
+        background: #f7f7f7;
+    }
+
+    .wad_xiangxizichan span:nth-child(2n+1) {
+        /*margin: 5px -1px 30px;*/
+        /*border-right: 1px dotted #ccc;*/
+        
+    }
+
+    .wad_xiangxizichan i {
+        display: block;
+        font-size: 12px;
+        color: #b3b3b3;
+    }
+
+    .wad_xiangxizichan .wad_jines {
+        color: #726f83;
+        font-size: 20px;
+    }
+
+    /*易宝绑定状态*/
+    .wad_contentgeren .wad_yibao button{
+        float: right;
+        margin-top: -8px;
+        border: 0;
+        background: none;
+        width: 30%;
+        text-align: center;
+        background: #ec6941;
+        height: 40px;
+        border-radius: 2px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+   .wad_contentgeren .wad_yibao_bangding {
+        color: #38b54a;
+        display: block;
+    }
+
+    .wad_contentgeren .wad_yibao p {
+        font-size: 14px;
+        color: #999;
+        line-height: 24px;
+        padding: 22px;
+        margin: 0 -20px;
+        border-bottom: 1px dashed #ccc;
+    }
+
+    /*资金流水记录&回款计划*/
+    .wad_contentgeren .wad_grzijin {
+        padding: 0;
+        margin: 5% 0;
+        overflow: hidden;
+
+    }
+
+    .wad_jilu {
+        margin: 0 6%;
+        border: 1px solid #00a0ea;
+        border-radius: 3px;
+        height: 36px;
+        line-height: 36px;
+        overflow: hidden;
+    }
+
+    .wad_jilu span {
+        float: left;
+        width: 50%;
+        text-align: center;
+        color: #333;
+        font-size: 14px;
+        color: #00a0ea;
+    }
+
+
+    .wad_jilu span:first-child {
+        border-right: 1px solid #00a0ea;
+        margin-right: -1px;
+    }
+
+    .wad_jilu .current {
+        background: #00a0ea;
+        color: #fff;
+    }
+
+    .wad_jiluitem {
+        /*display: none;*/
+    }
+
+    .wad_jiluitem p {
+        border-bottom: 1px solid #eee;
+        overflow: hidden;
+        margin: 12px 27px;
+        padding: 4px 0;
+    }
+
+    .wad_jiluitem p:nth-child(1) {
+        margin-top: 20px;
+    }
+
+    .wad_jiluitem p:last-child {
+        border-bottom: none;
+        margin-bottom: 15px;
+    }
+
+    .wad_jiluitem em {
+        display: block;
+        font-size: 12px;
+        color: #999;
+    }
+
+    .wad_leixing {
+        float: left;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .wad_lxjine {
+        float: right;
+        line-height: 40px;
+        font-size: 20px;
+        overflow: hidden;
+        color: #00a2ed;
+        font-weight: bolder;
+    }
+
+    .wad_jiluitem b {
+        font-size: 10px;
+        font-style: normal;
+        padding-left: 2px;
+
+    }
+
+    .wad_lxjine i {
+        padding-left: 5px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .was_lxquxian {
+        color: #eb6a42;
+    }
+
+    .wad_grhuikuan i {
+        padding-left: 0;
+    }
+
+    .wad_grhuikuan .wad_jiluitemspec .wad_leixing{
+        width: 60%;
+    }
+
+/*投标详情页*/
+    /*投标详情页标题*/
+    .wad_tbxgheader {
+        width: 100%;
+        overflow: hidden;
+        background: #fff;
+        text-align: center;
+        padding: 5px 0;
+        box-shadow: 0 3px 2px #efefef;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px dotted #ccc;
+    }
+    .wad_tbxgheader img {
+        height: 34px;
+        text-align: left;
+        display: inline-block;
+        line-height: 34px;
+        vertical-align: middle;
+    }
+
+    .wad_tbxgheader span {
+        font-size: 16px;
+        color: #555;
+        line-height: 24px;
+        vertical-align: middle;
+        width: 76%;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .tawrap {
+        background: #fff;
+        margin:4% 3%;
+        box-shadow:0 0 3px #c1c1c1;
+        overflow: hidden;
+    }
+
+
+    /*利率*/
+    .wad_tblilv {
+        height: 60px;
+        line-height: 60px;
+        color: #000;
+        text-align: center;
+        width: 100%;
+        background:#fff;
+        padding: 20px 0 5px; /* 如果不要信用报告了，padding:20px 0; */
+        border-bottom: 1px dotted #ccc;
+        /*border-top: 1px dotted #ccc;*/
+        position: relative;
+    }
+
+    /*用户信息*/
+    .wad_yonghuxinxi {
+        font-size: 12px;
+        position: absolute;
+        top: 5px;
+        left: 4%;
+        height: 12px;
+        line-height: 18px;
+        color: #666;
+    }
+
+    .wad_yonghuxinxi img {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 4px;
+        margin-top: -3px;
+    }
+
+    .wad_tb .wad_tblilv i {
+        display: inline-block;
+        font-size: 54px;
+        color: #c10000;
+    }
+
+    .wad_tblilv em {
+        font-size: 16px;
+        display: block;
+        line-height: 20px;
+        color: #999;
+    }
+
+    .wad_tblilv .wad_baifenbi {
+        font-size: 28px;
+        line-height: 24px;
+        padding: 0 3%;
+        color: #c10000;
+        text-align: left;
+        font-family: "sans-serif";
+        font-weight: bolder;
+    }
+
+    /*金额和期数*/
+    .wad_tb i {
+        font-size: 24px;
+    }
+
+    .wad_tb em {
+        font-size: 12px;
+    }
+
+    .wad_tb .wad_jine {
+        width: 68%;
+    }
+
+    .wad_tb .wad_jines {
+        font-size: 16px;
+    }
+
+    .wad_tb .wad_qixian {
+        width: 32%;
+        border-left: 1px dotted #ccc;
+        margin-left: -1px;
+        height: auto;
+    }
+
+    .wad_tb .wad_xxmes {
+        margin-top: 14px;
+        /*padding-bottom: 14px;*/
+    }
+
+    .wad_tb .wad_graph {
+        background: #f49924;
+        margin: 0 4%;
+        border-radius: 25px;
+    }
+
+    .wad_tb .wad_graph span {
+        font-size: 16px;
+        border-radius: 25px 0 0 25px;
+    }
+
+    .wad_tb .wad_jiekr {
+        text-indent: 15px;
+        border-bottom: 1px dotted #ccc;
+        padding-bottom: 16px;
+    }
+
+    /*投标须知*/
+    .wad_tbxuzhi {
+        /*border-bottom: 1px dotted #ccc;*/
+        border-top: 1px dotted #ccc;
+        padding: 10px 0 10px 4%;
+    }
+
+    .wad_tbxuzhi a:nth-child(1) {
+        font-size: 16px;
+        color: #333;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+    }
+
+    .wad_tbxuzhi em {
+        display: block;
+        color: #666;
+        font-size: 14px;
+        /*height: 24px;*/
+        line-height: 24px;
+    }
+
+    .wad_tbxuzhi img {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 4px;
+        margin-top: -3px;
+    }
+
+        /*购买表单*/
+    .wad_goumai {
+        padding: 10% 0 8%;
+        background: #0077d5;
+    }
+
+    .wad_goumai input {
+        padding: 6px 10% 7px 3%;
+        display: block;
+        margin: 0 auto;
+        width: 67%;
+        border-radius: 2px;
+        border: 1px solid #d7d8d8;
+        color: #000;
+        font-size:15px;
+        background:#fff;
+    }
+
+    .wad_goumai .wad_syqian {
+        display: block;
+        text-align: left;
+        font-size: 14px;
+        color: #fff;
+        height: 54px;
+        line-height: 30px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .wad_goumai .wad_qian {
+        float: right;
+        margin-top: -32px;
+        margin-right: 13%;
+        font-size: 18px;
+        color: #333;
+    }
+
+    .wad_goumai .tb_button {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        background: #0077d5;
+        border: 0;
+        height: 42px;
+        line-height: 38px;
+        color: #fff;
+        font-size: 20px;
+        border: 1px solid #0077d5;
+        letter-spacing: 2px;
+        text-indent: 2px;
+        padding-top: 2px;
+    }
+
+    .wad_goumai .wad_wdl {
+        padding: 4px 0 20px 10%;
+        display: block;
+    }
+
+    .wad_tbzhifutishi {
+        font-size: 14px;
+        color: yellow;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 18px;
+        padding-top: 6px;
+    }
+
+/*登录*/
+
+    .wad_loginbg {
+        background: #fff;
+    }
+
+    .wad_mobile {
+        background: #fff;
+    }
+
+    .wad_mobile .icon {
+        display: inline-block;
+        background: url(../images/mobile/bak.png) no-repeat 0 50%;
+        background-size: 4.6875em;
+        vertical-align: middle;
+        background-size: 12px;
+    }
+    /*头部*/
+    .wad_mobile .login_header {
+        text-align: center;
+        position: relative;
+        padding: .8125rem .8125rem 0;
+    }
+
+    .wad_mobile .btn_back {
+        width: 28%;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        top: .2625em;
+        text-align: left;
+    }
+
+    .wad_mobile .ico_back {
+        width: 60%;
+        height: 30px;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        text-align: right;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000;
+    }
+
+    .wad_mobile .logo_ico {
+        display: inline-block;
+        width: 60%;
+        /*width: 7.3125em;*/
+        height: 100px;
+        text-indent: -9999em;
+        background: url(../images/mobile/logo.png) no-repeat 50% bottom;
+        background-size: 160px;
+    }
+
+    .wad_mobile .logo_ico:nth-child(2) {
+        background: url(../images/mobile/logo-sm.png) no-repeat 50% bottom;
+        background-size: 100px;
+        width: 40%
+    }
+
+    /*表单*/
+    .wad_login {
+        padding-top: 30px;
+    }
+
+    .wad_login .wad_cuowutishi {
+        font-size: 14px;
+        color: red;
+        margin: 5px 0 20px;
+        padding-left: 2%;
+    }
+
+    .wad_login {
+        margin:0 9%; 
+    }
+
+    .wad_login li {
+        border-bottom: 1px solid #bdd5ee;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .wad_login .wad_shoujili {
+        border-bottom: 0;
+    }
+
+    .wad_login ul input {
+        padding: 10px 2%;
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+        color: #333;
+        width: 96%;
+    }
+
+    .wad_login em {
+        position: absolute;
+        top: 24%;
+        right: 2%;
+        color: #258e3b;
+        font-size: 18px;
+        border-radius: 25px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bolder;
+    }
+
+    .wad_login em.wad_right {
+        background: url(../images/wad_right.png) no-repeat 50% 50%;
+        border: 1px dotted #36753d;
+    }
+
+    .wad_login em.wad_wrong {
+        background: url(../images/wad_wrong.png) no-repeat 50% 50%;
+        border: 1px dotted #ae4344;
+    }
+
+    .wad_login .wad_wrong {
+        color: red;
+        border: 1px dotted red;
+        font-size: small;
+        line-height: 22px;
+    }
+
+    .wad_login .wad_yanzhengma {
+        position: absolute;
+        top: -7px;
+        right: 0;
+        background: #5cabcb;
+        height: 42px;
+        line-height: 42px;
+        padding: 0 10px;
+        border-radius: 2px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .wad_bar {
+        margin-top: 30px;
+    }
+
+    .wad_bar a {
+        font-size: 14px;
+        color: #666;
+        padding-left: 2%;
+    }
+
+    .wad_btn_login {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 20px;
+        background: #3a8ce1;
+        margin-top: 10px;
+        letter-spacing: .38em;
+        color: #fff;
+        font-weight: bolder;
+        border-radius: 2px;
+    }
+
+    .wad_link_reg {
+        font-size: 14px;
+        color: #999;
+        margin-top: 30px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .wad_link_reg a {
+        color: red;
+    }
+
+/*注册*/
+
+    .wad_agree {
+        text-align: center;
+        color: #999;
+        font-size: 12px;
+        margin-top: 40px;
+    }
+
+    .wad_agree label{
+        padding-left: 5px;
+        display: inline-block;
+    }
+
+    .wad_agree label a {
+        color: #666;
+    }
+
+    .wad_voice {
+        font-size: 14px;
+        color: #333;
+        line-height: 24px;
+    }
+
+    .wad_shouji {
+        color: #0697da;
+    }
+
+    .wad_retry {
+        background: none;
+        border: 0;
+        color: #0697da;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+
+    /*底部*/
+    .wad_mobilelogin .logo_ico {
+         height: 40px;
+    }
+
+    .wad_mobilelogin .logo_ico{
+        background-size: 74px;
+        width: 50%;
+    }
+
+    .wad_footer_banquan {
+        width: 90%;
+        padding: 10px 5% 0;
+        font-size: 12px;
+        color: #666;
+        line-height: 20px;
+        text-align: center;
+        background: #fff;
+    }   
+
+    /*成功注册*/
+    .wad_chenggong {
+        height:270px;
+    }
+
+    .wad_chenggong p:nth-child(1) {
+        font-size: 26px;
+        text-align: center;
+        color: #000;
+        padding-top: 20%;
+    }
+
+    .wad_chenggong p:nth-child(2) a {
+        font-size: 24px;
+        width: 76%;
+        float: left;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        background: #1d5b7e;
+        color: #fff;
+        border-radius: 2px;
+        margin: 5% 12%;
+    }
+
+    /*易宝*/
+    .yibaologo .logo_ico {
+        background: url(../images/mobile/logo-sm.png) no-repeat 50% bottom;
+        background-size: 160px;
+        width: 60%;
+    }
+
+/*个人信息情况*/
+    .wad_xinyongxinxi {
+        width: 100%;
+        background: #fff;
+        margin: 30px 0 40px;
+    }
+
+    .wad_xinyongxinxi li {
+        padding-left: 3%;
+    }
+
+
+    .wad_xinyongxinxi .wad_bottomtop {
+        padding-left: 0;
+        border-bottom: 1px solid #ccc;
+        background: #efefef;
+    }
+
+
+    .wad_xinyongxinxi .wad_bottomtop .wad_item{
+        border-top: 0;
+        font-size: 18px;
+        color: #333;
+        padding-left: 5%;
+        line-height: 50px;
+        border-bottom: 0;
+    }
+
+    .wad_xinyongxinxi li:last-child .wad_item {
+        border-bottom: 0;
+    }
+
+
+    .wad_xinyongxinxi .wad_item {
+        height: 44px;
+        overflow: hidden;
+        border-bottom: 1px dotted #ccc;
+    }
+
+    .wad_item label {
+        height: 24px;
+        float: left;
+        width: 85px;
+        line-height: 24px;
+        font-size: 16px;
+        background: #fff;
+        color: #999;
+        text-align: left;
+        border-right: 1px dotted #ccc;
+        margin: 10px 0;
+    }
+
+    .wad_item span {
+        height: 24px;
+        padding: 8px 2%;
+        color: #000;
+        line-height: 24px;
+        overflow: hidden;
+        text-align: left;
+        font-size: 16px;
+        margin: 2px 0;
+        float: left;
+        border: 0;
+    }
+
+    .wad_xinyongxinxi .wad_itemspec {
+        border-top: 1px solid #ccc;
+        padding-top: 24px;
+        background: #efefef;
+    }
+
+    .wad_xinyongxinxi .wad_lispec {
+        border-bottom: 1px solid #ccc;
+    }
+    .wad_jkmiaoshu .wad_lispec,.wad_jkmiaoshu .wad_lispec .wad_item,.wad_jkmiaoshu .wad_lispec span{
+                    height: auto;
+                }
+  .wad_xinyongxinxi .wad_jkmiaoshu .wad_itemspec {border-top:0;}
+  .wad_jkmiaoshu span {color: #666;}
+/*分页样式*/
+    .f_page {    
+        display:-moz-box;
+        display:-webkit-box;
+        display:box;
+        width: 76%;
+        height: 34px;
+        margin: 0 12% 20px;
+    }
+
+    .f_page .sectionone {
+        background:#fff;
+        -moz-box-flex:2;
+        -webkit-box-flex:2;
+        box-flex:2;
+        -webkit-box-orient: horizontal; 
+        -moz-box-orient: horizontal;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        font-size: 14px;
+        line-height: 34px;
+        color: #333;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+    }
+
+    .f_page .sectionone:nth-child(1),.f_page .sectionone:nth-child(3) {
+        -moz-box-flex:5;
+        -webkit-box-flex:5;
+        box-flex:5;
+    }
+
+    .f_page .sectionone:nth-child(2) {
+        margin: 0 10%;
+        position: relative;
+        height: 34px;
+        border: 0;
+        background: none;
+    }
+
+    .f_page .sectionone:nth-child(2) span {
+        padding: 0 6px;
+    }
+
+/*关于我们*/
+    .wad_gywenandai {
+        margin: 20px 5%;
+        background: #fff;
+        box-shadow: 0 1px #EBEBEB;
+        border: 1px solid;
+        border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+    }
+
+    .wad_gywenandai h1 {
+        height: 34px;
+        background: #0099df;
+        line-height: 34px;
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .wad_gywenandai span {
+        font-size: 14px;
+        color: #666;
+        line-height: 20px;
+        display: block;
+        padding: 20px 5%;
+        border-top: 1px dotted #ccc;
+    }
+
+    .wad_gywenandai .wad_gywanspec {
+        text-indent: 20px;
+    }
+
+    .wad_gywenandai a {
+        color: #333;
+        display: block;
+        font-size: 14px;
+        padding: 0 5%;
+    }
+
+    .wad_gywenandai p {
+        font-size: 14px;
+        color: #333;
+        text-align: left;
+        padding: 0 5%;
+        line-height: 24px;
+    }
+
+    .wad_gywenandai .wad_gywanspec1 {
+        padding: 20px 5% 10px;
+        color: #0099df;
+        font-size: 16px;
+        margin-top: 12px;
+    }
+
+    .wad_gywenandai .wad_gywanspec2 {
+        margin-bottom: 20px;
+    }
+
+    .wad_gywenandai .wad_gywanspec3 {
+        background: none;
+        color: #0099df;
+        border-top: 1px dotted #ccc;
+        padding-top: 20px;
+    }
+
+    .wad_gywenandai .wad_gywanspec4 {
+        border-top: 0;
+        padding: 10px 5% 20px;
+    }
+
+/*弹出层②*/
+    .box_targetchoose {
+        position: fixed;
+        top: -100%;
+        width: 100%;
+        background: rgba(0,0,0,.7);
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    .box_targetchoose:target {
+        opacity: 1;
+        top: 0;
+        bottom: 0;
+    }
+
+
+    .box_targetchoose .neirong {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-height: 0%;
+        max-width: 0%;
+        box-shadow: 0 0 8px rgba(0,0,0,.3);
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        transform:scale(1,1);
+    }
+    .box_targetchoose:target .neirong {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .box_targetchoose:target .neirong span {
+        color: #000;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -52px;
+        margin-left: -35%;
+        background: #fff;
+        display: block;
+        border-radius: 5px;
+        width: 70%;
+    }
+
+    .box_targetchoose .box_closechoose {
+        display: block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #007aff;
+        height: 44px;
+        text-align: center;
+        line-height: 44px;
+        border-top: 1px solid #bdbdbd;
+        font-size: 15px;
+    }
+
+    .box_targetchoose .box_close:before,.box_targetchoose .box_close:after {
+        content: none;
+    }
+
+    .box_targetchoose em {
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        font-size: 18px;
+        color: #222;
+    }
+	.wad_mobile .top_bg{
+	    padding-top: 5px;
+	    font-size: 21px;
+	    line-height: center;
+	    font-family: "微软雅黑";
+	    text-align: center;
+	    color: #FFFFFF;
+	    width: 100%;
+	    height: 42px;
+	    background: url(../images/mobile/top_bg.png) repeat-x;
+	}
+  
+
+   .wad_mobile .top_bg .ico_back {
+        width: 60%;
+        height: 30px;
+        position: absolute;
+        left: 10px;
+        top: 3px;
+        text-align: right;
+        font-size: 16px;
+        line-height: 32px;
+        color: #fff;
+    }
+    
+
+    

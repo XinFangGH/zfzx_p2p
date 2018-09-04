@@ -1,0 +1,33 @@
+<%@ page language="java"  import="java.net.*,com.hurong.credit.model.user.BpCustMember"  contentType="text/html; charset=utf-8"  pageEncoding="utf-8"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+BpCustMember bc = (BpCustMember)session.getAttribute("hurong_website");
+	
+try {
+		InetAddress inetAddress = InetAddress.getLocalHost();
+		String ip = inetAddress.getHostAddress();//获取ip地址
+		String canonical =inetAddress.getCanonicalHostName(); //获取本地的主机域名
+		String host =inetAddress.getHostName(); //获取本地的主机名
+	
+		if("zhangtongtong".equals(bc.getLoginname())||"liyunfei".equals(bc.getLoginname())){
+			%>
+			ip地址<%=ip%></br>
+			主机域名<%=canonical%></br>
+			主机名<%=host%>
+			<% 
+		}
+	} catch (Exception e) {
+	e.printStackTrace();
+	}
+%>
+<select>
+</select>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 第三方接口 -->
+<interface>
+	<!-- 短信接口 -->
+	<message>
+		<!-- 彩云金融 短信接口   商讯通 -->
+		<proj_caiyunjinrong>
+			<url>http://www.mxtong.net.cn/GateWay/Services.asmx/DirectSend?</url>
+			<userID>962999</userID>
+			<accountID>admin</accountID>
+			<password>EWSMF8</password>
+		</proj_caiyunjinrong>
+		<proj_wenandai>
+			<url>http://www.mxtong.net.cn/GateWay/Services.asmx/DirectSend?</url>
+			<userID>962999</userID>
+			<accountID>admin</accountID>
+			<password>EWSMF8</password>
+		</proj_wenandai>
+		<!-- 点点聚宝  短信接口  宇展盈讯 -->
+		<proj_diandianjubao>
+			<url>http://sms.shwsms.com/httpInterfaceSubmitAction.do?</url>
+			<userID></userID>
+			<accountID>diandianjubao</accountID>
+			<password>123456</password>
+		</proj_diandianjubao>
+		<!-- 怡然贷(国创)短信接口  商讯通 -->
+		<proj_yirandai>
+			<url>http://www.mxtong.net.cn/GateWay/Services.asmx/DirectSend?</url>
+			<userID>963191</userID>
+			<accountID>admin</accountID>
+			<password>1NJE6Z</password>
+		</proj_yirandai>
+	</message>
+	<!-- 身份证验证  彩云金融-->
+	<ID5>
+		
+	</ID5>
+</interface>

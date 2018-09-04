@@ -1,0 +1,353 @@
+.slide_into{
+    width:5.58rem;
+    height: 0.56rem;
+    margin-top: 0.16rem;
+    margin-left: 0.56rem;
+    background-color: #FFF;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+    border: none;
+    text-indent: 2em;
+    border-radius: 0.48rem;
+    outline:none;
+    -webkit-appearance: none;
+}
+
+.mouse{
+    display: inline-block;
+    float: right;
+    margin-right: 0.32rem;
+    width: 0.44rem;
+    height: 0.88rem;
+    background: url(../img/invitations_list/calendar.png)no-repeat center;
+    background-size: 0.44rem 0.46rem;
+}
+
+/*已出借*/
+.already_borrowed{
+    width: 7.5rem;
+    height:auto;
+    margin:0 auto;
+}
+
+.already_borrowed ul{
+    width: 7.5rem;
+    height:2.4rem;
+    box-sizing: border-box;
+    padding: 0 0.4rem;
+    border-bottom: 1px solid #EDEDED;
+}
+.already_borrowed ul li:nth-child(1){
+    width: 100%;
+    height:1rem;
+    line-height:1rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    border-bottom: 1px dashed #EDEDED;
+}
+
+.already_borrowed ul li span{
+    display: inline-block;
+    float: left;
+}
+
+.already_borrowed ul li:nth-child(1) .userPic{
+    width: 0.3rem;
+    height:1rem;
+    background: url("../img/invitations_list/user.png")no-repeat center;
+    background-size: 0.3rem 0.36rem;
+}
+.already_borrowed ul li:nth-child(1) .phonePic{
+    width: 0.24rem;
+    height:1rem;
+    background: url("../img/invitations_list/phone.png")no-repeat center;
+    background-size: 0.24rem 0.36rem;
+}
+.already_borrowed ul li:nth-child(1) .more{
+    width: 0.1rem;
+    height:1rem;
+    background: url("../img/message_center/combinedShape.png")no-repeat center;
+    background-size: 0.1rem 0.18rem;
+}
+
+.already_borrowed ul li:nth-child(1) span:nth-child(3),
+.already_borrowed ul li:nth-child(1) span:nth-child(4),
+.already_borrowed ul li:nth-child(1) span:nth-child(5){
+    float: right;
+}
+
+.already_borrowed ul li:nth-child(1) span:nth-child(2){
+     margin-left: 0.12rem;
+ }
+
+.already_borrowed ul li:nth-child(1) span.more{
+    margin-left: 0.12rem;
+}
+.already_borrowed ul li:nth-child(1) span.phonePic{
+    margin-right: 0.16rem;
+}
+
+.already_borrowed ul li:nth-child(2){
+    margin-top: 0.2rem;
+}
+
+.already_borrowed ul li:nth-child(2),
+.already_borrowed ul li:nth-child(3){
+    width: 100%;
+    height:0.5rem;
+    line-height:0.5rem;
+}
+
+.already_borrowed ul li:nth-child(2) span,
+.already_borrowed ul li:nth-child(3) span{
+    width: 30%;
+    height:0.5rem;
+    line-height:0.5rem;
+    text-align: center;
+}
+.already_borrowed ul li:nth-child(2) .bidname,
+.already_borrowed ul li:nth-child(2) .bidname{
+    width:40%;
+}
+.already_borrowed ul li:nth-child(2) span{
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+.already_borrowed ul li:nth-child(2) span:nth-child(2){
+    font-size: 0.34rem;
+    color: #FF7740;
+}
+
+.already_borrowed ul li:nth-child(3) span{
+    font-size: 0.24rem;
+    color: #9B9B9B;
+}
+
+/*未出借*/
+.no_loan{
+    width: 7.5rem;
+    height:auto;
+    margin:0 auto;
+}
+
+.no_loan ul{
+    width: 7.5rem;
+    height:1.56rem;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.no_loan ul li{
+    width: 100%;
+    height:0.6rem;
+}
+
+.no_loan ul li:nth-child(1){
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    margin-top: 0.2rem;
+}
+
+.no_loan ul li:nth-child(2){
+    font-size: 0.24rem;
+    color: #9B9B9B;
+}
+
+.no_loan ul li span{
+    display: inline-block;
+    float: left;
+    width: 33%;
+    height:0.6rem;
+    line-height:0.6rem;
+    text-align: center;
+}
+
+.no_loan ul li span i{
+    display: inline-block;
+    /*position: relative;
+    right:0.12rem;*/
+    width: 0.3rem;
+    height:0.6rem;
+    vertical-align: middle;
+    margin-right: 0.12rem;
+}
+
+.no_loan ul li span.already_real_name i{
+    background: url("../img/invitations_list/user.png")no-repeat center;
+    background-size: 0.3rem 0.36rem;
+}
+
+.no_loan ul li span.no_real_name i{
+    background: url("../img/invitations_list/noname.png")no-repeat center;
+    background-size: 0.3rem 0.38rem;
+}
+
+/*出借明细*/
+.nav_box{
+    position:fixed;
+    width:100%;
+    height:0.88rem;
+    left:0;
+    top:0;
+    z-index:9;
+}
+
+.nav_box .nav{
+    width:100%;
+    height:0.88rem;
+    line-height:0.88rem;
+    text-align:center;
+    font-size: 0.36rem;
+    color: #FFF;
+    position: relative;
+    /* border-bottom: 1px solid #E7E7E7;*/
+    background-image: linear-gradient(48deg,#5E9EFE  0%, #69B7FF 100%);
+}
+
+.nav_box .nav .back{
+    display: inline-block;
+    position: absolute;
+    left:0.2rem;
+    width:0.22rem;
+    height:0.88rem;
+    background: url(../img/financeLease/baijiantou.png)no-repeat center;
+    background-size:0.22rem  0.4rem;
+}
+
+.loan_details{
+    width: 7.5rem;
+    height:3.9rem;
+    background-image: linear-gradient(45deg, #69B7FF 0%, #5E9EFE 100%);
+    overflow: hidden;
+}
+
+.loan_details .nav{
+    width:100%;
+    height:0.88rem;
+    line-height:0.88rem;
+    text-align:center;
+    font-size: 0.36rem;
+    color: #FFF;
+    position: relative;
+}
+
+.loan_details .nav .back{
+    display: inline-block;
+    position: absolute;
+    left:0.2rem;
+    width:0.22rem;
+    height:0.88rem;
+    background: url(../img/financeLease/baijiantou.png)no-repeat center;
+    background-size:0.22rem  0.4rem;
+}
+
+.loan_details .loan_details_topbar{
+    width:7.5rem;
+    height:2.86rem;
+    background:url("../img/invitations_list/card.png") no-repeat center;
+    background-size:7.5rem  2.86rem;
+    margin:0.27rem auto 0;
+    overflow: hidden;
+}
+
+.loan_details .loan_details_topbar li{
+    width:7rem;
+    height:0.65rem;
+    line-height:0.65rem;
+    box-sizing: border-box;
+    padding: 0  0.5rem 0 0.6rem;
+    margin:0 auto;
+    font-size: 0.28rem;
+}
+
+.loan_details .loan_details_topbar li:nth-child(1){
+    margin-top: 0.4rem;
+}
+
+.loan_details .loan_details_topbar li span{
+    display: inline-block;
+    float: left;
+}
+
+.loan_details .loan_details_topbar li span.userPic{
+    width: 0.3rem;
+    height:0.65rem;
+    background: url("../img/invitations_list/user.png")no-repeat center;
+    background-size: 0.3rem 0.36rem;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+
+.loan_details .loan_details_topbar li span.phonePic{
+    width: 0.24rem;
+    height:0.65rem;
+    background: url("../img/invitations_list/phone.png")no-repeat center;
+    background-size: 0.24rem 0.36rem;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+    margin-left: 0.03rem;
+}
+
+.loan_details .loan_details_topbar li span:nth-child(2),
+.loan_details .loan_details_topbar li span:nth-child(4){
+    color: #1A1A1A;
+}
+
+.loan_details .loan_details_topbar li span:nth-child(3){
+    color: #9B9B9B;
+}
+
+.loan_details .loan_details_topbar li span:nth-child(2) {
+    width: 2.5rem;
+}
+
+.loan_details .loan_details_topbar li span:nth-child(4){
+    margin-left: 0.2rem;
+}
+
+.loan_details_lists{
+    width: 7.5rem;
+    height:auto;
+    box-sizing: border-box;
+    padding: 0.2rem  0.4rem;
+    border-bottom: 1px solid #EDEDED ;
+}
+
+.loan_details_lists li{
+    width: 100%;
+    height:0.8rem;
+    line-height:0.8rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+.loan_details_lists li:nth-child(1){
+    border-bottom: 1px dashed #EDEDED;
+}
+
+.loan_details_lists li span{
+    display: inline-block;
+}
+
+.loan_details_lists li span:nth-child(1){
+    float: left;
+}
+
+.loan_details_lists li span:nth-child(2){
+    float: right;
+}
+
+.loan_details_lists li span.listsColor{
+    color: #9B9B9B;
+}
+
+.loan_details_lists li span.Repayments{
+    color: #FF7740;
+}
+
+
+
+
+
+
+

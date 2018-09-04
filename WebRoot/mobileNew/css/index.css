@@ -1,0 +1,1399 @@
+#swiperMsg  {
+    height: 4rem;
+    width: 7.5rem;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+#swiperMsg   .swiper-slide {
+    height: 100%;
+}
+
+#swiperMsg   .swiper-slide img {
+    width: 7.5rem;
+    height: 4rem;
+}
+
+#swiperMsg  .swiperMsg{
+    display: inline-block;
+    position: absolute;
+    top:0.24rem;
+    right:0.34rem;
+    width:0.4rem ;
+    height:0.36rem;
+    background: url(../img/account/news_1.png)no-repeat center;
+    background-size:0.4rem 0.36rem;
+    z-index: 100;
+}
+
+#swiperMsg  .swiperMsg1{
+    display: inline-block;
+    position: absolute;
+    top:0.24rem;
+    right:0.34rem;
+    width:0.4rem ;
+    height:0.36rem;
+    background: url(../img/account/news_2.png)no-repeat center;
+    background-size:0.4rem 0.36rem;
+    z-index: 100;
+}
+
+.addSelected {
+    color: #409af6;
+}
+/*跑马灯*/
+.my_ammount {
+    width: 7.5rem;
+    margin: 0 auto;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0.2rem 0.16rem;
+    line-height: 0.56rem;
+    border-bottom: 1px solid #EDEDED;
+    display: flex;
+}
+
+.my_ammount .ammount-ico {
+    width: 0.32rem;
+    height: 0.32rem;
+    margin-top: 0.12rem;
+}
+
+.my_ammount #my_content_liu {
+    width:88%;
+    height:0.56rem;
+    overflow: hidden;
+}
+
+.my_ammount #my_content_liu ul {
+    width: 100%;
+    height: 0.56rem;
+}
+
+.my_ammount #my_content_liu ul li {
+    padding-left: 10px;
+    float: top;
+    width: 100%;
+    height: 0.56rem;
+    color: #1A1A1A;
+    font-size:0.28rem;
+    display: block;
+}
+
+.my_ammount #my_content_liu ul li a{
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    color: #1A1A1A;
+}
+
+
+.my_ammount .ammount-ico1 {
+    display: inline-block;
+    width: 0.1rem;
+    height: 0.18rem;
+    margin-top: 0.18rem;
+    margin-left: 0.4rem;
+}
+
+/*累计注册用户*/
+.cumulativeUsers{
+    width:6.62rem;
+    height:1.28rem;
+    margin:0.32rem auto 0.54rem;
+   /* background: #6FB6FF url("../img/homepage/group.png")no-repeat center;*/
+    /*background-size:6.72rem   0.76rem;*/
+    background: url("../img/homepage/Background.png")no-repeat center;
+    background-size:11.16rem   2.28rem;
+    box-shadow: 0 4px 6px 0 rgba(156,193,255,0.50);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.cumulativeUsers ul{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.cumulativeUsers ul li{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0.2rem 0.4rem;
+}
+
+.cumulativeUsers ul li:nth-child(2){
+    padding: 0.2rem 0.1rem;
+}
+
+.cumulativeUsers ul li span{
+    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.cumulativeUsers ul li:nth-child(1) span{
+    background: url("../img/homepage/groupCopy.png")no-repeat center;
+    background-size:0.48rem 0.48rem;
+}
+.cumulativeUsers ul li:nth-child(2) span{
+    background: url("../img/homepage/groupCopy_3.png")no-repeat center;
+    background-size:0.48rem 0.48rem;
+}
+
+.cumulativeUsers ul li div{
+    display: inline-block;
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+
+.cumulativeUsers ul li div p{
+    margin: 0px;
+}
+
+.cumulativeUsers ul li div p:nth-child(1){
+    font-size: 0.24rem;
+    color: #FFFFFF;
+    line-height: 0.34rem;
+    text-align: center;
+}
+
+.cumulativeUsers ul li div p:nth-child(2){
+    font-size: 0.44rem;
+    color: #FFFFFF;
+    line-height:0.6rem;
+    text-align: center;
+}
+
+.cumulativeUsers ul li div p:nth-child(2) em{
+    font-size: 0.22rem;
+    color: #FFFFFF;
+    line-height: 0.32rem;
+    text-align: center;
+    font-style:normal
+}
+
+.novice{
+    width: 7.10rem;
+    height:4.86rem;
+    margin: 0.54rem auto 0;
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px 0 rgba(146,173,189,0.35);
+    border-radius: 4px;
+}
+
+.novice div:nth-child(1){
+    width: 100%;
+    height:1rem;
+    box-sizing: border-box;
+    padding: 0 0.2rem;
+}
+
+.novice  div:nth-child(1) span{
+    display: inline-block;
+    float: left;
+    width: 0.44rem;
+    height:1rem;
+    background: url("../img/homepage/novice.png")no-repeat center;
+    background-size:0.44rem  0.44rem;
+    margin-right: 0.12rem;
+}
+
+.novice div:nth-child(1) p{
+    display: inline-block;
+    height:1rem;
+    line-height:1rem;
+}
+
+.novice div:nth-child(1) p.newer{
+    font-size: 0.34rem;
+    color: #FF7740;
+    font-weight: 600;
+    margin-right: 0.16rem;
+}
+
+.novice div:nth-child(1)  p.newer b{
+    font-size: 0.34rem;
+    color: #1A1A1A;
+}
+
+
+.novice div:nth-child(1)  p.describe{
+    font-size: 0.22rem;
+    color: #9B9B9B;
+}
+
+.novice div:nth-child(2){
+    width: 6.62rem;
+    /* height: 1px; */
+    margin: 0 auto;
+    border-bottom: 1px solid #EDEDED;
+    background-color: #EDEDED;
+}
+
+.novice div:nth-child(3){
+    width: 100%;
+    height:3.8rem;
+    font-size:0.26rem;
+    color: #9B9B9B;
+}
+
+.novice div:nth-child(3) {
+    width: 100%;
+    height:1.56rem;
+    margin:0.2rem auto 0;
+}
+.novice div:nth-child(3) p{
+    display: block;
+}
+
+.novice div:nth-child(3) p:nth-child(1) {
+    width: 100%;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    font-size: 0.26rem;
+    color: #9B9B9B;
+    text-align: center;
+}
+
+.novice div:nth-child(3) p:nth-child(2){
+    width: 100%;
+    height: 1.22rem;
+    line-height:1.22rem;
+    font-size: 0.8rem;
+    color: #FF7740;
+    text-align: center;
+}
+
+.novice div:nth-child(3) p:nth-child(2) span{
+    font-size:0.24rem;
+    color: #FF7740;
+}
+
+.novice div:nth-child(4){
+    width:73%;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    margin: 0.16rem auto 0;
+}
+
+.novice div:nth-child(4) p{
+    display: inline-block;
+    width: 1.4rem;
+    height: 0.32rem;
+    font-size: 0.26rem;
+    line-height: 0.32rem;
+    text-align: center;
+}
+
+.novice div:nth-child(4) p:nth-child(2){
+    width: 2rem;
+    border-left:1px solid  #9BA6AD;
+    border-right:1px solid  #9BA6AD;
+}
+
+
+.novice div:nth-child(5){
+    width:3.12rem;
+    height:0.8rem;
+    line-height:0.8rem;
+    margin:0.32rem auto 0.48rem ;
+    background-image: linear-gradient(-136deg, #FF6444 0%, #FF8B5F 100%);
+    border-radius: 100px;
+    box-shadow: 0 4px 6px 0 rgba(255,109,74,0.50);
+    font-size: 0.32rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.selectedBox{
+    width: 7.10rem;
+   /* height:8.82rem;*/
+    height:auto;
+    margin: 0.6rem auto 0;
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px 0 rgba(146,173,189,0.35);
+    border-radius: 4px;
+}
+
+.selectedBox div:nth-child(1){
+    width: 100%;
+    height:1rem;
+    box-sizing: border-box;
+    padding: 0 0.2rem;
+}
+
+.selectedBox div:nth-child(1) span{
+    display: inline-block;
+    float: left;
+    width: 0.44rem;
+    height:1rem;
+    background: url("../img/homepage/selected.png")no-repeat center;
+    background-size:0.44rem  0.44rem;
+    margin-right: 0.12rem;
+}
+
+.selectedBox div:nth-child(1) p{
+    display: inline-block;
+    height:1rem;
+    line-height:1rem;
+}
+
+.selectedBox div:nth-child(1) p.newer{
+    font-size: 0.34rem;
+    color: #6BA9FC;
+    font-weight: 600;
+    margin-right: 0.16rem;
+}
+
+.selectedBox div:nth-child(1)  p.newer b{
+    font-size: 0.34rem;
+    color: #1A1A1A;
+}
+
+
+.selectedBox div:nth-child(1)  p.describe{
+    font-size: 0.22rem;
+    color: #9B9B9B;
+}
+
+.selectedBox div:nth-child(1)  p.more{
+    float: right;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+}
+
+.selectedBox div:nth-child(1)  p.more i{
+    display: inline-block;
+    width:0.10rem;
+    height: 0.18rem;
+    background: url(../img/homepage/combinedShape.png)no-repeat center;
+    background-size:0.10rem 0.18rem;
+    margin-left: 0.1rem;
+}
+
+.selectedBox div:nth-child(2){
+    width: 6.62rem;
+    /* height: 1px; */
+    margin: 0 auto;
+    border-bottom: 1px solid #EDEDED;
+    background-color: #EDEDED;
+}
+
+.selectedBox  div:nth-child(3){
+    width: 100%;
+    /*height: 7.5rem;*/
+    height:auto;
+    box-sizing: border-box;
+    padding: 0 0.2rem 0.6rem;
+}
+
+.selectedBox  div:nth-child(3) a.lease_ul{
+    display: block;
+}
+
+.selectedBox  div:nth-child(3)  a.lease_ul ul{
+    width: 100%;
+    height:2.50rem;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul.active_one{
+    border-bottom: 1px solid #EDEDED;
+}
+.selectedBox div:nth-child(3)  a.lease_ul:nth-child(3) ul.active_one{
+    border-bottom: none;
+}
+
+
+
+.selectedBox div:nth-child(3) a.lease_ul ul li:nth-child(1){
+    width: 100%;
+    height:0.94rem;
+    line-height: 0.94rem;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(1) p{
+    display: inline-block;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(1) p.standard{
+    width: 0.64rem;
+    height:0.36rem;
+    line-height: 0.36rem;
+    text-align: center;
+    background-image: linear-gradient(-135deg, #69BEFF 0%, #5E91FE 100%);
+    border-radius: 4px;
+    font-size: 0.24rem;
+    color: #FFFFFF;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(1) p.finance{
+    font-size:0.26rem;
+    color: #1A1A1A;
+    margin-left: 0.16rem;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(1) p.increase{
+    display: inline-block;
+    width: 1.16rem;
+    height:0.94rem;
+    line-height:0.94rem;
+    float: right; background: url("../img/homepage/finance_2.png")no-repeat center;
+    background-size:1.16rem 0.54rem;
+    text-align: right;
+    font-size: 0.24rem;
+    color: #FF4E4E;
+    padding-right: 0.05rem;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(2) ul{
+    width: 6rem;
+    height: 1.3rem;
+    margin:0 auto;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(2) ul li{
+    display: inline-block;
+    width:2.84rem ;
+    height:100%;
+    float: left;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(2) ul li p {
+    display: inline-block;
+    float: left;
+    width: 2.84rem;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    text-align: center;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(2) ul li:nth-child(1) p:nth-child(1){
+    /*font-size: 0.56rem;*/
+    color: #FF7740;
+}
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(2) ul li:nth-child(1) p:nth-child(1) .f56{
+    font-size:0.56rem;
+}
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(2) ul li:nth-child(1) p:nth-child(1) .f38{
+    font-size: 0.38rem;
+}
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(2) ul li:nth-child(1) p:nth-child(1) .f24{
+    font-size:0.24rem;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(2) ul li:nth-child(2){
+    width: 1px;
+    height: 0.9rem;
+    background: #EDEDED;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(2) ul li:nth-child(3) p:nth-child(1){
+    font-size: 0.3rem;
+    color: #1A1A1A;
+}
+
+.selectedBox div:nth-child(3)  a.lease_ul ul li:nth-child(2) ul li p:nth-child(2){
+    display:inline-block;
+    width: 2.84rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+}
+
+.media_news {
+    position: relative;
+    overflow: hidden;
+    /*width: 7.5rem;*/
+    height:1.2rem;
+    padding: 0.6rem 0 0.72rem 0.2rem;
+    margin: 0 auto;
+}
+
+.media_news .dl {
+    float: left;
+    width: 1.16rem;
+    height: 1.2rem;
+    box-sizing: border-box;
+    padding: 0.12rem 0;
+    text-align: center;
+    font-size: 0.34rem;
+    color: #1A1A1A;
+    line-height: 0.48rem;
+    font-weight: bold;
+    background: url(../img/homepage/coverage.png) center no-repeat;
+    background-size: 1.16rem 1.2rem;
+}
+
+.media_news .dl p {
+    color: #6BA9FC;
+}
+
+.media_news .dr{
+    position: absolute;
+    width: 100%;
+    left: 1.44rem;
+    top: 0.42rem;
+    overflow: hidden;
+    z-index:10;
+    box-sizing:border-box;
+}
+.media_news .dr ul li{
+    margin: 0.2rem 0;
+    float: left;
+    background: #FFF;
+    box-shadow: 0 2px 10px 0 rgba(146, 173, 189, 0.40);
+    border-radius: 4px;
+    padding: 0.2rem;
+    font-size: 0.26rem;
+    line-height: 0.36rem;
+    color: #9B9B9B;
+    width: 4rem!important;
+    height:0.76rem;
+}
+
+.media_news .dr li .sl {
+    line-height: 0.38rem;
+    font-size: 0.26rem;
+    color: #000;
+}
+
+.media_news .dr li .sr {
+    line-height: 0.38rem;
+    font-size: 0.26rem;
+    color:#9B9B9B;
+}
+
+.bottomPic{
+    width: 7.1rem;
+    height:1.88rem;
+    margin:0 auto 2.16rem;
+}
+.bottomPic div{
+    display: inline-block;
+    width: 3.44rem;
+    height:1.88rem;
+}
+
+.bottomPic a{
+    width: 3.44rem;
+    height:1.88rem;
+    border-radius: 4px;
+}
+
+.bottomPic a:nth-child(1){
+    float: left;
+    box-shadow: 0 4px 6px 0 rgba(96,153,231,0.50);
+}
+
+.bottomPic a:nth-child(2){
+     float: right;
+    box-shadow: 0 4px 6px 0 rgba(241,173,72,0.50);
+}
+
+
+.bottomPic div.pic_one{
+    background: url(../img/homepage/bottomPic_one.png)no-repeat center;
+    background-size: 3.44rem 1.88rem;
+}
+
+.bottomPic a div.pic_two{
+    background: url(../img/homepage/bottomPic_two.png)no-repeat center;
+    background-size: 3.44rem 1.88rem;
+}
+
+/*下脚footer*/
+
+.swiper1 .swiper-slide span.homePage{
+    display: inline-block;
+    width:0.4rem;
+    height:0.44rem;
+    background: url(../img/footer_icon/home.png)no-repeat center;
+    background-size:0.4rem  0.44rem;
+}
+.swiper1 .swiper-slide span.lend{
+    display: inline-block;
+    width:0.4rem;
+    height:0.44rem;
+    background: url(../img/footer_icon/List_hui.png)no-repeat center;
+    background-size:0.4rem  0.44rem;
+}
+.swiper1 .swiper-slide span.account{
+    display: inline-block;
+    width:0.4rem;
+    height:0.44rem;
+    background: url(../img/footer_icon/me_hui.png)no-repeat center;
+    background-size:0.4rem  0.44rem;
+}
+
+/*账号  start*/
+.accounttopbar{
+    width: 7.5rem;
+    height:4.12rem;
+    background-image: linear-gradient(45deg, #69B7FF 0%, #5E9EFE 100%);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.accounttopbar .userMsg{
+    width: 7.5rem;
+    height:0.72rem;
+    box-sizing: border-box;
+    padding: 0 0.4rem;
+    margin-top: 0.28rem;
+}
+
+.accounttopbar .userMsg span{
+    display: inline-block;
+    float: left;
+}
+
+.accounttopbar .userMsg span:nth-child(1){
+    width: 0.72rem;
+    height: 0.72rem;
+    background: url(../img/account/user.png)no-repeat center;
+    background-size: 0.72rem 0.72rem;
+}
+
+.accounttopbar .userMsg span:nth-child(2){
+    width: 2rem;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 0.2rem;
+}
+
+/*.accounttopbar .userMsg span:nth-child(3)*/
+.accounttopbar .userMsg span.msg{
+    width: 0.4rem;
+    height: 0.72rem;
+    background: url(../img/account/news_1.png)no-repeat center;
+    background-size: 0.4rem 0.36rem;
+    float: right;
+}
+
+.accounttopbar .userMsg span.msg1{
+    width: 0.4rem;
+    height: 0.72rem;
+    background: url(../img/account/news_2.png)no-repeat center;
+    background-size: 0.4rem 0.36rem;
+    float: right;
+}
+
+.accounttopbar .userList{
+    width: 7.5rem;
+    height:auto;
+    box-sizing: border-box;
+    padding: 0 0.8rem 0 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.accounttopbar .userList li{
+    display: inline-block;
+    width: 3.05rem;
+    height:1.26rem;
+    float: left;
+    box-sizing: border-box;
+}
+
+.accounttopbar .userList li span{
+    display:block;
+    color: #FFFFFF;
+    height:0.84rem;
+    line-height:0.84rem;
+
+}
+
+.accounttopbar .userList li p{
+    display:block;
+    height:0.34rem;
+    line-height:0.34rem;
+    opacity: 0.5;
+    color: #FFFFFF;
+}
+
+.accounttopbar .userList li:nth-child(1) span{
+    font-size: 0.6rem;
+}
+
+.accounttopbar .userList li:nth-child(2) span{
+    font-size: 0.32rem;
+}
+
+.accounttopbar .userList li:nth-child(3) span,
+.accounttopbar .userList li:nth-child(4) span {
+    font-size: 0.38rem;
+}
+
+.accounttopbar .userList li:nth-child(2) ,
+.accounttopbar .userList li:nth-child(4){
+    padding-left: 1.4rem;
+}
+
+/*投资需要登陆的头部*/
+.accounttopbar_login{
+    width: 7.5rem;
+    height:4.12rem;
+    background-image: linear-gradient(45deg, #69B7FF 0%, #5E9EFE 100%);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.accounttopbar_login .accounttopbar_login_user{
+    width: 1.36rem;
+    height:1.36rem;
+    background: url("../img/account/accounttopbar_login_user.png")no-repeat center;
+    background-size: 1.36rem 1.36rem;
+    margin:0.52rem auto 0.2rem;
+}
+
+.accounttopbar_login p{
+    display: inline-block;
+    width: 100%;
+    height:0.4rem;
+    line-height:0.4rem;
+    font-size: 0.28rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.accounttopbar_login  .accounttopbar_login_btn{
+    width: 3.12rem;
+    height:0.8rem;
+    border-radius: 100px;
+    line-height: 0.8rem;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin:0.44rem auto 0;
+    border:1px solid #fff;
+}
+
+.accounttopbar_login .userMsg_1{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.36rem;
+    background: url(../img/account/userMsg_1.png)no-repeat center;
+    background-size: 0.4rem 0.36rem;
+    float: right;
+    margin-right: 0.4rem;
+    margin-top: 0.34rem;
+}
+
+    /*资产管理*/
+.assetManagement{
+    width: 7.5rem;
+    height:auto;
+    margin: 0 auto;
+}
+
+.assetManagement .managementTitle{
+    width: 7.5rem;
+    height:0.94rem;
+    line-height:0.94rem;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+    box-sizing: border-box;
+    padding-left: 0.28rem;
+}
+
+.assetManagement .managementList{
+    width: 7.5rem;
+    height: auto;
+    border-top:1px solid #EDEDED;
+    border-bottom:1px solid #EDEDED;
+    margin:0 auto;
+    box-sizing: border-box;
+    padding: 0 0.4rem;
+}
+
+.assetManagement .managementList li{
+    width: 6.7rem;
+    height: 1.44rem;
+    margin:0 auto;
+    /*border-bottom: 2px solid #EAEDFB;*/
+    box-sizing: border-box;
+    padding: 0.3rem 0 0.3rem;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.assetManagement .newList{
+    margin-bottom:1.7rem;
+    /*padding: 0px;*/
+    padding: 0 0.4rem;
+}
+
+.assetManagement .managementList li.no_line{
+     border-bottom: 0px;
+ }
+
+.assetManagement .managementList li.newStyle{
+    /*width: 100%;
+    padding: 0.3rem 0 0.3rem 0.4rem;*/
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.3rem 0 0.3rem 0rem;
+}
+
+.assetManagement .managementList li div.Whole{
+    width:50%;
+    height:0.84rem;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+}
+
+.assetManagement .managementList li div.Whole>a{
+    display: inline-block;
+    width: 100%;
+    height:100%;
+}
+
+.assetManagement .managementList li div.line{
+    border-right:1px solid #EDEDED;
+  /*  padding-left: 0.3rem;*/
+    padding-left: 0.1rem;
+}.assetManagement .managementList li div.changeTwo{
+    border-right:1px solid #EDEDED;
+  /*  padding-left: 0.3rem;*/
+   /* padding-left: 0.6rem;*/
+}
+
+
+
+
+
+
+.assetManagement .managementList li div.changePic{
+    padding-left: 0.6rem;
+}
+
+.assetManagement .managementList li div.Whole span{
+    display: inline-block;
+    float: left;
+    width: 0.6rem;
+    height: 0.84rem;
+}
+
+.assetManagement .managementList li div.Whole span.icon_1{
+    background: url(../img/account/icon_1.png)no-repeat center;
+    background-size:0.6rem  0.6rem;
+}
+
+.assetManagement .managementList li div.Whole span.icon_2{
+    background: url(../img/account/icon_2.png)no-repeat center;
+    background-size:0.6rem  0.6rem;
+}
+.assetManagement .managementList li div.Whole span.icon_3{
+    background: url(../img/account/icon_3.png)no-repeat center;
+    background-size:0.6rem  0.6rem;
+}
+.assetManagement .managementList li div.Whole span.icon_4{
+    background: url(../img/account/icon_4.png)no-repeat center;
+    background-size:0.6rem  0.6rem;
+}
+.assetManagement .managementList li div.Whole span.icon_5{
+    background: url(../img/account/icon_5.png)no-repeat center;
+    background-size:0.6rem  0.6rem;
+}
+.assetManagement .managementList li div.Whole span.icon_6{
+    background: url(../img/account/icon_6.png)no-repeat center;
+    background-size:0.6rem  0.6rem;
+}
+
+
+.assetManagement .managementList li div.Whole div{
+    display: inline-block;
+    float: left;
+    width:2rem;
+    height: 0.84rem;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+}
+
+.assetManagement .managementList li div.Whole div p:nth-child(1){
+    line-height: 0.4rem;
+    /*font-size: 0.24rem;*/
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+.assetManagement .managementList li div.Whole div p:nth-child(2){
+    line-height: 0.4rem;
+     font-size: 0.24rem;
+     color: #9B9B9B;
+}
+
+#outerdiv{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(16,44,81,0.3);
+    z-index:101;
+    /*display:none;*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/*资金存管*/
+#outerdiv .prompt_tube{
+    /* display: inline-block;*/
+    width: 5.6rem;
+    height:5.52rem;
+    background: #FFFFFF;
+    box-shadow: 0 8px 25px 0 rgba(16,44,81,0.10);
+    border-radius: 10px;
+}
+
+#outerdiv .prompt_tube div:nth-child(1){
+    width: 5.6rem;
+    height:1.9rem;
+    background:url(../img/financeLease/tube.png)no-repeat top;
+    background-size:5.6rem  1.9rem;
+}
+#outerdiv .prompt_tube div:nth-child(2){
+    width: 4.48rem;
+    height:0.96rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    line-height: 0.48rem;
+    margin: 0.14rem auto 0;
+}
+
+#outerdiv .prompt_tube div:nth-child(3){
+    width: 3.12rem;
+    height:0.8rem;
+    line-height:0.8rem;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin:0.5rem auto;
+    background-image: linear-gradient(-136deg, #FF6444 0%, #FF8B5F 100%);
+    border-radius: 100px;
+}
+
+#outerdiv .prompt_tube div:nth-child(4){
+    width: 100%;
+    height:0.44rem;
+    line-height:0.44rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #9B9B9B;
+}
+
+/*账户管理*/
+/*.assetManagement .managementList_2{
+
+ }*/
+
+.assetManagement .managementList li div.Whole span.icon_7{
+    background: url(../img/account/icon_7.png)no-repeat center;
+    background-size:0.52rem  0.52rem;
+}
+
+.assetManagement .managementList li div.Whole span.icon_8{
+    background: url(../img/account/icon_8.png)no-repeat center;
+    background-size:0.5rem  0.46rem;
+}
+
+.assetManagement .managementList li div.Whole span.icon_9{
+    background: url(../img/account/icon_9.png)no-repeat center;
+    background-size:0.4rem  0.58rem;
+}
+
+.assetManagement .managementList li div.Whole span.icon_10{
+    background: url(../img/account/icon_10.png)no-repeat center;
+    background-size:0.48rem  0.48rem;
+}
+
+.assetManagement .managementList li div.Whole span.icon_11{
+    background: url(../img/account/icon_11.png)no-repeat center;
+    background-size:0.44rem  0.48rem;
+}
+
+
+
+
+
+
+.assetManagement .managementList li div.Whole div p.alignment{
+   /* height: 0.84rem;*/
+    line-height: 0.84rem;
+    /*font-size: 0.24rem;*/
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+/*账号  end*/
+
+
+/*出借 satrt*/
+.Lent{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:9;
+ /*   width: 7.5rem;*/
+    width: 100%;
+    height:0.9rem;
+    margin:0 auto;
+    background-image: linear-gradient(48deg, #69B7FF 0%, #5E9EFE 100%);
+}
+
+.Lent p{
+    display: inline-block;
+    width:100%;
+    height:0.9rem;
+    line-height:0.9rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #FFFFFF;
+}
+
+.Lent span{
+    position: absolute;
+    top:0;
+    right: 0.44rem;
+    display: inline-block;
+    float: right;
+    width: 0.62rem ;
+    height:0.9rem;
+    background: url(../img/Lent/search.png)no-repeat center;
+    background-size:0.36rem  0.36rem;
+    margin:0 auto;
+}
+
+.Lent span.mouseChange{
+    background: url(../img/Lent/quxiao.png)no-repeat center;
+    background-size:0.62rem  0.32rem;
+}
+
+
+
+
+
+.Lent .slide_into{
+    position: absolute;
+    top:0;
+    right:1.2rem;
+    z-index: 10;
+    width: 0rem;
+    height:0.56rem;
+    margin-top: 0.17rem;
+    border:none;
+    outline:none;
+    -webkit-appearance: none;
+    background-color:#FFF;
+    /*transition: 0.3s all;*/
+    font-size: 0.24rem;
+    color: #9B9B9B;
+    text-indent: 2em;
+    border-radius: 0.58rem;
+}
+
+
+.lentContent {
+    width:7.5rem;
+    height:auto;
+    /*margin:0.9rem auto;*/
+}
+
+.lentContent .financing{
+    width: 7.5rem;
+    height:3.46rem;
+    box-sizing: border-box;
+    padding: 0.32rem 0 0.4rem;
+    border-bottom: 1px solid #EDEDED;
+   /* margin-top: 0.9rem;*/
+}
+
+.lentContent .financing .financingTitle{
+    width: 100%;
+    height:0.56rem;
+    line-height: 0.56rem;
+    box-sizing: border-box;
+    padding: 0 0.62rem 0 0.2rem;
+    position:relative;
+}
+
+.lentContent .financing .financingTitle span,
+.lentContent .financing .financingTitle p {
+     display: inline-block;
+}
+.lentContent .financing .financingTitle span.newMark{
+    position:absolute;
+    left:0.2rem;
+    top:0rem;
+    width: 0.32rem;
+    height:0.56rem;
+    line-height:0.56rem;
+    text-align: center;
+    background: url(../img/Lent/new.png)no-repeat center;
+    background-size:0.32rem  0.36rem;
+    font-size: 0.2rem;
+    color: #FFFFFF;
+}
+.lentContent .yhk .financingTitle span.newMark{
+    background-image: url(../img/Lent/new_hui.png);
+}
+.lentContent .financing .financingTitle span.newStyle{
+    width: 0.64rem;
+    height:0.36rem;
+    line-height:0.36rem;
+    text-align: center;
+    background-image: linear-gradient(-135deg, #69BEFF 0%, #5E91FE 100%);
+    border-radius: 4px;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-left:0.4rem;
+}
+.lentContent .yhk .financingTitle span.newStyle{
+    background:#9B9B9B;
+}
+.lentContent .financing .financingTitle span.markBg{
+    display: inline-block;
+    width: 1.16rem;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    float: right;
+    background: url(../img/homepage/finance_2.png)no-repeat center;
+    background-size: 1.16rem 0.54rem;
+    text-align: right;
+    font-size: 0.24rem;
+    color: #FF4E4E;
+    padding-right: 0.05rem;
+    font-weight:bold;
+}
+.lentContent .yhk .financingTitle span.markBg{
+    color: #9B9B9B;
+    background-image:url(../img/mypic/jiaxi_hui.png);
+}
+.lentContent .financing .financingTitle p.markTitle{
+    font-size: 0.28rem;
+    color: #4A4A4A;
+}
+.lentContent .yhk .financingTitle p.markTitle{
+    color: #9B9B9B;
+}
+.lentContent .financing .financingSubject{
+    width:6.3rem;
+    height:2.02rem;
+    margin:0 auto;
+    position: relative;
+}
+
+.lentContent .financing .financingSubject .Seal{
+    position: absolute;
+    top:0px;
+    right:0.68rem;
+    display: inline-block;
+    width: 1.28rem;
+    height: 1.28rem;
+    background: url(../img/Lent/huankuanzhong.png)no-repeat center;
+    background-size:1.28rem  1.28rem;
+}
+.lentContent .yhk .financingSubject .Seal{
+    background-image:url(../img/mypic/yihuankuan.png);
+}
+.lentContent .ymb .financingSubject .Seal{
+    background-image:url(../img/Lent/yimanbiao.png);
+}
+.lentContent .ylb .financingSubject .Seal{
+    background-image:url(../img/Lent/yiliubiao.png);
+}
+.lentContent .ygq .financingSubject .Seal{
+    background-image:url(../img/Lent/yiguoqi.png);
+}
+.lentContent .financing .financingSubject ul{
+    width:100%;
+    height:1.06rem;
+    margin-top: 0.3rem;
+}
+
+.lentContent .financing .financingSubject ul li{
+     display: inline-block;
+     width:30%;
+     height:1.06rem;
+ }
+
+.lentContent .financing .financingSubject ul li.changeLi{
+    width:37%;
+}
+
+
+.lentContent .financing .financingSubject ul li div {
+     width: 100%;
+    height:0.64rem;
+    line-height:0.64rem;
+    text-align: center;
+}
+
+.lentContent .financing .financingSubject ul li div.redRate span{
+    color: #FF7740;
+}
+.lentContent .yhk .financingSubject ul li div.redRate span{
+    color:#9B9B9B;
+}
+.lentContent .financing .financingSubject ul li div.redRate span:nth-child(1){
+    font-size: 0.56rem;
+}.lentContent .financing .financingSubject ul li div.redRate span:nth-child(2){
+    font-size: 0.38rem;
+}.lentContent .financing .financingSubject ul li div.redRate span:nth-child(3){
+    font-size: 0.24rem;
+}
+
+.lentContent .financing .financingSubject ul li div span{
+    display: inline-block;
+ /*   width: 100%;
+    height: 100%;*/
+  /*  vertical-align: text-bottom;*/
+    font-size: 15px;
+    color: #1A1A1A;
+}
+.lentContent .yhk .financingSubject ul li div span{
+    color:#9B9B9B;
+}
+.lentContent .financing .financingSubject ul li p{
+    display: inline-block;
+    width: 100%;
+    height:0.34rem;
+    line-height: 0.34rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+    margin-top: 0.08rem;
+}
+
+.lentContent .financing .financingSubject .progressRate{
+
+}
+
+.lentContent .financing .financingSubject .progressBottom{
+    width:6.3rem;
+    height:0.34rem;
+}
+
+.lentContent .financing .financingSubject .progressBottom span{
+    display: inline-block;
+    width: auto;
+    height:0.34rem;
+    line-height:0.34rem;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+}
+
+.lentContent .financing .financingSubject .progressRate{
+    width: 6.3rem;
+    height:0.5rem;
+    line-height:0.5rem;
+    position:relative;
+}
+
+.lentContent .financing .financingSubject .progressRate .progressBar {
+    display: inline-block;
+    float: left;
+    width:5.52rem;
+    height:0.06rem;
+    background: rgba(155,155,155,0.15);
+    border-radius: 4px;
+    position:absolute;
+    top:45%;
+    left:0px;
+}
+
+.lentContent .financing .financingSubject .progressRate .progressBar span{
+    display: inline-block;
+    height: 0.06rem;
+    width: 20%;
+    background-image: linear-gradient(-90deg, #FF7740 3%, #FF5540 100%);
+    border-radius: 4px;
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+.lentContent .yhk .financingSubject .progressRate .progressBar span{
+    background: rgba(155,155,155,0.15);
+}
+
+.lentContent .financing .financingSubject .progressRate p{
+    display: inline-block;
+    float: right;
+    width: 0.54rem;
+    height:0.5rem;
+    line-height:0.5rem;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+}
+
+/*.lentContent .financing .financingSubject .progressBottom span:nth-child(1){
+    float: left;
+}*/
+.lentContent .financing .financingSubject .progressBottom span.lf{
+    float: left;
+}
+.lentContent .financing .financingSubject .progressBottom span:nth-child(2){
+    float: right;
+}
+
+.lentContent .financing .financingSubject .progressBottom span:nth-child(2) p{
+    display: inline-block;
+   /* width:0.4rem ;*/
+    height: 0.34rem;
+    line-height: 0.34rem;
+    text-align: center;
+    font-size:0.24rem;
+    color: #000000;
+}
+.lentContent .yhk .financingSubject .progressBottom span:nth-child(2) p{
+    color:#9B9B9B;
+}
+
+/*出借 end*/
+
+/*安全保障 start*/
+
+/*安全保障 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

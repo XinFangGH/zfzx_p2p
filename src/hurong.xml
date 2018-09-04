@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hurong>
+	<description>hurong配置文件</description>
+	<systemConfig>
+		<!-- 项目路径-->
+		<projStr>proj_wenandai</projStr>
+	</systemConfig>
+</hurong>

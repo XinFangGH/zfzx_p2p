@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+        name="com.hurong.credit.model.thirdInterface.WebBankCode"
+        table="web_bank_code"
+        select-before-update="false"
+        dynamic-update="false"
+        dynamic-insert="false"
+        optimistic-lock="version"
+    >
+		<id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+            length="19"
+        >
+            <generator class="native"/>
+        </id>
+         <property
+            name="bankName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="bankName"
+            length="50"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="bankCode"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="bankCode"
+            length="50"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="bankLogo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="bankLogo"
+            length="255"
+            not-null="false"
+            unique="false"
+        />
+        <property
+                name="bankMaxLogo"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                access="property"
+                column="bankMaxLogo"
+                length="255"
+                not-null="false"
+                unique="false"
+        />
+        <property
+                name="bankMinLogo"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                access="property"
+                column="bankMinLogo"
+                length="255"
+                not-null="false"
+                unique="false"
+        />
+        <property
+            name="thirdPayConfig"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="thirdPayConfig"
+            length="50"
+            not-null="false"
+            unique="false"
+        />
+        
+        <property
+            name="bankType"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="bankType"
+            length="50"
+            not-null="false"
+            unique="false"
+        />
+        <property
+                name="spell"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                access="property"
+                column="spell"
+                length="255"
+                not-null="false"
+                unique="false"
+
+        />
+     </class>
+</hibernate-mapping>

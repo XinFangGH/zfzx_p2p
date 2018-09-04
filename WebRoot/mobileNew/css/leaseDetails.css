@@ -1,0 +1,713 @@
+/*固定导航*/
+.fixed_nav_box{
+    position:fixed;
+    width:100%;
+    height:0.88rem;
+    left:0;
+    top:0;
+    z-index:9;
+}
+
+.fixed_nav_box .nav{
+    width:100%;
+    height:0.88rem;
+    line-height:0.88rem;
+    text-align:center;
+    font-size: 0.36rem;
+    color: #FFF;
+    position: relative;
+}
+
+.fixed_nav_box .nav .back{
+    display: inline-block;
+    position: absolute;
+    left:0.2rem;
+    width:0.22rem;
+    height:0.88rem;
+    background: url(../img/financeLease/baijiantou.png)no-repeat center;
+    background-size:0.22rem  0.4rem;
+}
+
+/*背景导航*/
+/*固定导航*/
+.leaseContainer {
+    width: 7.5rem;
+    height:auto;
+    margin:0 auto;
+}
+
+.leaseContainer  .BG {
+    width: 7.5rem;
+    /*height:4.84rem;*/
+     height:3.94rem;
+    /*height:3.54rem;*/
+    background: url(../img/financeLease/leaseDetailsBgx.png)no-repeat center;
+    background-size:7.5rem  3.94rem;
+    overflow: hidden;
+}
+
+.leaseContainer  .BG .BG_nav_box{
+    width:100%;
+    height:0.88rem;
+}
+
+.leaseContainer  .BG .BG_nav_box .nav{
+    width:100%;
+    height:0.88rem;
+    line-height:0.88rem;
+    text-align:center;
+    font-size: 0.36rem;
+    color: #FFF;
+    position: relative;
+}
+
+.leaseContainer  .BG .BG_nav_box .nav .back{
+    display: inline-block;
+    position: absolute;
+    left:0.2rem;
+    width:0.22rem;
+    height:0.88rem;
+    background: url(../img/financeLease/baijiantou.png)no-repeat center;
+    background-size:0.22rem  0.4rem;
+}
+
+.leaseContainer  .BG  .leaseDetails{
+   width: 7.5rem;
+    height:1.2rem;
+  /*  margin: 0.3rem auto 0.4rem;*/
+    margin:0 auto 0.4rem;
+    box-sizing: border-box;
+    padding: 0  0.2rem  0  0.2rem;
+}
+
+.leaseContainer  .BG  .leaseDetails .leaseUl{
+   /* display: inline-block;*/
+   /* float: left;*/
+    width: 100%;;
+    height:100%;
+}
+
+.leaseContainer  .BG  .leaseDetails .leaseUl li{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height:100%;
+}
+
+.leaseContainer  .BG  .leaseDetails .leaseUl li.verticalLine{
+    position: absolute;
+    left:50%;
+   /* display: inline-block;
+    float: left;*/
+    width: 2px;
+    height:0.8rem;
+    background-color: #fff;
+    opacity: 0.4;
+    /*border: 1px solid #FFFFFF;*/
+    margin-top: 0.2rem;
+}
+
+.leaseContainer  .BG  .leaseDetails .leaseUl li p{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.leaseContainer  .BG  .leaseDetails .leaseUl li p:nth-child(1){
+    height:0.8rem;
+    line-height: 0.8rem;
+    font-size:0.6rem;
+    color:#ffffff;
+}
+.leaseContainer  .BG  .leaseDetails .leaseUl li p:nth-child(1) span:nth-child(1){
+    font-size: 0.38rem;
+    color: #FFFFFF;
+}
+.leaseContainer  .BG  .leaseDetails .leaseUl li p:nth-child(1) span:nth-child(2){
+    font-size: 0.24rem;
+    color: #FFFFFF;
+}
+
+.leaseContainer  .BG  .leaseDetails .leaseUl li p:nth-child(2){
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size:0.24rem;
+    color:#ffffff;
+    opacity:0.5;
+}
+
+.leaseContainer  .BG  .leaseDetails .verticalLine{
+    display: inline-block;
+    float: left;
+    width: 2px;
+    height:0.8rem;
+    background-color: #fff;
+    opacity: 0.4;
+    /*border: 1px solid #FFFFFF;*/
+    margin-top: 0.2rem;
+}
+
+.leaseContainer  .BG  .progressBar{
+    width: 100%;
+    height: 0.08rem;
+    margin-top: 0.6rem;
+   /* background-color: #e6e6e6;*/
+    position: relative;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius:0.4rem;
+    background: rgba(255,255,255,0.4);
+}
+
+.leaseContainer  .BG  .progressBar_pending {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 0.08rem;
+    overflow: hidden;
+   /* background-color: #f65540;*/
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    background-image: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 100%);
+}
+
+.leaseContainer  .BG .progressBar_button{
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+  /*   left: -5px;
+    top: -10px; */
+    left: 0;
+    top: -0.06rem;
+    background: url(../img/financeLease/dot.png) no-repeat center center;
+    background-size:0.2rem  0.2rem ;
+    /*margin-left: -0.16rem;*/
+}
+
+.leaseContainer  .BG  .progressBar_title{
+    /*width: 0.72rem;*/
+    height: 0.44rem;
+    line-height: 0.44rem;
+    position: absolute;
+   /* left: -0.16rem;*/
+    top: -0.5rem;
+    text-align: center;
+   /* background: url(${base}/mobileNew/images/mypic/Bubble.png) no-repeat center center;*/
+ /*   margin-left: -0.4rem;*/
+  /*  margin-left: -0.2rem;*/
+    color: #FFF;
+    font-size: 0.24rem;
+}
+
+
+    /*进度条*/
+
+.leaseContainer  .BG .leaseBottom{
+    width: 7.5rem;
+    height: 0.6rem;
+}
+
+.leaseContainer  .BG .leaseBottom_numberOne{
+    /*margin-top: 0.25rem;*/
+    margin-top: 0.5rem;
+}
+
+.leaseContainer  .BG   .leaseBottom li{
+    display: inline-block;
+    float: left;
+    height: 0.6rem;
+   /* line-height: 1.3rem;*/
+}
+
+.leaseContainer  .BG   .leaseBottom li:nth-child(1){
+    width: 60%;
+    box-sizing: border-box;
+    padding-left: 0.6rem;
+}
+
+
+.leaseContainer  .BG   .leaseBottom li:nth-child(2){
+    width: 40%;
+}
+
+.leaseContainer  .BG   .leaseBottom li span{
+    display: inline-block;
+    float: left;
+    width: auto;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    opacity: 0.5;
+    font-size:0.24rem;
+    color: #FFFFFF;
+}
+
+.leaseContainer  .BG .leaseBottom li p{
+    display: inline-block;
+    width: auto;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+    margin-left: 0.1rem;
+}
+
+.leaseContainer .warmHints{
+    width: 6.9rem;
+    height:1.2rem;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+    line-height: 0.43rem;
+    margin: 0.3rem auto 0;
+}
+
+.leaseContainer .warmHints p{
+    display: inline-block;
+    margin-right: 0.1rem;
+    font-size: 0.24rem;
+    color: #1A1A1A;
+}
+
+.leaseContainer .course{
+    width: 7.5rem;
+    height:1rem;
+   /* border:1px solid #ccc;*/
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin:0.18rem auto 0.3rem;
+}
+
+.leaseContainer .course li{
+    display: inline-block;
+    float: left;
+}
+
+.leaseContainer .course li:nth-child(1),
+.leaseContainer .course li:nth-child(3),
+.leaseContainer .course li:nth-child(5),
+.leaseContainer .course li:nth-child(7){
+    width: 1rem;
+    height:1rem;
+}
+
+.leaseContainer .course li span{
+    display: inline-block;
+    width: 0.96rem;
+    height: 0.64rem;
+}
+
+.leaseContainer .course li:nth-child(1) span{
+    background: url(../img/financeLease/1.png)no-repeat center;
+    background-size:0.6rem  0.54rem;
+}
+.leaseContainer .course li:nth-child(3) span{
+    background: url(../img/financeLease/2.png)no-repeat center;
+    background-size:0.58rem  0.60rem;
+}
+.leaseContainer .course li:nth-child(5) span{
+    background: url(../img/financeLease/3.png)no-repeat center;
+    background-size:0.72rem  0.58rem;
+}
+.leaseContainer .course li:nth-child(7) span{
+    background: url(../img/financeLease/4.png)no-repeat center;
+    background-size:0.56rem  0.54rem;
+}
+
+.leaseContainer .course li p{
+    display: inline-block;
+    width: 100%;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color:#F9BA7F;;
+  /*  color: #F69132;*/
+}
+
+.leaseContainer .course li:nth-child(2),
+.leaseContainer .course li:nth-child(4),
+.leaseContainer .course li:nth-child(6){
+    width: 0.76rem;
+    height:1rem;
+    background: url(../img/financeLease/dottedLine.png)no-repeat  0 0.35rem;
+    background-size:0.76rem  0.04rem;
+    overflow: hidden;
+}
+
+.leaseContainer .segmentingLine{
+    width:6.62rem;/*width:7.5rem;*/
+    height:1px;
+    background-color: #EDEDED;
+}
+
+.leaseContainer .information{
+    width: 7.5rem;
+    height:auto;
+    /*margin: 0.4rem auto;*/
+    margin:0.2rem auto 0.002rem;
+    box-sizing: border-box;
+}
+
+.leaseContainer .information li{
+    width: 7.5rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+}
+
+.leaseContainer .information li span,
+.leaseContainer .information li p{
+    display: inline-block;
+    font-size: 0.28rem;
+}
+
+.leaseContainer .information li span{
+    width:1.5rem;
+    height:0.6rem;
+    line-height:0.6rem;
+    color: #9B9B9B;
+
+}
+
+.leaseContainer .information li p{
+    width:4rem;
+    height:0.6rem;
+    line-height:0.6rem;
+    color: #1A1A1A;
+}
+
+.leaseContainer .leasePull{
+    width: 7.5rem;
+    height:1.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+    margin-bottom: 1.3rem;
+   /* margin-top: 1rem;*/
+}
+
+.leaseContainer .leasePull span{
+    display: inline-block;
+    width: 0.2rem;
+    height:0.4rem;
+    background: url(../img/financeLease/jiantou.png)no-repeat center;
+    background-size:0.2rem  0.18rem;
+    vertical-align: top;
+    margin-left: 0.05rem;
+}
+
+
+.footerButton {
+    width: 100%;
+    height:0.98rem;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow:0 -1px 6px 0 rgba(155,166,173,0.25);
+    z-index: 10;
+}
+
+.footerButton .button{
+    width: 4.88rem;
+    height:0.8rem;
+    line-height: 0.8rem;
+    font-size:0.32rem;
+    color:#ffffff;
+    text-align:center;
+    background-image:linear-gradient(-130deg, #69beff 0%, #719eff 100%);
+    border-radius:100px;
+    margin:0.09rem auto;
+}
+
+
+/*弹框*/
+.outerdiv_1{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(16,44,81,0.3);
+    z-index:4;
+    /*display:none;*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/*资金存管*/
+.outerdiv_1 .prompt_tube{
+   /* display: inline-block;*/
+    width: 5.6rem;
+    height:5.52rem;
+    background: #FFFFFF;
+    box-shadow: 0 8px 25px 0 rgba(16,44,81,0.10);
+    border-radius: 0.26rem;
+}
+
+.outerdiv_1 .prompt_tube div:nth-child(1){
+    width: 5.6rem;
+    height:1.9rem;
+    background:url(../img/financeLease/tube.png)no-repeat top;
+    background-size:5.6rem  1.9rem;
+}
+.outerdiv_1 .prompt_tube div:nth-child(2){
+    width: 4.48rem;
+    height:0.96rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    line-height: 0.48rem;
+    margin: 0.14rem auto 0;
+}
+
+.outerdiv_1 .prompt_tube div:nth-child(3){
+    width: 3.12rem;
+    height:0.8rem;
+    line-height:0.8rem;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin:0.5rem auto;
+    background-image: linear-gradient(-136deg, #FF6444 0%, #FF8B5F 100%);
+    border-radius: 100px;
+}
+.outerdiv_1 .prompt_tube div:nth-child(3) a{
+    color: #FFFFFF;
+}
+.outerdiv_1 .prompt_tube div:nth-child(4){
+    width: 100%;
+    height:0.44rem;
+    line-height:0.44rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #9B9B9B;
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+
+/*alert绑卡*/
+.outerdiv_1 .alertBindCard{
+    position: relative;
+    width: 5.72rem;
+    height:3.28rem;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.outerdiv_1 .alertBindCard div:nth-child(1){
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #1A1A1A;
+}
+.outerdiv_1 .alertBindCard div:nth-child(2){
+    width: 100%;
+    height:0.4rem;
+    line-height:0.4rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+.outerdiv_1 .alertBindCard  ul{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:1.2rem;
+    border-top: 1px solid #EDEDED;
+}
+
+.outerdiv_1 .alertBindCard  ul li{
+    display: inline-block;
+    float: left;
+    width: 49.5%;
+    height:1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size:0.28rem;
+    color: #9B9B9B;
+}
+
+.outerdiv_1 .alertBindCard  ul li:nth-child(2){
+    color: #6BA9FC;
+    border-left: 1px solid #EDEDED;
+}
+
+/*风险测评*/
+.outerdiv_1 .immediateTest{
+    width: 7.04rem;
+    height:6.9rem;
+    background: url("../img/financeLease/frame.png")no-repeat center;
+    background-size:7.04rem 6.9rem;
+}
+.outerdiv_1 .immediateTest span{
+    display: inline-block;
+    float: right;
+    margin-top: 0.46rem;
+    margin-right: 0.72rem;
+    width:0.58rem;
+    height:0.58rem;
+    background: url("../img/financeLease/close.png")no-repeat center;
+    background-size:0.58rem 0.58rem;
+}
+
+.outerdiv_1 .immediateTest p{
+    display: block;
+    width: 4.2rem;
+    height:0.96rem;
+    line-height: 0.48rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    margin:3.85rem auto 0;
+}
+
+.outerdiv_1 .immediateTest a{
+    display: block;
+    width: 3.12rem;
+    height:0.8rem;
+    line-height:0.8rem;
+    text-align: center;
+    font-size:0.32rem;
+    color: #FFFFFF;
+    background-image: linear-gradient(-136deg,#FF865B 0%,#FF6A48   100%);
+    border-radius: 2rem;
+    box-shadow: 0 4px 6px 0 rgba(255,134,91,0.50);
+    margin:0.2rem auto 0;
+}
+
+/*确认出借*/
+.outerdiv_1 .confirm{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 7.5rem;
+    height:6.12rem;
+    background: #FFFFFF;
+    border-top-left-radius:10px;border-top-right-radius:10px;
+}
+
+.outerdiv_1 .confirm li{
+    width: 7.5rem;
+    height:1rem;
+    line-height:1rem;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.outerdiv_1 .confirm li span,
+.outerdiv_1 .confirm li p{
+    display: inline-block;
+    height:100%;
+}
+
+.outerdiv_1 .confirm li:nth-child(1) ,
+.outerdiv_1 .confirm li:nth-child(2){
+    box-sizing: border-box;
+    padding-left: 0.4rem;
+}
+
+.outerdiv_1 .confirm li:nth-child(1) span,
+.outerdiv_1 .confirm li:nth-child(2) span {
+    float: left;
+    font-size: 0.28rem;
+    color: #9B9B9B;
+}
+
+.outerdiv_1 .confirm li:nth-child(1) p{
+    float: left;
+    font-size:0.34rem;
+    color: #1A1A1A;
+}
+
+.outerdiv_1 .confirm li:nth-child(2) p {
+    float: left;
+    font-size: 0.36rem;
+    color: #F86E62;
+}
+.outerdiv_1 .confirm li:nth-child(3){
+    border-top:1px solid #EDEDED;
+    border-bottom:1px solid #EDEDED;
+}
+
+.outerdiv_1 .confirm li:nth-child(3)  div{
+    display: inline-block;
+    float: left;
+    font-size:0.28rem;
+}
+
+.outerdiv_1 .confirm li:nth-child(3)  div:nth-child(1){
+    width: 69%;
+    color: #1A1A1A;
+    box-sizing: border-box;
+    padding-left: 0.4rem;
+}
+.outerdiv_1 .confirm li:nth-child(3)  div:nth-child(1) p{
+    color: #9B9B9B;
+}
+
+.outerdiv_1 .confirm li:nth-child(3)  div:nth-child(2){
+    width: 30%;
+    color: #6BA9FC;
+    border-left: 1px solid  #EDEDED;
+    text-align: center;
+}
+
+.outerdiv_1 .confirm li:nth-child(4){
+    box-sizing: border-box;
+    padding-left: 0.4rem;
+    font-size: 0.24rem;
+    line-height: 0.8rem;
+}
+
+.outerdiv_1 .confirm li:nth-child(4) p{
+    display: inline-block;
+    color: #FF5540;
+    float: left;
+}
+
+.outerdiv_1 .confirm li:nth-child(4) #loanHints_5{
+    color:#9B9B9B !important;
+}
+
+.outerdiv_1 .confirm li:nth-child(4) #loanHints_5 i{
+    font-style: normal;
+    color: #FF5540;
+}
+
+.outerdiv_1 .confirm li:nth-child(5){
+    width: 4.88rem;
+    height:0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+    background-image: linear-gradient(-130deg, #719eff 0%,  #69beff  100%);
+    border-radius: 100px;
+    margin: auto;
+}
+
+.outerdiv_1 .confirm li:nth-child(6){
+    box-sizing: border-box;
+    padding-left: 0.4rem;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+}
+
+.outerdiv_1 .confirm li:nth-child(6) input{
+    vertical-align: middle;
+}
+
+.outerdiv_1 .confirm li:nth-child(6) p{
+    font-size: 0.24rem;
+    color: #719eff;
+    line-height: 0.34rem;
+}

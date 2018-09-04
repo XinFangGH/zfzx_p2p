@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd 
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd">
+	
+     <bean id="csPersonHouseService" class="com.hurong.credit.service.creditFlow.customer.person.impl.CsPersonHouseServiceImpl">
+   	 	<constructor-arg index="0" ref="csPersonHouseDao"/>
+   	 </bean>
+
+	 <bean id="csPersonCarService" class="com.hurong.credit.service.creditFlow.customer.person.impl.CsPersonCarServiceImpl">
+   	 	<constructor-arg index="0" ref="csPersonCarDao"/>
+   	 </bean>
+	
+   	 <bean id="personService" class="com.hurong.credit.service.creditFlow.customer.person.impl.PersonServiceImpl">
+   	 	<constructor-arg index="0" ref="personDao"/>
+   	 </bean>
+   	 
+   	
+   	 <bean id="personRelationService" class="com.hurong.credit.service.creditFlow.customer.person.impl.PersonRelationServiceImpl">
+   	 	<constructor-arg index="0" ref="personRelationDao"/>
+   	 </bean>
+	 <bean id="bpCustPersonEducationService" class="com.hurong.credit.service.creditFlow.customer.person.impl.BpCustPersonEducationServiceImpl">
+   	 	<constructor-arg index="0" ref="bpCustPersonEducationDao"/>
+   	 </bean>
+	 <bean id="bpCustPersonNegativeSurveyService" class="com.hurong.credit.service.creditFlow.customer.person.impl.BpCustPersonNegativeSurveyServiceImpl">
+   	 	<constructor-arg index="0" ref="bpCustPersonNegativeSurveyDao"/>
+   	 </bean>
+	 <bean id="bpCustPersonPublicActivityService" class="com.hurong.credit.service.creditFlow.customer.person.impl.BpCustPersonPublicActivityServiceImpl">
+   	 	<constructor-arg index="0" ref="bpCustPersonPublicActivityDao"/>
+   	 </bean>
+	 <bean id="bpCustPersonWorkExperienceService" class="com.hurong.credit.service.creditFlow.customer.person.impl.BpCustPersonWorkExperienceServiceImpl">
+   	 	<constructor-arg index="0" ref="bpCustPersonWorkExperienceDao"/>
+   	 </bean>
+   	 
+	 
+	
+	
+</beans>

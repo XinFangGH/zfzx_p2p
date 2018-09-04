@@ -1,0 +1,17 @@
+@charset "utf-8"; 
+/* CSS Document */
+.topbar { height:31px; background-color:#fff; }
+.logobar { background-color:#FFF; }
+.navbar { height:50px; background-color:#07308A; }
+.banner {width:100%; overflow:hidden; text-align:center;}
+.main{ width:1200px; margin:0px auto;  overflow:hidden; }
+.main1 { width:1200px; margin:10px auto;}
+.partner-pic {height:150px; margin:20px auto;background-color:#fff; border:1px solid #ddd; }
+/*友情链接*/
+.partner-text {padding:25px 20px; margin:20px 0; background-color:#fff; border:1px solid #e7e4e5; }
+.partner-text .partner-tit{font-size:24px; color:#494949;padding:0 15px;}
+.partner-text .partner-pics{padding-top:20px; overflow:hidden;}
+.partner-text .partner-pics a{border:1px solid #b5b5b5;display:block; float:left;margin:0px 19px 25px 19px;}
+.sitemap {width:100%; background:#555; height:200px; }
+.copyright { width:1001px; height:20px; margin:10px auto; text-align:center; color:#b7b7b7;}
+.permit { width:1001px; height:79px; margin:0px auto; text-align:center; }

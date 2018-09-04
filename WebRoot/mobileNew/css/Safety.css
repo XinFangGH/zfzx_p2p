@@ -1,0 +1,632 @@
+@charset "utf-8";
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+    font-size: 100px;
+}
+
+.nav_box{
+    position:fixed;
+    width:100%;
+    height:0.88rem;
+    left:0;
+    top:0;
+    z-index:100;
+    background-color: #FFF;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav_box .nav{
+    width:100%;
+    height:0.88rem;
+    line-height:0.88rem;
+    text-align:center;
+    font-size: 0.36rem;
+    color: #1A1A1A;
+    position: relative;
+    /* border-bottom: 1px solid #E7E7E7;*/
+}
+
+.nav_box .nav .back{
+    display: inline-block;
+    position: absolute;
+    left:0.2rem;
+    width:0.22rem;
+    height:0.88rem;
+    background: url(../img/imf/jiantou.png)no-repeat center;
+    background-size:0.22rem  0.4rem;
+}
+
+/*--初始化Swiper的样式--*/
+.swiper-container, .swiper-wrapper ,.swiper-slide {
+    height:100%;
+}
+
+/*.swiper-slide {
+    overflow-y: scroll!important;
+}*/
+
+/*--第一屏幕--*/
+.page1 ,.page4 ,.page5{
+    position: relative;
+    background: url("../img/safety/background.png") no-repeat center;
+    background-size: cover;
+}
+.page1 .box, .page2 .box, .page3 .box, .page4 .box, .page5 .box, .page6 .box{
+    width:100%;
+    height:0.88rem;
+}
+
+.page1 .meteor{
+    position: absolute;
+    width: 1.18rem;
+    height: 1.18rem;
+    background: url("../img/safety/meteor.png")no-repeat center;
+    background-size: 1.18rem 1.18rem;
+}
+
+.page1 .meteor_1{
+    left:9%;
+    top:4%;
+}
+
+.page1 .meteor_2{
+    left:86.4%;
+    top:12%;
+}
+
+.page1 .meteor_3{
+    position: absolute;
+    left:19.4%;
+    top:42%;
+    width: 0.84rem;
+    height: 0.84rem;
+    background: url("../img/safety/meteor.png")no-repeat center;
+    background-size: 0.84rem 0.84rem;
+}
+
+.page1 .meteor_4{
+    position: absolute;
+    left:82.1%;
+    top:79%;
+    width: 1.1rem;
+    height: 1.1rem;
+    background: url("../img/safety/meteor.png")no-repeat center;
+    background-size: 1.1rem 1.1rem;
+}
+
+.page1 .prevention_pic{
+    position: relative;
+    width: 6.56rem;
+    height:3.62rem;
+    margin: 2.42rem auto 0;
+}
+
+.page1 .prevention_pic .prevention{
+    width: 3.16rem;
+    height:3.62rem;
+    background: url("../img/safety/shield.png")no-repeat center;
+    background-size: 3.16rem 3.62rem;
+    margin: 0 auto;
+}
+
+.page1 .prevention_pic .prevention_text{
+    position: absolute;
+    top: 1.6rem;
+    width: 6.56rem;
+    height:0.54rem;
+    background: url("../img/safety/text.png")no-repeat center;
+    background-size: 6.56rem 0.54rem;
+    vertical-align: middle;
+}
+
+.page1 .prevention_describe{
+   /* width: 4.16rem;*/
+    height:1.12rem;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+    line-height: 0.56rem;
+    margin: 0.6rem auto 0;
+    text-align:center;
+}
+
+.page1 .prevention_block{
+    width: 100%;
+    height:0.64rem;
+   /* margin-top: 0.1rem;*/
+}
+
+.page1 .prevention_block li{
+    display: inline-block;
+    width: 1.4rem;
+    height:0.64rem;
+}
+
+.page1 .prevention_block li:nth-child(1){
+    float: left;
+    margin-left: 0.48rem;
+    background: url("../img/safety/block.png")no-repeat center;
+    background-size: 1.4rem 0.54rem;
+}
+
+.page1 .prevention_block li:nth-child(2){
+    float: right;
+    margin-right: 0.48rem;
+    background: url("../img/safety/block_right.png")no-repeat center;
+    background-size: 1.4rem 0.54rem;
+}
+
+/*--第二屏幕--*/
+.page2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.page2 .advantage_list{
+    width: 7.5rem;
+    box-sizing: border-box;
+    /*padding:0 0.5rem;*/
+    height:auto;
+    padding: 1.5rem 0.5rem 1rem;
+}
+
+.page2 .advantage_list li{
+    position: relative;
+    width: 100%;
+    height:2rem;
+    margin-top: 0.6rem;
+}
+
+.page2 .advantage_list li div{
+    display: inline-block;
+    float: left;
+}
+
+.page2 .advantage_list li div.Mapping{
+    width: 1.8rem;
+    height:1.54rem;
+}
+
+.page2 .advantage_list li:nth-child(1) div.Mapping{
+   background: url("../img/safety/icon1.png")no-repeat center;
+    background-size:1.8rem  1.54rem;
+}
+
+.page2 .advantage_list li:nth-child(2) div.Mapping{
+   background: url("../img/safety/icon2.png")no-repeat center;
+    background-size:1.8rem  1.54rem;
+}
+
+.page2 .advantage_list li:nth-child(3) div.Mapping{
+   background: url("../img/safety/icon3.png")no-repeat center;
+    background-size:1.8rem  1.54rem;
+}
+
+.page2 .advantage_list li:nth-child(4) div.Mapping{
+   background: url("../img/safety/icon4.png")no-repeat center;
+    background-size:1.8rem  1.54rem;
+}
+
+.page2 .advantage_list li div.Writing{
+    width: 4.54rem;
+    height:auto;
+}
+
+.page2 .advantage_list li:nth-child(1) div.Writing,
+.page2 .advantage_list li:nth-child(3) div.Writing {
+    margin-left: 0.16rem;
+}
+
+.page2 .advantage_list li:nth-child(2) div.Mapping,
+.page2 .advantage_list li:nth-child(4) div.Mapping {
+    margin-left: 0.16rem;
+}
+
+.page2 .advantage_list li div.Writing h3{
+    font-weight: normal;
+    font-size: 0.32rem;
+    color: #2A3874;
+}
+
+.page2 .advantage_list li div.Writing p{
+    line-height: 0.36rem;
+    font-size: 0.26rem;
+    color: #9B9B9B;
+    margin-top: 0.08rem;
+}
+
+.page2 .advantage_list li:nth-child(1){
+    margin-top: 0.9rem;
+}
+
+.page2 .advantage_list li:nth-child(3){
+    margin-top: 0.4rem;
+}
+
+.page2 .advantage_list li:nth-child(1) div.Writing{
+    position: absolute;
+    top: -0.25rem;
+}
+
+.page2 .advantage_list li:nth-child(3) div.Writing{
+    position: absolute;
+    top: -0.19rem;
+}
+
+.page2 .line{
+    position: absolute;
+}
+
+.page2 .line_1{
+    left:84%;
+    top: 6.8%;
+    width: 0.5rem;
+    height: 0.88rem;
+    background: url("../img/safety/line_1.png")no-repeat center;
+    background-size: 0.5rem  0.88rem;
+}
+.page2 .line_2{
+    left:14.1%;
+    bottom: 0;
+    width: 0.5rem;
+    height: 1rem;
+    background: url("../img/safety/line_2.png")no-repeat center;
+    background-size: 0.5rem  1rem;
+}
+
+.page2 .line_3{
+    left:7.7%;
+    top:9%;
+    width: 0.24rem;
+    height: 0.22rem;
+    background: url("../img/safety/blue.png")no-repeat center;
+    background-size: 0.24rem 0.22rem;
+}
+
+.page2 .line_4{
+    left:86.4%;
+    bottom: 4%;
+    width: 0.32rem;
+    height:0.36rem;
+    background: url("../img/safety/yellow.png")no-repeat center;
+    background-size: 0.32rem  0.36rem;
+}
+
+    /*--第三屏--*/
+.page3 {
+    position: relative;
+    background-size: cover;
+}
+
+.page3 h3{
+    font-weight: normal;
+    width: 2.14rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #FFFFFF;
+    background: url("../img/safety/rectangle.png")no-repeat center;
+    background-size: 2.14rem  0.6rem;
+    margin: 1.48rem auto 0;
+}
+
+.page3 ul.measures{
+    width: 6.7rem;
+    height:8.72rem;
+    background: url("../img/safety/dotted_ line.png")no-repeat center;
+    background-size: 6.7rem  8.72rem;
+    margin: 0.42rem auto;
+
+}
+
+.page3 ul.measures li{
+    width: 6.7rem;
+}
+
+.page3 ul.measures li h4{
+    display: inline-block;
+    float: left;
+    width: 2rem;
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.32rem;
+    color: #2A3874;
+}
+
+.page3 ul.measures li p{
+    display: inline-block;
+    float: left;
+    width: 4.52rem;
+ /*   height:2.18rem;*/
+    line-height:0.4rem;
+    font-weight: normal;
+    font-size: 0.28rem;
+    color: #9B9B9B;
+    box-sizing: border-box;
+}
+
+.page3 ul.measures li:nth-child(1){
+    height: 2.05rem;
+}
+
+
+.page3 ul.measures li:nth-child(1) h4{
+    height: 2.05rem;
+    line-height: 2.05rem;
+}
+.page3 ul.measures li:nth-child(2){
+    height: 2.2rem;
+}
+
+.page3 ul.measures li:nth-child(2) h4{
+    height: 2.2rem;
+    line-height: 2.2rem;
+}
+
+.page3 ul.measures li:nth-child(3){
+    height: 2.25rem;
+}
+
+.page3 ul.measures li:nth-child(3) h4{
+    height: 2.25rem;
+    line-height: 2.25rem;
+}
+
+.page3 ul.measures li:nth-child(4){
+    height: 2.2rem;
+}
+
+.page3 ul.measures li:nth-child(4) h4{
+    height: 2.2rem;
+    line-height: 2.2rem;
+}
+
+.page3 ul.measures li:nth-child(1) p{
+    margin-top: 0.6rem;
+}
+
+.page3 ul.measures li:nth-child(2) p{
+    margin-top: 0.52rem;
+}
+
+.page3 ul.measures li:nth-child(3) p{
+    margin-top: 0.52rem;
+}
+
+.page3 ul.measures li:nth-child(4) p{
+    margin-top: 0.72rem;
+}
+
+.page3 .atmosphere{
+    position: absolute;
+}
+
+.page3 .Glittering{
+    width: 1.18rem;
+    height: 1.18rem;
+    background: url("../img/safety/meteor.png")no-repeat center;
+    background-size: 1.18rem 1.18rem;
+}
+
+.page3 .atmosphere_1{
+    left:92.3%;
+    top:15%;
+}
+
+.page3 .atmosphere_2{
+    left:6.4%;
+    top: 86.5%;
+}
+
+
+.page3 .atmosphere_3{
+    left:6%;
+    top: 6.8%;
+    width: 0.5rem;
+    height: 0.88rem;
+    background: url("../img/safety/line_3.png")no-repeat center;
+    background-size:0.5rem 0.88rem;
+}
+
+.page3 .atmosphere_4{
+    left:87.2%;
+    top:10%;
+    width: 0.24rem;
+    height: 0.22rem;
+    background: url("../img/safety/blue.png")no-repeat center;
+    background-size:0.24rem 0.22rem;
+}
+
+.page3 .atmosphere_5{
+    left:3.6%;
+    top: 36%;
+    width: 0.3rem;
+    height: 0.28rem;
+    background: url("../img/safety/orange.png")no-repeat center;
+    background-size:0.3rem 0.28rem;
+}
+
+/*--第四屏--*/
+.page4 {
+    position: relative;
+    background-size: cover;
+}
+
+.page4 h3.title_02{
+   /* width: 1.36rem;*/
+    width: 100%;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    text-align: center;
+    font-size:0.34rem;
+    color: #FFFFFF;
+    margin: 1.3rem auto 0.42rem;
+}
+
+.page4 .control_flow{
+    width: 6.14rem;
+    height:auto;
+    margin: 0.32rem auto  1.8rem;
+}
+
+.page4 .control_flow li:nth-child(odd){
+    width: 6.14rem;
+    height:auto;
+}
+
+.page4 .control_flow li:nth-child(odd) h4{
+    width: 6.14rem;
+    height:0.72rem;
+    line-height:0.72rem;
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+    background: url("../img/safety/Dotted_line.png") no-repeat center;
+    background-size: 2.68rem 0.72rem;
+}
+
+.page4 .control_flow li:nth-child(odd) p{
+    line-height: 0.4rem;
+    font-size: 0.28rem;
+    color: #FFFFFF;
+    margin-top: 0.32rem;
+}
+
+.page4 .control_flow li:nth-child(even){
+    width: 6.14rem;
+    height:0.84rem;
+    margin: 0.4rem auto;
+    background: url("../img/safety/jiantou.png") no-repeat center;
+    background-size: 0.48rem 0.84rem;
+}
+
+    /*--第五屏--*/
+.page5 {
+    position: relative;
+    background-size: cover;
+}
+
+.page5 .control_flow{
+    width: 6.14rem;
+    height:auto;
+    margin: 1.48rem auto 0.6rem;
+}
+
+.page5 .control_flow li:nth-child(odd){
+    width: 6.14rem;
+    height:auto;
+}
+
+.page5 .control_flow li:nth-child(odd) h4{
+    width: 6.14rem;
+    height:0.72rem;
+    line-height:0.72rem;
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+    background: url("../img/safety/Dotted_line.png") no-repeat center;
+    background-size: 2.68rem 0.72rem;
+}
+
+.page5 .control_flow li:nth-child(odd) p{
+    line-height: 0.4rem;
+    font-size: 0.28rem;
+    color: #FFFFFF;
+    margin-top: 0.32rem;
+}
+
+.page5 .control_flow li:nth-child(even){
+    width: 6.14rem;
+    height:0.84rem;
+    margin: 0.4rem auto;
+    background: url("../img/safety/jiantou.png") no-repeat center;
+    background-size: 0.48rem 0.84rem;
+}
+
+/*--第六屏--*/
+.page6 {
+    position: relative;
+    background-size: cover;
+}
+
+.page6  .advantage{
+    width: 4.58rem;
+    height:4.4rem;
+    line-height:0.44rem;
+    font-size: 0.32rem;
+    text-align: center;
+    background: url("../img/safety/picture.png")no-repeat center;
+    background-size:4.58rem  4.4rem;
+    margin: 1.28rem auto 0.4rem;
+}
+
+.page6  .advantage_list{
+     width: 6.16rem;
+     height:auto;
+     margin: 0.2rem auto 0;
+ }
+
+.page6  .advantage_list li{
+    width: 6.16rem;
+    height:0.6rem;
+    line-height:0.6rem;
+}
+
+.page6  .advantage_list li p,
+.page6  .advantage_list li span{
+    float: left;
+}
+
+.page6  .advantage_list li p{
+    width:5.8rem;
+  /*  height:0.6rem;*/
+    line-height:0.6rem;
+    font-size: 0.28rem;
+    color: #475790;
+}
+
+.page6  .advantage_list li span{
+    display: inline-block;
+    width: 0.12rem;
+    height: 0.6rem;
+    background: url("../img/safety/dot_blue.png")no-repeat center;
+    background-size:0.12rem  0.12rem;
+    margin-right: 0.2rem;
+    vertical-align: middle;
+}
+
+
+
+    /*下脚箭头*/
+.swiper-container  .swiper-wrapper .page1 span.down_arrow,
+.swiper-container  .swiper-wrapper .page4 span.down_arrow,
+.swiper-container  .swiper-wrapper .page5 span.down_arrow {
+    display: block;
+    width:100%;
+    height:0.5rem;
+    background:url("../img/safety/jiantou_green.png")no-repeat center;
+    background-size: 0.52rem 0.5rem;
+    position: absolute;
+    bottom: 0.6rem;
+}
+
+.swiper-container  .swiper-wrapper .page2 span.down_arrow,
+.swiper-container  .swiper-wrapper .page3 span.down_arrow{
+    display: block;
+    width:100%;
+    height:0.5rem;
+    background:url("../img/safety/jiantou_blue.png")no-repeat center;
+    background-size: 0.52rem 0.5rem;
+    position: absolute;
+    bottom: 0.6rem;
+}
+
+
+

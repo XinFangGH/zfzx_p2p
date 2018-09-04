@@ -1,0 +1,727 @@
+body,div,p,ul,ol,dl,dd, dt,li,h1,h2,h3,h4,h5,em,form,input,button { margin:0; padding:0; font-family:"微软雅黑",Arial, Helvetica,sans-serif,"宋体"; font-size:12px; font-weight:normal;    }
+
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+DL {
+	MARGIN: 0px
+}
+DD {
+	MARGIN: 0px
+}
+INPUT {
+	FONT-SIZE: 12px
+}
+SELECT {
+	FONT-SIZE: 12px
+}
+OPTION {
+	FONT-SIZE: 12px
+}
+TABLE {
+	WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+A {
+	outline: none
+}
+A:link {
+	COLOR: #286bc5; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #286bc5; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #286bc5; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #286bc5; TEXT-DECORATION: none
+}
+BUTTON {
+	outline: none; -moz-user-select: none; -khtml-user-select: none; user-select: none
+}
+BUTTON:unknown {
+	BORDER-TOP-STYLE: none! important; BORDER-RIGHT-STYLE: none! important; BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+.clear {
+	CLEAR: both; FONT-SIZE: 0px; HEIGHT: 0px
+}
+.wrap {
+	MARGIN: 0px auto; WIDTH: 950px
+}
+.ui-tabs .ui-tabs-nav {
+	HEIGHT: 33px
+}
+BODY .ui-datepicker SELECT.ui-datepicker-month {
+	WIDTH: 40%
+}
+BODY .ui-datepicker SELECT.ui-datepicker-year {
+	WIDTH: 40%
+}
+#hots UL {
+	HEIGHT: 34px
+}
+#hots UL LI {
+	PADDING-LEFT: 7px; BACKGROUND: url(http://finance.sina.com.cn/calc/images/hotsleft.gif) no-repeat left 50%; FLOAT: left; MARGIN-RIGHT: 5px
+}
+#hots UL LI DIV {
+	PADDING-RIGHT: 5px; BACKGROUND: url(http://finance.sina.com.cn/calc/images/hotsright.gif) no-repeat right 50%
+}
+#hots UL LI DIV A {
+	DISPLAY: inline-block; FONT-SIZE: 14px; BACKGROUND: url(http://finance.sina.com.cn/calc/images/hotscenter.gif) repeat-x 0px 1px; COLOR: #101f3e; HEIGHT: 34px; TEXT-DECORATION: none
+}
+#hots UL LI DIV A:hover {
+	COLOR: #e26704
+}
+#center .ui-corner-all {
+	-moz-border-radius: 0px
+}
+#left {
+	FLOAT: left; WIDTH: 165px
+}
+.resetbtn {
+	
+}
+#center {
+	
+}
+#center INPUT {
+	
+}
+#right {
+	FLOAT: left; WIDTH: 225px
+}
+#desc {
+	OVERFLOW: hidden; COLOR: #0152a6
+}
+#center .ui-widget-content {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#detailct {
+	BORDER-RIGHT: #adccd1 1px solid; PADDING-LEFT: 20px; BACKGROUND: url(http://finance.sina.com.cn/calc/images/detailicon.gif) no-repeat 9px 6px; BORDER-LEFT: #adccd1 1px solid; BORDER-top: #adccd1 1px solid; PADDING-top: 10px;
+}
+#detail {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: right; COLOR: #e26704
+}
+#types {
+	BORDER-RIGHT: #adccd1 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: #adccd1 1px solid; BORDER-TOP-STYLE: none; PADDING-TOP: 10px; BORDER-BOTTOM: #adccd1 1px solid
+}
+#types .ui-state-active A {
+	CURSOR: default
+}
+.input CENTER {
+	TEXT-ALIGN: right
+}
+.input BUTTON {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-TOP: 15px; FONT-SIZE: 14px; BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc15.png) no-repeat 0px 0px; MARGIN-LEFT: 5px; VERTICAL-ALIGN: middle; BORDER-LEFT: medium none; WIDTH: 67px; CURSOR: pointer; COLOR: #ffffff; LINE-HEIGHT: 30px; BORDER-BOTTOM: medium none; HEIGHT: 30px
+}
+.ui-datepicker-trigger {
+	VERTICAL-ALIGN: middle
+}
+#types TABLE TR TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 15px; BORDER-BOTTOM: #cccccc 1px dashed; HEIGHT: 23px
+}
+.frontface {
+	FONT-SIZE: 14px; WIDTH: 200px; COLOR: #0152a4; TEXT-INDENT: 10px
+}
+#types UL {
+	BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP-STYLE: none; BORDER-BOTTOM: #cccccc 1px dashed; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none
+}
+INPUT {
+	BORDER-RIGHT: #b5b8c8 1px solid; BORDER-TOP: #b5b8c8 1px solid; BACKGROUND: url(http://finance.sina.com.cn/calc/images/text-bg.gif) #ffffff repeat-x; BORDER-LEFT: #b5b8c8 1px solid; LINE-HEIGHT: 18px; BORDER-BOTTOM: #b5b8c8 1px solid
+}
+INPUT.error {
+	BORDER-LEFT-COLOR: #cc3300; BACKGROUND: url(http://finance.sina.com.cn/calc/images/invalid_line.gif) #ffffff repeat-x center bottom; BORDER-BOTTOM-COLOR: #cc3300; BORDER-TOP-COLOR: #cc3300; BORDER-RIGHT-COLOR: #cc3300
+}
+#center .disList INPUT.resetbtn {
+	PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 65px; PADDING-TOP: 0px; HEIGHT: 25px
+}
+#center INPUT.uinumber {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 133px; LINE-HEIGHT: 18px; PADDING-TOP: 0px; HEIGHT: 18px; TEXT-ALIGN: right; _width: 133px
+}
+#center INPUT.uidate {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 133px; LINE-HEIGHT: 18px; PADDING-TOP: 0px; HEIGHT: 18px; TEXT-ALIGN: right; _width: 133px
+}
+.input TR {
+	HEIGHT: 30px
+}
+.output TR {
+	HEIGHT: 30px
+}
+.unit {
+	FONT-SIZE: 10pt; MARGIN-LEFT: 5px; COLOR: #848484
+}
+.ui-state-active .ui-button-text {
+	BACKGROUND: url(http://finance.sina.com.cn/calc/images/select.png) no-repeat right 80%
+}
+INPUT.txtd {
+	BACKGROUND: #eeeeee; WIDTH: 143px; TEXT-ALIGN: right
+}
+.conclusion {
+	MARGIN: 20px 0px
+}
+.conclusion P {
+	COLOR: #0152a4; TEXT-INDENT: 20px
+}
+#tooltip {
+	PADDING-RIGHT: 25px; DISPLAY: none; PADDING-LEFT: 25px; FONT-WEIGHT: bolder; FONT-SIZE: 13px; Z-INDEX: 100000; BACKGROUND: url(http://finance.sina.com.cn/calc/images/tooltip/black_arrow.png); FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://finance.sina.com.cn/calc/images/tooltip/black_arrow.png"); PADDING-BOTTOM: 25px; WIDTH: 160px; COLOR: #fff; PADDING-TOP: 25px; HEIGHT: 70px; _background: none
+}
+HTML {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LEGEND {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+IMG {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+ADDRESS {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+CAPTION {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+CITE {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+CODE {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+DFN {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+TH {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+VAR {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+LI {
+	LIST-STYLE-TYPE: none
+}
+SELECT {
+	VERTICAL-ALIGN: middle
+}
+INPUT {
+	VERTICAL-ALIGN: middle
+}
+SELECT {
+	FONT-SIZE: 12px; MARGIN: 0px
+}
+INPUT {
+	FONT-SIZE: 12px; MARGIN: 0px
+}
+TEXTAREA {
+	FONT-SIZE: 12px; MARGIN: 0px
+}
+TABLE {
+	BORDER-COLLAPSE: collapse
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; FONT-SIZE: 12px/20px; PADDING-TOP: 5px
+}
+.clearfix:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+.clearfix {
+	ZOOM: 1
+}
+.clearit {
+	CLEAR: both; FONT-SIZE: 0px; OVERFLOW: hidden; HEIGHT: 0px
+}
+A {
+	COLOR: #009; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #800080
+}
+A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+A:focus {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+A.isLine {
+	TEXT-DECORATION: underline
+}
+.fred {
+	COLOR: #f00
+}
+.fred1 {
+	COLOR: #e00303
+}
+.blue {
+	COLOR: #003599
+}
+.grey {
+	COLOR: #545454
+}
+.space {
+	BACKGROUND: #fff; OVERFLOW: hidden; HEIGHT: 10px
+}
+.f12 {
+	FONT-SIZE: 12px
+}
+.f14 {
+	FONT-SIZE: 14px
+}
+.lh23 {
+	LINE-HEIGHT: 23px
+}
+.lh24 {
+	LINE-HEIGHT: 24px
+}
+.lh30 {
+	LINE-HEIGHT: 30px
+}
+H1 {
+	FONT-WEIGHT: normal
+}
+H2 {
+	FONT-WEIGHT: normal
+}
+H3 {
+	FONT-WEIGHT: normal
+}
+H4 {
+	FONT-WEIGHT: normal
+}
+H5 {
+	FONT-WEIGHT: normal
+}
+STRONG {
+	FONT-WEIGHT: normal
+}
+.wrap {
+	MARGIN: 0px auto; WIDTH: 950px
+}
+.secondaryHeader {
+	FONT-WEIGHT: 100; FONT-SIZE: 12px; BACKGROUND: url(http://i2.sinaimg.cn/dy/images/header/2008/standardl2nav_bg.gif) #fff repeat-x; OVERFLOW: hidden; COLOR: #000; HEIGHT: 33px
+}
+.secondaryHeader A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+.secondaryHeader A:visited {
+	COLOR: #000; TEXT-DECORATION: none
+}
+.secondaryHeader A:hover {
+	COLOR: #c00; TEXT-DECORATION: underline
+}
+.secondaryHeader A:active {
+	COLOR: #c00; TEXT-DECORATION: underline
+}
+.sHBorder {
+	BORDER-RIGHT: #e3e3e3 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #e3e3e3 1px solid; PADDING-LEFT: 12px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; BORDER-LEFT: #e3e3e3 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #e3e3e3 1px solid; ZOOM: 1
+}
+.sHLogo {
+	FLOAT: left; OVERFLOW: hidden; LINE-HEIGHT: 31px; HEIGHT: 31px
+}
+.sHLogo SPAN {
+	DISPLAY: block; FONT-SIZE: 27px; FLOAT: left; VERTICAL-ALIGN: middle; FONT-FAMILY: Arial; HEIGHT: 31px
+}
+.sHLogo SPAN A {
+	DISPLAY: block; FONT-SIZE: 27px; FLOAT: left; VERTICAL-ALIGN: middle; FONT-FAMILY: Arial; HEIGHT: 31px
+}
+.sHLogo SPAN {
+	VERTICAL-ALIGN: middle
+}
+.sHLogo SPAN A IMG {
+	VERTICAL-ALIGN: middle
+}
+.sHLinks {
+	FLOAT: right; LINE-HEIGHT: 31px
+}
+.navTop {
+	MARGIN-TOP: 10px; LINE-HEIGHT: 30px; HEIGHT: 30px
+}
+.navTop A {
+	COLOR: #666; TEXT-DECORATION: none
+}
+.navTop A:visited {
+	COLOR: #666; TEXT-DECORATION: none
+}
+.navTop A:hover {
+	COLOR: #f00; TEXT-DECORATION: none
+}
+.navTop LI {
+	BORDER-RIGHT: #cedcdf 1px solid; PADDING-RIGHT: 13px; PADDING-LEFT: 13px; FLOAT: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; PADDING-TOP: 0px; HEIGHT: 22px
+}
+.navTop LI A {
+	FONT-SIZE: 14px; COLOR: #666
+}
+.navTop .zckey {
+	PADDING-RIGHT: 40px; PADDING-LEFT: 50px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.navTop .zckey A {
+	FONT-SIZE: 16px; COLOR: #6d899e; FONT-FAMILY: "΢���ź�","����"
+}
+.navTop .zckey A:visited {
+	COLOR: #6d899e
+}
+.navTop .zckey A:hover {
+	COLOR: #6d899e
+}
+.navBot {
+	BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc01.png) no-repeat; HEIGHT: 63px
+}
+.navBot .zchot {
+	FLOAT: right; MARGIN: 15px 0px 0px; WIDTH: 650px; LINE-HEIGHT: 34px; HEIGHT: 34px
+}
+.navBot .zchot LABEL {
+	FONT-SIZE: 14px; FLOAT: left; COLOR: #d7e9d1; FONT-FAMILY: "΢���ź�","����"
+}
+.zctit1 {
+	BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc07.png) no-repeat; OVERFLOW: hidden; LINE-HEIGHT: 35px; HEIGHT: 35px
+}
+.zctit1 H2 {
+	PADDING-RIGHT: 18px; PADDING-LEFT: 18px; FONT-WEIGHT: normal; FONT-SIZE: 14px; FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #0053a6; PADDING-TOP: 0px; FONT-FAMILY: "΢���ź�","����"
+}
+.zctit1 H2 A {
+	COLOR: #0053a6
+}
+.zctit1 H2 A:visited {
+	COLOR: #0053a6
+}
+.zctit1 H2 A:hover {
+	COLOR: #f00
+}
+.zctit1 .more {
+	PADDING-RIGHT: 15px; FONT-SIZE: 12px; FLOAT: right
+}
+.zctit1 .more A {
+	COLOR: #0053a6
+}
+.zclist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.zclist A {
+	
+}
+.zclist A:visited {
+	
+}
+.zclist A:hover {
+	
+}
+.zclist LI {
+	FONT-SIZE: 12px; COLOR: #8b8b8b; TEXT-INDENT: 13px; LINE-HEIGHT: 20px
+}
+.zclist SPAN.extra {
+	FLOAT: right
+}
+.zclist_big LI {
+	BACKGROUND-POSITION: 0px 10px; FONT-SIZE: 14px; LINE-HEIGHT: 24px; HEIGHT: 24px
+}
+.zclist_noBg LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.zctable A {
+	COLOR: #0052a8
+}
+.zctable {
+	WIDTH: 193px; BORDER-COLLAPSE: collapse; TEXT-ALIGN: center
+}
+.zctable TH {
+	COLOR: #000; LINE-HEIGHT: 22px
+}
+.zctable TD {
+	OVERFLOW: hidden; COLOR: #8a8a8a; LINE-HEIGHT: 22px
+}
+.zctable TR.first {
+	BACKGROUND: #eee
+}
+.aBg0 IMG {
+	BORDER-RIGHT: #c7e4d0 1px solid; BORDER-TOP: #c7e4d0 1px solid; BORDER-LEFT: #c7e4d0 1px solid; BORDER-BOTTOM: #c7e4d0 1px solid
+}
+.aBg0:hover IMG {
+	BORDER-RIGHT: #f00 1px solid; BORDER-TOP: #f00 1px solid; BORDER-LEFT: #f00 1px solid; BORDER-BOTTOM: #f00 1px solid
+}
+.aBg1 IMG {
+	BORDER-RIGHT: #c7e4d0 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #c7e4d0 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #c7e4d0 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #c7e4d0 1px solid
+}
+.aBg1:hover IMG {
+	BORDER-RIGHT: #f00 1px solid; BORDER-TOP: #f00 1px solid; BORDER-LEFT: #f00 1px solid; BORDER-BOTTOM: #f00 1px solid
+}
+.aBg2 IMG {
+	BORDER-RIGHT: #c7e4d0 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #c7e4d0 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #c7e4d0 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #c7e4d0 1px solid
+}
+.aBg2:hover IMG {
+	BORDER-RIGHT: #f00 1px solid; BORDER-TOP: #f00 1px solid; BORDER-LEFT: #f00 1px solid; BORDER-BOTTOM: #f00 1px solid
+}
+.aBg3 IMG {
+	BORDER-RIGHT: #c7e4d0 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #c7e4d0 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #c7e4d0 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #c7e4d0 1px solid
+}
+.aBg3:hover IMG {
+	BORDER-RIGHT: #f00 1px solid; BORDER-TOP: #f00 1px solid; BORDER-LEFT: #f00 1px solid; BORDER-BOTTOM: #f00 1px solid
+}
+.zcblack {
+	COLOR: #000
+}
+A.zcblack:hover {
+	COLOR: #f00
+}
+.zcblue {
+	COLOR: #284275
+}
+A.zcblue:hover {
+	COLOR: #f00
+}
+.zcgrey {
+	COLOR: #828282
+}
+A.zcgrey:hover {
+	COLOR: #f00
+}
+.zcgreen {
+	COLOR: #026d43! important
+}
+.zcpart1 {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 20px
+}
+.zcpart1 .zcleft {
+	FLOAT: left; WIDTH: 735px
+}
+.zcpart1 .zcleft #slide_1 {
+	FLOAT: left; WIDTH: 165px
+}
+#slide_1 DT {
+	FONT-SIZE: 14px; BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc03.png) no-repeat; MARGIN-BOTTOM: 1px; WIDTH: 165px; CURSOR: pointer; COLOR: #fff; TEXT-INDENT: 22px; LINE-HEIGHT: 31px; FONT-FAMILY: Arial,"����"
+}
+#slide_1 DL DD {
+	DISPLAY: none
+}
+#slide_1 DD P {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 1px; WIDTH: 165px; COLOR: #fff; TEXT-INDENT: 22px; LINE-HEIGHT: 31px; BORDER-BOTTOM: #ccc 1px dashed; FONT-FAMILY: Arial
+}
+#slide_1 DD P A {
+	DISPLAY: block; COLOR: #5b93ae
+}
+#slide_1 DD P A:hover {
+	BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc14.png) no-repeat right 6px; COLOR: #5b93ae
+}
+#slide_1 DD P .selected {
+	FONT-WEIGHT: bold; BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc14.png) no-repeat right 6px
+}
+#slide_1 .zc_up {
+	BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc03.png) no-repeat
+}
+#slide_1 .zc_down {
+	BACKGROUND: url(http://finance.sina.com.cn/calc/images/leftnavbg2.gif) no-repeat 0px -1px
+}
+#slide_1 .zc_show DD {
+	DISPLAY: block
+}
+.zcpart1 .zcleft .contant {
+	FLOAT: right; WIDTH: 560px
+}
+.contant H2 {
+	BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc12.png) no-repeat; FONT: bold 18px/63px Arial,"����"; OVERFLOW: hidden; COLOR: #0152a6; TEXT-INDENT: 25px; HEIGHT: 52px
+}
+.contant .zccont {
+	BORDER-RIGHT: #adccd1 1px solid; PADDING-RIGHT: 12px; BORDER-TOP: #adccd1 0px solid; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; BORDER-LEFT: #adccd1 1px solid; PADDING-TOP: 15px; BORDER-BOTTOM: #adccd1 1px solid
+}
+.contant .zcblks {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 15px; BORDER-BOTTOM: #ccc 1px dashed; POSITION: relative; HEIGHT: 23px
+}
+.zcblks LABEL {
+	FONT-SIZE: 14px; FLOAT: left; OVERFLOW: hidden; WIDTH: 200px; COLOR: #0152a4; TEXT-INDENT: 10px
+}
+.zcblks SPAN {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 120px; COLOR: #585858
+}
+.zcblks INPUT {
+	BORDER-RIGHT: #bacbd3 1px solid; BORDER-TOP: #bacbd3 1px solid; FLOAT: left; BORDER-LEFT: #bacbd3 1px solid; WIDTH: 130px; LINE-HEIGHT: 18px; BORDER-BOTTOM: #bacbd3 1px solid; HEIGHT: 18px
+}
+.zcblks .cal {
+	DISPLAY: inline; BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc13.png) red no-repeat; FLOAT: left; MARGIN-LEFT: 10px; WIDTH: 26px; HEIGHT: 23px
+}
+.contant .zcsp {
+	HEIGHT: 70px
+}
+.zcsp LABEL {
+	FONT-SIZE: 14px; FLOAT: left; OVERFLOW: hidden; WIDTH: 90px; COLOR: #0152a4
+}
+.zcsp DL {
+	FLOAT: left; WIDTH: 215px
+}
+.zcsp DT {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 5px; COLOR: #017eb8; LINE-HEIGHT: 22px
+}
+.zcsp2 {
+	PADDING-RIGHT: 15px; HEIGHT: 53px
+}
+.zcsp2 INPUT {
+	MARGIN-TOP: 15px; FONT-SIZE: 14px; BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc15.png) no-repeat; FLOAT: right; MARGIN-LEFT: 5px; VERTICAL-ALIGN: middle; WIDTH: 67px; COLOR: #fff; BORDER-TOP-STYLE: none; LINE-HEIGHT: 30px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 30px; BORDER-BOTTOM-STYLE: none
+}
+.zch2 {
+	MARGIN-BOTTOM: 10px; WIDTH: 200px; LINE-HEIGHT: 25px; BORDER-BOTTOM: #80ccee 1px solid; HEIGHT: 25px
+}
+.zch2 H4 {
+	FONT-SIZE: 16px; FLOAT: left; COLOR: #0052a2; BORDER-BOTTOM: #80ccee 1px solid; FONT-FAMILY: "΢���ź�","����"
+}
+.zcsp3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 15px
+}
+.zcsp3 LABEL {
+	FONT-SIZE: 14px; FLOAT: left; WIDTH: 200px; COLOR: #0152a4; TEXT-INDENT: 10px
+}
+.zcsp3 TEXTAREA {
+	BORDER-RIGHT: #dcdcdc 1px solid; BORDER-TOP: #dcdcdc 1px solid; MARGIN-TOP: 5px; BORDER-LEFT: #dcdcdc 1px solid; WIDTH: 522px; BORDER-BOTTOM: #dcdcdc 1px solid; HEIGHT: 85px
+}
+.zcsp4 {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 15px; POSITION: relative; HEIGHT: 31px
+}
+.zcsp4 .download {
+	FONT-SIZE: 14px; BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc16.png) no-repeat; FLOAT: right; VERTICAL-ALIGN: middle; WIDTH: 119px; COLOR: #fff; BORDER-TOP-STYLE: none; LINE-HEIGHT: 31px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 31px; BORDER-BOTTOM-STYLE: none
+}
+.hide {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; Z-INDEX: 20; BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc10.png) no-repeat; LEFT: 380px; PADDING-BOTTOM: 0px; WIDTH: 180px; COLOR: #828282; PADDING-TOP: 10px; POSITION: absolute; TOP: -23px; HEIGHT: 38px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale, src='http://finance.sina.com.cn/calc/images/count_wzc10.png')
+}
+.hide .cancel {
+	BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc09.png) no-repeat; FLOAT: left; WIDTH: 18px; CURSOR: pointer; MARGIN-RIGHT: 3px; HEIGHT: 18px
+}
+.hide2 {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; Z-INDEX: 2; BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc11.png) no-repeat; LEFT: 66px; PADDING-BOTTOM: 15px; WIDTH: 295px; PADDING-TOP: 15px; POSITION: absolute; TOP: 20px; HEIGHT: 63px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale, src='http://finance.sina.com.cn/calc/images/count_wzc11.png')
+}
+.hide2 P {
+	LINE-HEIGHT: 30px; HEIGHT: 30px
+}
+.hide2 LABEL {
+	FONT-SIZE: 14px; FLOAT: left; WIDTH: 95px; COLOR: #0052a6; LINE-HEIGHT: 30px; HEIGHT: 30px
+}
+.hide2 INPUT {
+	MARGIN-TOP: 5px; FLOAT: right; OVERFLOW: hidden; WIDTH: 192px; LINE-HEIGHT: 14px; HEIGHT: 14px
+}
+.hide2 SELECT {
+	MARGIN-TOP: 5px; FONT-SIZE: 14px; FLOAT: right; WIDTH: 196px
+}
+.zcpart1 .zcright {
+	FLOAT: right; WIDTH: 205px
+}
+.zcblks2 {
+	MARGIN-BOTTOM: 10px
+}
+.zcblks2 .zccont {
+	BORDER-RIGHT: #e1e1e1 1px solid; BORDER-TOP: #e1e1e1 0px solid; BORDER-LEFT: #e1e1e1 1px solid; BORDER-BOTTOM: #e1e1e1 0px solid
+}
+.zcblks2 .zcbot {
+	CLEAR: both; FONT-SIZE: 0px; BACKGROUND: url(http://finance.sina.com.cn/calc/images/count_wzc08.png) no-repeat; LINE-HEIGHT: 9px; HEIGHT: 7px
+}
+.zcblks2 .zclist A {
+	COLOR: #6b6b6b
+}
+.zcblks2 .zclist A:visited {
+	COLOR: #800080
+}
+.zcblks2 .zclist A:hover {
+	COLOR: #f00
+}
+.zccont {
+	
+}
+.zccont TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; HEIGHT: 23px
+}
+.zccont THEAD {
+	BACKGROUND: #eeeeee
+}
+.L {
+	COLOR: #0052a8
+}
+.R {
+	COLOR: #848406; TEXT-ALIGN: right
+}
+.R2 {
+	COLOR: #848406
+}
+.imgnav {
+	DISPLAY: block; OVERFLOW: hidden; WIDTH: 200px; HEIGHT: 100%
+}
+#qa {
+	FLOAT: right; MARGIN-RIGHT: 10px
+}
+#qa A {
+	COLOR: #fff
+}
+
+/*用户所在位置*/
+.position{ padding:10px 0px 14px; color:#000; line-height:24px; text-align:left;  font-size:14px; width: 1000px; margin: 0 auto;}
+.position a:link,#position a:visited{ text-align:left; color:#000;   padding-bottom:4px; font-size:14px;}
+.position a:hover{color:#ff9600; text-decoration:underline;}
+.position .share { float: right;  line-height: 24px; border: none; }
+.position .share a{ text-decoration: none;}
+

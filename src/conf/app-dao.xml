@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	
+	<bean id="genericDao" abstract="true" class="com.hurong.core.dao.impl.GenericDaoImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"/>
+   		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+   	<bean id="baseDao" abstract="true" class="com.hurong.core.dao.impl.BaseDaoImpl" parent="genericDao"/>
+   	<!-- 
+   	<bean id="dynamicDao" class="com.hurong.core.dao.impl.DynamicDaoImpl">
+   		<property name="sessionFactory" ref="sessionFactory"/>
+   	</bean>
+ 	-->
+	<bean id="androidAppDao" class="com.hurong.credit.dao.android.impl.AndroidAppDaoImpl" parent="baseDao">
+	</bean>
+ 	<!-- start:  Generated for ArticleCategory From Template: app-dao.xml.beansvm  -->
+	<bean id="articlecategoryDao" class="com.hurong.credit.dao.article.impl.ArticleCategoryDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for ArticleCategory From Template: app-dao.xml.beansvm  -->
+
+
+<bean id="maliciousRecordDAO" class="com.hurong.credit.dao.customer.impl.MaliciousRecordDAOImpl" parent="baseDao"/>
+
+<!-- start:  Generated for Article From Template: app-dao.xml.beansvm  -->
+	<bean id="articleDao" class="com.hurong.credit.dao.article.impl.ArticleDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for Article From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for P2pFriendlink From Template: app-dao.xml.beansvm  -->
+	<bean id="p2pFriendlinkDao" class="com.hurong.credit.dao.article.impl.P2pFriendlinkDaoImpl" parent="baseDao"/>
+		<bean id="p2pBannerlinkDao" class="com.hurong.credit.dao.article.impl.P2pBannerlinkDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for P2pFriendlink From Template: app-dao.xml.beansvm  -->
+   	<bean id="bpCustPersonEducationDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.BpCustPersonEducationDaoImpl" parent="baseDao"/>
+	<!-- start:  Generated for BpCustMember From Template: app-dao.xml.beansvm  -->
+	<bean id="bpCustMemberDao" class="com.hurong.credit.dao.user.impl.BpCustMemberDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpCustMember From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for CsDicAreaDynam From Template: app-dao.xml.beansvm  -->
+	<bean id="csDicAreaDynamDao" class="com.hurong.credit.dao.user.impl.CsDicAreaDynamDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for CsDicAreaDynam From Template: app-dao.xml.beansvm  -->
+
+<!-- start:  Generated for BpDicArea From Template: app-dao.xml.beansvm  -->
+	<bean id="bpDicAreaDao" class="com.hurong.credit.dao.user.impl.BpDicAreaDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpDicArea From Template: app-dao.xml.beansvm  -->
+
+<bean id="dictionaryDao" class="com.hurong.credit.dao.system.product.impl.DictionaryDaoImpl" parent="baseDao"/>
+
+<!-- start:  Generated for BpCustLoginlog From Template: app-dao.xml.beansvm  -->
+	<bean id="bpCustLoginlogDao" class="com.hurong.credit.dao.user.impl.BpCustLoginlogDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpCustLoginlog From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for IndexShow From Template: app-dao.xml.beansvm  -->
+	<bean id="indexShowDao" class="com.hurong.credit.dao.system.impl.IndexShowDaoImpl" parent="baseDao"/>
+	<bean id="globalTypeDao" class="com.hurong.credit.dao.system.product.impl.GlobalTypeDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for IndexShow From Template: app-dao.xml.beansvm  -->
+<bean id="bpFundProjectDao" class="com.hurong.credit.dao.creditFlow.fund.project.impl.BpFundProjectDaoImpl" parent="baseDao"/>
+
+<!-- 日志接口 -->
+<bean id="userloginlogsDao" class="com.hurong.credit.dao.creditFlow.log.impl.UserloginlogsDaoImpl" parent="baseDao"/>
+<!--  -->
+<bean id="slSmallloanProjectDao" class="com.hurong.credit.dao.creditFlow.smallLoan.project.impl.SlSmallloanProjectDaoImpl" parent="baseDao"/>
+<!-- 互联网金融 -->
+
+<!-- start:  Generated for BpBusinessDirPro From Template: app-dao.xml.beansvm  -->
+	<bean id="bpBusinessDirProDao" class="com.hurong.credit.dao.creditFlow.financingAgency.business.impl.BpBusinessDirProDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpBusinessDirPro From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for BpBusinessOrPro From Template: app-dao.xml.beansvm  -->
+	<bean id="bpBusinessOrProDao" class="com.hurong.credit.dao.creditFlow.financingAgency.business.impl.BpBusinessOrProDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpBusinessOrPro From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for BpPersionDirPro From Template: app-dao.xml.beansvm  -->
+	<bean id="bpPersionDirProDao" class="com.hurong.credit.dao.creditFlow.financingAgency.persion.impl.BpPersionDirProDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpPersionDirPro From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for BpPersionOrPro From Template: app-dao.xml.beansvm  -->
+	<bean id="bpPersionOrProDao" class="com.hurong.credit.dao.creditFlow.financingAgency.persion.impl.BpPersionOrProDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpPersionOrPro From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for PlBidInfo From Template: app-dao.xml.beansvm  -->
+	<bean id="plBidInfoDao" class="com.hurong.credit.dao.creditFlow.financingAgency.impl.PlBidInfoDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for PlBidInfo From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for PlBidPlan From Template: app-dao.xml.beansvm  -->
+	<bean id="plBidPlanDao" class="com.hurong.credit.dao.creditFlow.financingAgency.impl.PlBidPlanDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for PlBidPlan From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for PlBiddingType From Template: app-dao.xml.beansvm  -->
+	<bean id="plBiddingTypeDao" class="com.hurong.credit.dao.creditFlow.financingAgency.typeManger.impl.PlBiddingTypeDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for PlBiddingType From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for PlBusinessDirProKeep From Template: app-dao.xml.beansvm  -->
+	<bean id="plBusinessDirProKeepDao" class="com.hurong.credit.dao.creditFlow.financingAgency.business.impl.PlBusinessDirProKeepDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for PlBusinessDirProKeep From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for PlKeepCreditlevel From Template: app-dao.xml.beansvm  -->
+	<bean id="plKeepCreditlevelDao" class="com.hurong.credit.dao.creditFlow.financingAgency.typeManger.impl.PlKeepCreditlevelDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for PlKeepCreditlevel From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for PlKeepGtorz From Template: app-dao.xml.beansvm  -->
+	<bean id="plKeepGtorzDao" class="com.hurong.credit.dao.creditFlow.financingAgency.typeManger.impl.PlKeepGtorzDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for PlKeepGtorz From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for PlKeepProtype From Template: app-dao.xml.beansvm  -->
+	<bean id="plKeepProtypeDao" class="com.hurong.credit.dao.creditFlow.financingAgency.typeManger.impl.PlKeepProtypeDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for PlKeepProtype From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for PlPersionDirProKeep From Template: app-dao.xml.beansvm  -->
+	<bean id="plPersionDirProKeepDao" class="com.hurong.credit.dao.creditFlow.financingAgency.persion.impl.PlPersionDirProKeepDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for PlPersionDirProKeep From Template: app-dao.xml.beansvm  -->
+
+
+<!-- start:  Generated for BpMoneyManager From Template: app-dao.xml.beansvm  -->
+	<bean id="bpMoneyManagerDao" class="com.hurong.credit.dao.financePurchase.impl.BpMoneyManagerDaoImpl" parent="baseDao"/>
+	
+	<bean id="BpFinanceApplyUserDao" class="com.hurong.credit.dao.financePurchase.impl.BpFinanceApplyUserDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpMoneyManager From Template: app-dao.xml.beansvm  -->
+
+<!-- start:  Generated for OaNewsMessage From Template: app-dao.xml.beansvm  -->
+	<bean id="oaNewsMessageDao" class="com.hurong.credit.dao.message.impl.OaNewsMessageDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for OaNewsMessage From Template: app-dao.xml.beansvm  -->
+
+<!-- start:  Generated for WebFinanceApplyUploadsDao From Template: app-dao.xml.beansvm  -->
+	<bean id="webFinanceApplyUploadsDao" class="com.hurong.credit.dao.materials.impl.WebFinanceApplyUploadsDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for WebFinanceApplyUploadsDao From Template: app-dao.xml.beansvm  -->
+
+<!-- start:  Generated for BankCode From Template: app-dao.xml.beansvm  -->
+	<bean id="bankCodeDao" class="com.hurong.credit.dao.pay.impl.BankCodeDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BankCode From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for ThirdPayMessage From Template: app-dao.xml.beansvm  -->
+	<bean id="thirdPayMessageDao" class="com.hurong.credit.dao.pay.impl.ThirdPayMessageDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for ThirdPayMessage From Template: app-dao.xml.beansvm  -->
+<!-- 金融中介  -->
+<bean id="investPersonInfoDao" class="com.hurong.credit.dao.customer.impl.InvestPersonInfoDaoImpl" parent="baseDao"/>
+
+
+<!-- start:  Generated for BpCustRelation From Template: app-dao.xml.beansvm  -->
+	<bean id="bpCustRelationDao" class="com.hurong.credit.dao.customer.impl.BpCustRelationDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpCustRelation From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for BpCustRelation From Template: app-dao.xml.beansvm  -->
+	
+<!-- end:  Generated for BpCustRelation From Template: app-dao.xml.beansvm  -->
+
+
+<!-- start:  Generated for BpBidLoan From Template: app-dao.xml.beansvm  -->
+	<bean id="bpBidLoanDao" class="com.hurong.credit.dao.pay.impl.BpBidLoanDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpBidLoan From Template: app-dao.xml.beansvm  -->
+<bean id="bpFundIntentDao" class="com.hurong.credit.dao.creditFlow.finance.impl.BpFundIntentDaoImpl" parent="baseDao"/>
+<bean id="sysConfigDao" class="com.hurong.credit.dao.system.impl.SysConfigDaoImpl"
+		parent="baseDao" />
+		<!-- 产品配置  -->
+		<bean id="bpProductParameterDao" class="com.hurong.credit.dao.system.product.impl.BpProductParameterDaoImpl" parent="baseDao"/>
+		
+<!-- start:  Generated for PlThirdInterfaceLog From Template: app-dao.xml.beansvm  -->
+	<bean id="plThirdInterfaceLogDao" class="com.hurong.credit.dao.thirdInterface.impl.PlThirdInterfaceLogDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for PlThirdInterfaceLog From Template: app-dao.xml.beansvm  -->
+<!-- 招标计划 -->
+<bean id="plManageMoneyPlanDao" class="com.hurong.credit.dao.financingAgency.manageMoney.impl.PlManageMoneyPlanDaoImpl" parent="baseDao"/>		
+<bean id="plManageMoneyPlanBuyinfoDao" class="com.hurong.credit.dao.financingAgency.manageMoney.impl.PlManageMoneyPlanBuyinfoDaoImpl" parent="baseDao"/>		
+<bean id="plManageMoneyTypeDao" class="com.hurong.credit.dao.financingAgency.manageMoney.impl.PlManageMoneyTypeDaoImpl" parent="baseDao"/>	
+<bean id="plMmObligatoryRightChildrenDao" class="com.hurong.credit.dao.financingAgency.manageMoney.impl.PlMmObligatoryRightChildrenDaoImpl" parent="baseDao"/>
+<bean id="plMmOrderChildrenOrDao" class="com.hurong.credit.dao.financingAgency.manageMoney.impl.PlMmOrderChildrenOrDaoImpl" parent="baseDao"/>
+<bean id="plEarlyRedemptionDao" class="com.hurong.credit.dao.financingAgency.manageMoney.impl.PlEarlyRedemptionDaoImpl" parent="baseDao"/>
+<import resource="classpath:com/hurong/credit/dao/creditFlow/creditAssignment/xmls/app-dao.xml"/>	
+<import resource="classpath:com/hurong/credit/dao/creditFlow/multiLevelDic/xmls/app-dao.xml"/>
+<!-- start:  Generated for WebBankCode From Template: app-dao.xml.beansvm  -->
+	<bean id="webBankCodeDao" class="com.hurong.credit.dao.thirdInterface.impl.WebBankCodeDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for WebBankCode From Template: app-dao.xml.beansvm  -->
+
+<bean id="csBankDao"
+		class="com.hurong.credit.dao.thirdInterface.impl.CsBankDaoImpl"
+		parent="baseDao" />
+<!-- start:  Generated for WebBankcard From Template: app-dao.xml.beansvm  -->
+	<bean id="webBankcardDao" class="com.hurong.credit.dao.thirdInterface.impl.WebBankcardDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for WebBankcard From Template: app-dao.xml.beansvm  -->
+<!-- 互联网 金融前台展示贷款材料 -->
+  
+<!-- start:  Generated for PlWebShowMaterials From Template: app-dao.xml.beansvm  -->
+	<bean id="plWebShowMaterialsDao" class="com.hurong.credit.dao.p2p.materials.impl.PlWebShowMaterialsDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for PlWebShowMaterials From Template: app-dao.xml.beansvm  -->
+
+<bean id="ourProcreditAssuretenetDao"
+		class="com.hurong.credit.dao.creditFlow.assuretenet.impl.OurProcreditAssuretenetDaoImpl"
+		parent="baseDao" />
+		<bean id="slProcreditAssuretenetDao"
+		class="com.hurong.credit.dao.creditFlow.assuretenet.impl.SlProcreditAssuretenetDaoImpl"
+		parent="baseDao" />
+		
+		<bean id="plBidAutoDao"
+		class="com.hurong.credit.dao.creditFlow.auto.impl.PlBidAutoDaoImpl"
+		parent="baseDao" />
+		
+		<bean id="ourProcreditMaterialsEnterpriseDao"
+		class="com.hurong.credit.dao.creditFlow.materials.impl.OurProcreditMaterialsEnterpriseDaoImpl"
+		parent="baseDao" />
+
+<!--    -->
+	<!-- start:  Generated for BpFinanceApply From Template: app-dao.xml.beansvm  -->
+	<bean id="bpFinanceApplyDao" class="com.hurong.credit.dao.p2p.impl.BpFinanceApplyDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for BpFinanceApply From Template: app-dao.xml.beansvm  -->
+	<bean id="slFundIntentDao" class="com.hurong.credit.dao.creditFlow.finance.impl.SlFundIntentDaoImpl" parent="baseDao"/>
+<bean id="plMmOrderAssignInterestDao" class="com.hurong.credit.dao.financingAgency.manageMoney.impl.PlMmOrderAssignInterestDaoImpl" parent="baseDao"/>
+
+	 <bean id="csPersonHouseDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.CsPersonHouseDaoImpl" parent="baseDao"/>
+	<bean id="csPersonCarDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.CsPersonCarDaoImpl" parent="baseDao"/>
+	<bean id="personDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.PersonDaoImpl" parent="baseDao"/>
+	<bean id="personRelationDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.PersonRelationDaoImpl" parent="baseDao"/>
+	<bean id="bpCustPersonNegativeSurveyDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.BpCustPersonNegativeSurveyDaoImpl" parent="baseDao"/>
+	<bean id="bpCustPersonPublicActivityDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.BpCustPersonPublicActivityDaoImpl" parent="baseDao"/>
+	<bean id="bpCustPersonWorkExperienceDao" class="com.hurong.credit.dao.creditFlow.customer.person.impl.BpCustPersonWorkExperienceDaoImpl" parent="baseDao"/>
+	<bean id="enterpriseDao" class="com.hurong.credit.dao.creditFlow.customer.enterprise.impl.EnterpriseDaoImpl" parent="baseDao"/>
+	<bean id="slEarlyRepaymentRecordDao"
+		class="com.hurong.credit.dao.creditFlow.smallLoan.finance.impl.SlEarlyRepaymentRecordDaoImpl"
+		parent="baseDao" />
+		<bean id="plBidSaleDao" class="com.hurong.credit.dao.creditFlow.financingAgency.impl.PlBidSaleDaoImpl" parent="baseDao"/>
+
+	    <!--会员等级设置dao配置	-->
+	<bean id="memberGradeSetDao" class="com.hurong.credit.dao.creditFlow.bonusSystem.gradeSet.impl.MemberGradeSetDaoImpl" parent="baseDao"/>
+	
+	<bean id="webBonusSettingDao" class="com.hurong.credit.dao.creditFlow.bonusSystem.setting.impl.WebBonusSettingDaoImpl" parent="baseDao"/>
+	<bean id="webBonusRecordDao" class="com.hurong.credit.dao.creditFlow.bonusSystem.record.impl.WebBonusRecordDaoImpl" parent="baseDao"/>
+     
+	<bean id="bpActivityManageDao" class="com.hurong.credit.dao.activity.impl.BpActivityManageDaoImpl" parent="baseDao"/>
+	
+	<bean id="bpCustRedEnvelopeDao" class="com.hurong.credit.dao.p2p.redMoney.impl.BpCustRedEnvelopeDaoImpl" parent="baseDao"/>
+	
+	<bean id="bpCustRedMemberDao" class="com.hurong.credit.dao.p2p.redMoney.impl.BpCustRedMemberDaoImpl" parent="baseDao"/>
+	<bean id="oaNewsMessagerinfoDao" class="com.hurong.credit.dao.message.impl.OaNewsMessagerinfoDaoImpl" parent="baseDao"/>
+	
+	
+<!-- start:  Generated for P2pLoanProduct From Template: app-dao.xml.beansvm  -->
+	<bean id="p2pLoanProductDao" class="com.hurong.credit.dao.p2p.loan.impl.P2pLoanProductDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for P2pLoanProduct From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for P2pLoanConditionOrMaterial From Template: app-dao.xml.beansvm  -->
+	<bean id="p2pLoanConditionOrMaterialDao" class="com.hurong.credit.dao.p2p.loan.impl.P2pLoanConditionOrMaterialDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for P2pLoanConditionOrMaterial From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for P2pLoanRate From Template: app-dao.xml.beansvm  -->
+	<bean id="p2pLoanRateDao" class="com.hurong.credit.dao.p2p.loan.impl.P2pLoanRateDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for P2pLoanRate From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for P2pLoanApplyStep From Template: app-dao.xml.beansvm  -->
+	<bean id="p2pLoanApplyStepDao" class="com.hurong.credit.dao.p2p.loan.impl.P2pLoanApplyStepDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for P2pLoanApplyStep From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for P2pLoanBasisMaterial From Template: app-dao.xml.beansvm  -->
+	<bean id="p2pLoanBasisMaterialDao" class="com.hurong.credit.dao.p2p.loan.impl.P2pLoanBasisMaterialDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for P2pLoanBasisMaterial From Template: app-dao.xml.beansvm  -->
+<bean id="fileFormDao" class="com.hurong.credit.dao.creditFlow.fileForm.impl.FileFormDaoImpl" parent="baseDao"/>
+<!-- start:第三方调用日志 -->
+<bean id="thirdPayRecordDao" class="com.thirdPayInterface.ThirdPayLog.dao.impl.ThirdPayRecordDaoImpl" parent="baseDao"/>
+<!-- end -->	
+<!-- start:第三方调用日志 -->
+<bean id="thirdPayLogDao" class="com.thirdPayInterface.ThirdPayLog.dao.impl.ThirdPayLogDaoImpl" parent="baseDao"/>
+<!-- end -->	
+
+	<import resource="classpath:com/hurong/credit/dao/coupon/xmls/dao-coupon.xml"/>	
+	<import resource="classpath:com/hurong/credit/dao/financeProduct/xmls/dao-financeProduct.xml"/>
+	<import resource="classpath:com/hurong/credit/dao/creditFlow/finance/compensatory/xmls/appcompensatory-dao.xml"/>
+	<!-- start:  Generated for PlatDataPublish From Template: app-dao.xml.beansvm  -->
+	<bean id="platDataPublishDao" class="com.hurong.credit.dao.p2p.impl.PlatDataPublishDaoImpl" parent="baseDao"/>
+	<!-- end:  Generated for PlatDataPublish From Template: app-dao.xml.beansvm  -->
+<!-- start:  Generated for WebBankCodeFudian From Template: app-dao.xml.beansvm  -->
+	<bean id="webBankCodeFudianDao" class="com.hurong.credit.dao.credit.thirdInterface.impl.WebBankCodeFudianDaoImpl" parent="baseDao"/>
+<!-- end:  Generated for WebBankCodeFudian From Template: app-dao.xml.beansvm  -->
+</beans>

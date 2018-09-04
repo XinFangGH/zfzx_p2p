@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container .header { margin-bottom: 15px; border-bottom: 1px solid #d5d5d5; }
+.contents .aside { width: 174px; }
+.contents .main { width: 795px; }
+.account-info .hd { border-bottom: 1px solid #ff9e5e; color: #fff; font-size: 14px; height: 34px; line-height: 34px; text-align: center; margin-bottom: 15px; }
+.account-info .hd h2 { background-color: #ff9e5e; float: left; height: 34px; padding: 0 15px; }
+.account-info ul.bd { padding: 0 10px; line-height: normal; }
+.account-info .myinfo li { font-size: 14px; line-height: 28px; }
+.account-info .myinfo li a { color: #c02126; }
+.account-info .avatar-wrap { margin: 15px 0; }
+.account-info .avatar-wrap .frame { background: url(../images/frame.png) no-repeat 0 0; height: 144px; margin: 0 30px 0 10px; width: 144px; }
+.account-info .avatar-wrap .frame img { margin: 8px; border-radius: 5px; }
+.account-info .avatar-wrap .upload-avatar { margin-top: 25px; }
+.account-info .avatar-wrap .upload-avatar p { color: #666; line-height: 22px; margin-bottom: 15px; }
+
+.account-info .bd a.certified { background-image: url(../images/icon.png); background-repeat: no-repeat; padding: 5px 12px; text-decoration: none; }
+.account-info .bd a.unname { background-position: 0 -28px; }
+.account-info .bd a.name { background-position: 0 0; }
+.account-info .bd a.unmobile { background-position: -36px 0; }
+.account-info .bd a.mobile { background-position: -36px -28px; }
+
+.account-info .bd table { width: 100%; }
+.account-info .bd table th,
+.account-info .bd table td { border: 1px solid #d5d5d5; height: 36px; text-align: center; }
+.account-info .bd table td > a { margin: 0 10px; display: block; height: 36px; line-height: 36px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 110px; }
+.account-info .bd table td > span { margin-left: 5px; display: block; height: 36px; line-height: 36px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 55px; }
+.account-info .bd table th { background-color: #f4f4f4; }
+
+/* 杩樻璁板綍 */
+.account-info .tab-cont ul li { float: left; text-align: center; height: 36px; line-height: 36px; }
+.account-info .outer-wrap { border: 1px solid #d5d5d5; }
+.account-info .outer-wrap .thead { border-bottom: 1px solid #d5d5d5; }
+.account-info .outer-wrap .thead li { background-color: #ececec; line-height: 36px; border-right: 1px solid #ececec; }
+.account-info .outer-wrap > dd { border-bottom: 1px solid #d5d5d5;  }
+.account-info .outer-wrap > dd.last { border-bottom: none; }
+.account-info .outer-wrap .repay li { border-right: 1px solid #d5d5d5; }
+
+.account-info ul.repay li { height: 36px; line-height: 36px; border-right: 1px solid #d5d5d5; }
+/*.account-info ul.repay li.b { line-height: 18px; }*/
+/*.account-info .outer-wrap ul li.a { width: 95px; }*/
+.account-info .outer-wrap ul li.b { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 156px; }
+/*.account-info .outer-wrap ul li.c { width: 60px; }*/
+.account-info .outer-wrap ul li.d { width: 95px; }
+.account-info .outer-wrap ul li.e { width: 65px; }
+.account-info .outer-wrap ul li.f { width: 50px; }
+.account-info .outer-wrap ul li.g { width: 110px; }
+.account-info .outer-wrap ul li.h { width: 117px; }
+.account-info .outer-wrap ul li.i { width: 117px; }
+.account-info .outer-wrap ul li.j { width: 42px; border-right: none; }
+.account-info .outer-wrap ul li.j a { background-image: url(../images/arrow_slide.png); background-repeat: no-repeat; background-position: 3px -82px; display: block; margin: 6px 10px; height: 24px; width: 24px; text-indent: -99999em; }
+.account-info .inner-wrap { display: none; }
+.account-info .inner-wrap .thead { border-top: 1px solid #d5d5d5; border-bottom: 1px solid #ffd675; }
+.account-info .inner-wrap .thead li { background-color: #fffcdd; line-height: 36px; border-right: 1px solid #fffcdd; }
+.account-info .inner-wrap > dd { border-bottom: 1px solid #ffd675;  }
+.account-info .inner-wrap > dd.last { border-bottom: none; }
+.account-info .inner-wrap .detail li { border-right: 1px solid #ffd675; background-color: #fffcdd; }
+.account-info .inner-wrap ul li.aa { width: 50px; }
+.account-info .inner-wrap ul li.bb { width: 80px; }
+.account-info .inner-wrap ul li.cc { width: 100px; }
+.account-info .inner-wrap ul li.dd { width: 100px; }
+.account-info .inner-wrap ul li.ee { width: 120px; }
+.account-info .inner-wrap ul li.ff { width: 120px; }
+.account-info .inner-wrap ul li.gg { width: 115px; }
+.account-info .inner-wrap ul li.hh { width: 68px; border-right: 1px solid #fffcdd; }
+
+
+/* 涓汉璧勬枡 */
+.account-info form.bd { padding: 0 10px; }
+.account-info .bd dd {width:780px; font-size: 14px; line-height: 30px; margin: 15px 0; position: relative; }
+.account-info .bd dd span.sex label { margin-top: 0; }
+.account-info .bd dd > label { float: left; margin-top: 0; width: 80px; text-align: right; margin-right: 15px; }
+.account-info .authenticate dd > label { width: 160px; }
+.account-info dl dd:after { content: ""; clear: both; display: table; }
+.account-info .bd dd .submit-btn { margin: 15px 0 15px 95px; }
+
+
+/* 璐︽埛鍏呭€� */
+.process-wrap { border-bottom: 1px solid #f0f0f0; padding-bottom: 15px; }
+.process { background-image: url(../images/prepaidstep_bg.png); background-repeat: no-repeat; height: 32px; }
+.step-1 { background-position: 0 0; }
+.step-2 { background-position: 0 -39px; }
+.step-3 { background-position: 0 -79px; }
+.process li { float: left; margin-right: 10px; height: 32px; line-height: 32px; text-align: center; width: 126px; }
+.process li:first-child { width: 150px; }
+.process li.second { margin-right: 20px; width: 115px; }
+.process li:last-child { width: 105px; }
+.process li.here { color: #fff; }
+
+.account-info .bd h3 { font-size: 14px; font-weight: bold; line-height: 26px; margin: 10px 0; }
+.account-info .control .btn { background: url(../images/tab_page_bg.jpg) repeat-x 0 0; border: 1px solid #d5d5d5; border-radius: 5px; color: #646464; float: left; font-size: 14px; height: 28px; line-height: 28px; text-align: center; text-decoration: none; margin: 0; width: 105px; }
+.account-info .control .btn:hover { background: url(../images/tab_page_bg.jpg) repeat-x 0 0; }
+
+/* 閾惰鍗� */
+.cardbank-content { background-color: #f2f2f2; padding: 10px 25px; text-align: center; }
+.enterprise {
+	/*padding: 20px 40px;*/
+}
+.cardbank-content .list-icons li { margin-bottom: 0px; padding-bottom: 10px; }
+.list-icons li { float: left; margin-right: 0; width: 173px; }
+.list-icons input { vertical-align: middle; }
+.list-icons .current, .ui-list-icons .hover { border-color: #fa3!important; }
+.account-info ul.list-icons li {
+	height: 43px;
+	line-height: 43px;
+	margin: 0 15px 10px 0;
+}
+.list-icons .icon-box {
+	border: 1px solid #d5d5d5;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+	left: 3px;
+}
+
+.list-icons .icon-box .icon {
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	overflow: hidden;
+	background-color: #fff;
+	width: 150px;
+}
+.list-icons .icon-box .icon img {
+	vertical-align: middle;
+}
+
+.list-icons .icon-box:hover {
+	border-color: #fa3!important;
+}
+
+.enterprise .list-icons .icon-info {
+	background-color: #d2eef7;
+	border: 1px solid #DDD;
+	border-left: none;
+	font-weight: normal;
+	height: 100%;
+	left: 123px;
+	padding: 0 3px;
+	position: absolute;
+	top: -1px;
+	line-height: 18px; 
+}
+
+.ABC, .ARCU, .AYCB, .BANKWF, .BGB, .BHB, .BJBANK, .BOC, .BOCD, .BOCY, .BOD, .BODD, .BOJZ, .BOP, .BOQH, .BOSH, .BOSZ, .BOYK, .BOZK, .BSB, .BZMD, .CABANK, .CBKF, .CCB, .CCQTGB, .CDCB, .CDRCB, .CEB, .CGNB, .CIB, .CITIC, .CMB, .CMBC, .COMM, .CQBANK, .CRCBANK, .CSCB, .CSRCB, .CZCB, .CZCCB, .CZRCB, .DAQINGB, .DBSCN, .DLB, .DRCBCL, .DYCB, .DYCCB, .DZBANK, .EGBANK, .FJHXBC, .FSCB, .FXCB, .GCB, .GDB, .GDRCC, .GHB, .GLBANK, .GRCB, .GSRCU, .GXRCU, .GYCB, .GZB, .GZRCU, .H3CB, .HANABANK, .HBC, .HBRCU, .HDBANK, .HKB, .HNRCC, .HNRCU, .HRBANK, .HSBANK, .HSBC, .HSBK, .HURCB, .HXBANK, .HZCB, .ICBC, .JHBANK, .JINCHB, .JJBANK, .JLRCU, .JNBANK, .JRCB, .JSB, .JSBANK, .JXBANK, .JXRCU, .JZBANK, .KLB, .KSRB, .LSBANK, .LSBC, .LSCCB, .LZCCB, .LZYH, .NBBANK, .NBYZ, .NCB, .NDHB, .NHB, .NJCB, .NXBANK, .NXRCU, .NYCB, .ORBANK, .PSBC, .PZHCCB, .QDCCB, .QLBANK, .RZB, .SCB, .SCBBANK, .SCCB, .SCRCU, .SDB, .SDEB, .SDRCU, .SHBANK, .SHRCB, .SJBANK, .SPABANK, .SPDB, .SRBANK, .SRCB, .SXCB, .SXRCCU, .SZSBK, .TACCB, .TCCB, .TCRCB, .WHBANK, .WHCCB, .WHRCB, .WJRCB, .WRCB, .WZCB, .XABANK, .XCYH, .XLBANK, .XTB, .XXBANK, .XYBANK, .YBCCB, .YDRCB, .YNRCC, .YQCCB, .YXCCB, .ZGCCB, .ZJKCCB, .ZJNX, .ZJTLCB, .ZRCBANK, .ZYCBANK, .ZZBANK {
+	background-image: url(../images/combo.png);
+	text-indent: -9999em; }
+.ICBC { background-position: 0px -2808px; }
+.CCB { background-position: 0px -828px; }
+.ABC { background-position: 0px -0px; }
+.PSBC { background-position: 0px -3852px; }
+.BOC { background-position: 0px -252px; }
+.COMM { background-position: 0px -1188px; }
+.CMB { background-position: 0px -1116px; }
+.GDB { background-position: 0px -1908px; }
+.CITIC { background-position: 0px -1080px; }
+.CMBC { background-position: 0px -1152px; }
+.CIB { background-position: 0px -1044px; }
+.CEB { background-position: 0px -972px; }
+.SPABANK { background-position: 0px -4392px; }
+.HXBANK { background-position: 0px -2736px; }
+.SPDB { background-position: 0px -4428px; }
+.SDB { background-position: 0px -4176px; }
+
+/* 璐︽埛鎻愮幇 */
+.bank-wrap { border-top: 1px solid #f0f0f0; }
+.bank-wrap .select-bank { line-height: 24px; margin: 10px 0; }
+
+/* 浜ゆ槗瀵嗙爜 */
+.contents .info h3 { background-image: url(../images/icon_form_title.png); background-repeat: no-repeat; color: #d30c13; font-size: 14px; height: 36px; line-height: 36px; padding-left: 36px; }
+.contents .info h3.prompt { background-position: 0 0; }
+.contents .info h3.title { background-position: 0 -120px; }
+
+/* 瀹炲悕璁よ瘉 */
+.authenticate { padding: 10px; font-size: 14px; }
+.authenticate dl dd { line-height: 24px; margin-bottom: 15px; }
+.authenticate dl .idcards { border-top: 1px solid #ececec; padding-top: 15px; }
+.authenticate dl dd .txt { width: 168px; }
+.authenticate dl dd select { width: 180px; }
+.account-info .btn { background: url(../images/form_btn_bg.png) 0 -80px; color: #fff; display: block; font-size: 18px; height: 36px; line-height: 36px; margin: 20px 0 20px 190px; text-align: center; width: 122px; }
+.account-info .btn:hover { background: url(../images/form_btn_bg.png) -140px -80px; }
+.enterprise dl dd label,
+.enterprise dl dt label { color: #666; text-align: right; width: 180px; font-size: 14px; }
+.enterprise dl dd em { font-weight: bold; line-height: 31px; margin-left: 5px; }
+.enterprise dl dt { width: 187px; text-align: right; }
+.enterprise dd p.tip { clear: both; color: #a4a4a4; }
+
+.enterprise .instruction { background-color: #f0f0f0; padding: 15px; }
+.contents .enterprise .upload { margin-bottom: 0; }
+
+/* 鎴戠殑铻嶈祫銆佹姇璧� */
+.contents .finance dd { margin-bottom: 20px; }
+.contents .finance dd label { float: left; text-align: right; width: 80px; }
+
+/* 鏂板鎻愮幇閾惰鍗� */
+.account-info .bank-cards dd > label { text-align: right; width: 130px; margin-right: 20px; }
+.account-info .cards-wrap { float: left; width: 615px; }
+.account-info .cards-wrap ul li { margin: 0 15px 20px 0; }
+.account-info .cards-wrap .bgc { background-color: #f4f4f4; border-radius: 5px; margin-bottom: 10px; padding: 10px; }
+.account-info .cards-wrap .sendmsg { background: url(../images/form_btn_bg.png) repeat-x 0 -195px; border-radius: 5px; display: block; height: 32px; text-align: center; width: 91px; }
+.account-info .registration { border: none; height: 58px; padding: 0; }
+.account-info .registration .process { background-image: url(../images/item_progress.png);  background-repeat: no-repeat; margin-bottom: 15px; }
+.account-info .registration .step-1 { background-position: 0 0; }
+.account-info .registration .step-2 { background-position: 0 -39px; }
+.account-info .registration .step-3 { background-position: 0 -79px; }
+.account-info .registration .step-4 { background-position: 0 -159px; }
+.account-info .registration .process li { float: left; margin-right: 10px; height: 32px; line-height: 32px; text-align: center; width: 188px; }
+.account-info .registration .process li.here { color: #fff; }
+.account-info .registration .process li span { display: block; height: 26px; line-height: 26px; }
+.account-info .registration .process li.here span { color: #666; letter-spacing: 2px; }
+.account-info .bd h4 { font-size: 14px; font-weight: bold; line-height: 26px; margin: 10px 0; }
+.contents .account-info h3 { background-image: url(../images/icon_form_title.png); background-repeat: no-repeat; color: #d30c13; font-size: 14px; height: 36px; line-height: 36px; padding-left: 36px; }
+.contents .account-info h3.item-1 { background-position: -2px -5px; }
+.contents .account-info h3.item-2 { background-position: -2px -45px; }
+.contents .account-info h3.item-3 { background-position: -2px -85px; }
+
+.set-list li { line-height: 34px; margin-bottom: 10px; font-size:12px;}
+.set-list li label { float: left; height: 34px; background-image: url(../images/icon_form_title.png); background-repeat: no-repeat; padding-left: 35px; }
+.set-list .success { background-position: 0 -162px; }
+.set-list .failed { background-position: 0 -201px; }
+
+/* 璐︽埛瀹夊叏绛夌骇 */
+.degree { height: 24px; line-height: 24px; margin-top: 6px; margin-left: 25px; width: 229px; }
+.degree span { background-color: #e6e6e6; color: #444; float: left; text-align: center; font-weight: normal; width: 75px; }
+.degree span:first-child { border-radius: 12px 0 0 12px; margin-right: 2px; }
+.degree span:last-child { border-radius: 0 12px 12px 0; margin-left: 2px; }
+.degree .low { background-color: #ea4d53; }
+.degree .mid { background-color: #ff9e5e; }
+.degree .high { background-color: #68d35f; }
+.degree .low, .degree .mid, .degree .high { color: #fff; }
+
+.account-info .set-btn { 
+	background: #ff8b00; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ff8b00 0%, #ff7201 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8b00), color-stop(100%,#ff7201)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff8b00 0%,#ff7201 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff8b00 0%,#ff7201 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff8b00 0%,#ff7201 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ff8b00 0%,#ff7201 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8b00', endColorstr='#ff7201',GradientType=0 ); /* IE6-9 */
+	border-radius: 3px; color: #fff; font-size: 12px; display: block; height: 28px; line-height: 28px; text-align: center; width: 91px; text-decoration: none;
+}
+.account-info .set-btn:hover {
+	background: #ff9c24; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ff9c24 0%, #ff8d04 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9c24), color-stop(100%,#ff8d04)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff9c24 0%,#ff8d04 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff9c24 0%,#ff8d04 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff9c24 0%,#ff8d04 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ff9c24 0%,#ff8d04 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9c24', endColorstr='#ff8d04',GradientType=0 ); /* IE6-9 */
+	-webkit-transition: background linear .2s;
+	-moz-transition: background linear .2s;
+	-ms-transition: background linear .2s;
+	-o-transition: background linear .2s;
+	transition: background linear .2s;
+}
+.account-info .set-btn:active {
+	background: #c5c5c5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c5c5c5 0%, #a8a8a8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c5c5c5), color-stop(100%,#a8a8a8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c5c5c5 0%,#a8a8a8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c5c5c5 0%,#a8a8a8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c5c5c5 0%,#a8a8a8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c5c5c5 0%,#a8a8a8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5c5c5', endColorstr='#a8a8a8',GradientType=0 ); /* IE6-9 */
+}
+
+.account-info .funds,
+.account-info .recharge,
+.account-info .withdraw { margin: 0; height: 460px; }
+.account-info .filtration { padding: 0 25px; }
+.account-info .filtration label { float: left; margin-right: 50px; }
+
+/* 鎴戣杩樻鎻愮ず淇℃伅 */
+.account-info .tip-wrap { text-align: left; top: -55px; left: auto; /*right: 0;*/ }
+.account-info .error .tip-cont { color: #c2282e; }
+
+/* 鍏呭€煎脊鍑烘 */
+.mask-layer { position: absolute; top: 0; background-color: #000; opacity: 0.5; filter: alpha(opacity=50); }
+.show-box { display: none; position: absolute; left: 50%; top: 50%; margin: -125px auto auto -200px; border: 2px solid #f87823; background: #fff; width: 400px; height: 250px; z-index: 9999; }
+.show-box h4 { background-color: #ff9e5e; line-height: 25px; font-size: 14px; color: #fff; font-weight: bold; padding: 3px 10px; }
+.show-box table { margin: 20px auto; }
+.show-box table td { text-align: left; height: 28px; }
+.show-box .back-info { padding: 20px; }
+.show-box .btn-group { padding: 20px 80px; }
+.show-box .btn-group a { float: left; }
+
+.uploadifyQueue{ clear:left; }
+
+.account-info input.txt { width: 180px; }

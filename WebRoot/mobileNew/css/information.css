@@ -1,0 +1,1198 @@
+.nav_box{
+    position:fixed;
+    width:100%;
+    height:0.88rem;
+    left:0;
+    top:0;
+    z-index:9;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.nav_box .nav{
+    width:100%;
+    height:0.88rem;
+    line-height:0.88rem;
+    text-align:center;
+    font-size: 0.36rem;
+    color: #1A1A1A;
+    position: relative;
+   /* border-bottom: 1px solid #E7E7E7;*/
+    background-color: #FFF;
+}
+
+.nav_box .nav .back{
+    display: inline-block;
+    position: absolute;
+    left:0.2rem;
+    width:0.22rem;
+    height:0.88rem;
+    background: url(../img/imf/jiantou.png)no-repeat center;
+    background-size:0.22rem  0.4rem;
+}
+
+/*公司简介*/
+ .titleNav{
+    width:7.5rem;
+    height:0.50rem;
+    box-sizing: border-box;
+    padding:0 0.2rem;
+    margin:0 auto 0.44rem;
+}
+
+ .titleNav span.icon{
+    display: inline-block;
+    width:0.34rem;
+    height:0.40rem;
+  /*  margin-top: 0.06rem;*/
+    background:url("../img/information/icon/icon_1.png")no-repeat center;
+    background-size:0.34rem 0.40rem;
+    vertical-align: sub;
+}
+
+ .titleNav  span.title{
+    display: inline-block;
+    width: 3rem;
+    height:0.50rem;
+    line-height:0.50rem;
+    font-size:0.34rem;
+    color: #1A1A1A;
+    margin-left: 0.16rem;
+}
+
+/*#company{*/
+    /*width:7.5rem;*/
+    /*height:13rem;*/
+    /*margin: 0 auto 0.8rem;*/
+/*}*/
+
+
+#company  .companyContent{
+    width: 6.70rem;
+    height:auto;
+    margin: 0 auto 0.8rem;
+}
+
+#company  .companyContent .explain  p{
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    text-align: justify;
+    line-height: 0.44rem;
+    margin-bottom: 0.4rem;
+}
+
+#company  .companyContent  .explain_1 {
+    width:6.7rem;
+    height:3.2rem;
+    border-radius: 4px;
+    background: url("../img/information/background_1.png")no-repeat center;
+    background-size:6.7rem 3.2rem;
+    box-sizing: border-box;
+    padding:0.34rem  0.24rem  0.42rem ;
+}
+
+#company  .companyContent  .explain_1  p{
+    display: inline-block;
+    margin-bottom: 0.2rem;
+}
+
+#company  .companyContent  .explain_1  p:nth-child(1){
+    width: 100%;
+    height:0.44rem;
+    line-height:0.44rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+}
+#company  .companyContent  .explain_1  p:nth-child(2){
+    margin-bottom: 0.3rem;
+}
+
+#company  .companyContent  .explain_1  p:nth-child(2),
+#company  .companyContent  .explain_1  p:nth-child(3){
+    text-indent: 2em;
+    font-size: 0.24rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: justify;
+}
+
+#company  .companyContent  .explain_2 {
+    width:6.7rem;
+    height:3.2rem;
+    margin: 0.4rem auto 0;
+}
+
+#company  .companyContent  .explain_2 div{
+     display: inline-block;
+}
+
+#company  .companyContent  .explain_2 div:nth-child(1){
+    width:2.8rem;
+    height:3.2rem;
+    float: left;
+    background: url("../img/information/bacground_2.png")no-repeat center;
+    background-size:2.8rem 3.2rem;
+    box-sizing: border-box;
+    padding:0.34rem  0.52rem  0.5rem ;
+}
+
+
+
+#company  .companyContent  .explain_2 div:nth-child(2){
+    width:3.72rem;
+    height:3.2rem;
+    float: right;
+    background: url("../img/information/bacground_3.png")no-repeat center;
+    background-size:3.72rem 3.2rem;
+    box-sizing: border-box;
+    padding:0.34rem  0.24rem  0.42rem ;
+}
+
+#company  .companyContent  .explain_2 div:nth-child(1)  p:nth-child(1),
+#company  .companyContent  .explain_2 div:nth-child(2)  p:nth-child(1){
+    width: 100%;
+    height:0.44rem;
+    line-height:0.44rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #FFFFFF;
+}
+
+#company  .companyContent  .explain_2 div:nth-child(1)  p,
+#company  .companyContent  .explain_2 div:nth-child(2)  p{
+    display: inline-block;
+    margin-bottom: 0.2rem;
+}
+
+#company  .companyContent  .explain_2 div:nth-child(1)  p:nth-child(2),
+#company  .companyContent  .explain_2 div:nth-child(1)  p:nth-child(3){
+    font-size:0.24rem;
+    color: #FFFFFF;
+}
+
+#company  .companyContent  .explain_2 div:nth-child(2)  p:nth-child(2){
+    text-indent: 2em;
+    font-size: 0.24rem;
+    color: #FFFFFF;
+}
+
+ .segmentingLine{
+  /*  width: 100%;
+    border: 1px solid #EDEDED;
+     width: 7.5rem;*/
+     width: 7.5rem;
+     height:1px;
+     background-color: #EDEDED;
+     margin:0 auto 0.8rem;
+}
+
+ .titleNav span.licence{
+    display: inline-block;
+    width:0.34rem;
+    height:0.40rem;
+    /*  margin-top: 0.06rem;*/
+    background:url("../img/information/icon/icon_2.png")no-repeat center;
+    background-size:0.34rem 0.40rem;
+    vertical-align: sub;
+}
+
+#company .licenceModule{
+    width: 6.9rem;
+    height:9.5rem;
+    margin: 0px auto 0.8rem;
+}
+
+#company .licenceModule ul{
+    width: 100%;
+    height:100%;
+}
+
+#company .licenceModule ul li{
+    width: 100%;
+    height:0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+#company .licenceModule ul li p{
+    display: inline-block;
+    height: 100%;
+    font-size: 0.28rem;
+    color: #9B9B9B;
+    margin-right: 0.5rem;
+}
+
+/*组织架构*/
+ .titleNav span.organizational{
+    display: inline-block;
+    width:0.4rem;
+    height:0.32rem;
+    /*  margin-top: 0.06rem;*/
+    background:url("../img/information/icon/icon_3.png")no-repeat center;
+    background-size:0.4rem 0.32rem;
+    vertical-align: sub;
+}
+
+#organizational .organizationalStructure{
+    width: 5.74rem;
+    height:3.56rem;
+    background:url("../img/information/Framework.png")no-repeat center;
+    background-size:5.74rem 3.56rem;
+    margin: 0.4rem auto 0.8rem;
+}
+
+.titleNav span.practitioners{
+    display: inline-block;
+    width:0.38rem;
+    height:0.38rem;
+    /*  margin-top: 0.06rem;*/
+    background:url("../img/information/icon/icon_4.png")no-repeat center;
+    background-size:0.38rem 0.38rem;
+    vertical-align: sub;
+}
+
+#organizational .practitionersPic div:nth-child(1){
+    width: 6.1rem;
+    height:2.6rem;
+    background:url("../img/information/age.png")no-repeat center;
+    background-size:6.1rem 2.6rem;
+    margin:0 auto 1.16rem;
+}
+
+#organizational .practitionersPic div:nth-child(2){
+    width: 6.28rem;
+    height:2.6rem;
+    background:url("../img/information/Education.png")no-repeat center;
+    background-size:6.28rem 2.6rem;
+    margin:0 auto 1.26rem;
+}
+
+/*平台信息*/
+.titleNav span.platform{
+    display: inline-block;
+    width:0.38rem;
+    height:0.36rem;
+    /*  margin-top: 0.06rem;*/
+    background:url("../img/information/icon/icon_7.png")no-repeat center;
+    background-size:0.38rem 0.36rem;
+    vertical-align: sub;
+}
+
+#platform .platformMsg{
+    width: 6.9rem;
+    /*height: 7.6rem;*/
+    height:9rem;
+    margin:0 auto;
+}
+
+#platform .platformMsg ul{
+    width: 6.9rem;
+    height: 7.6rem;
+}
+
+#platform .platformMsg ul li{
+    width: 6.9rem;
+    height:0.72rem;
+    line-height:0.72rem;
+    font-size:0.28rem;
+    color: #1A1A1A;
+    margin-bottom: 0.3rem;
+}
+
+#platform .platformMsg ul li:last-child{
+    margin-bottom: 0rem;
+}
+
+#platform .platformMsg ul li:nth-of-type(odd) {
+    background-color: rgba(108,160,230,0.2);
+}
+
+#platform .platformMsg ul li:nth-of-type(even) {
+    background-color: rgba(108,160,230,0.08);
+}
+
+#platform .platformMsg ul li span:nth-child(1){
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    padding-left: 7%;
+}
+
+#platform .platformMsg ul li span:nth-child(2){
+    display: inline-block;
+    width: 68%;
+    height: 100%;
+}
+
+/*重大风险信息*/
+.titleNav span.risk{
+    display: inline-block;
+    width:0.34rem;
+    height:0.40rem;
+    /*  margin-top: 0.06rem;*/
+    background:url("../img/information/icon/icon_12.png")no-repeat center;
+    background-size:0.34rem 0.40rem;
+    vertical-align: sub;
+}
+
+#majorRisk .majorRisk{
+    width: 6.68rem;
+    height:10rem;
+    margin:0 auto;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+#majorRisk .majorRisk ul{
+    width: 6.68rem;
+    height:10rem;
+    margin:0 auto;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+#majorRisk .majorRisk ul li{
+    width:100%;
+    margin:0 auto;
+    font-size:0.28rem;
+    color: #1A1A1A;
+    box-sizing: border-box;
+    padding: 0.16rem;
+    border-bottom: 1px ;
+    border-bottom: 1px dashed #979797;
+}
+
+#majorRisk .majorRisk ul li:nth-child(1){
+    background-color: rgba(108,160,230,0.2);
+    border-bottom: 0px;
+}
+
+#majorRisk .majorRisk ul li:last-child{
+    border-bottom: 0px;
+}
+
+#majorRisk .majorRisk ul li span{
+    display: inline-block;
+}
+
+#majorRisk .majorRisk ul li span:nth-child(1){
+    width: 70%;
+  /*  height:100%;*/
+    box-sizing: border-box;
+    padding-left: 3%;
+}
+
+#majorRisk .majorRisk ul li span:nth-child(2){
+    width: 30%;
+  /*  height:100%;*/
+    text-align: center;
+}
+
+#majorRisk .majorRisk ul li:nth-child(1) span:nth-child(1){
+    text-align: center;
+}
+
+/*联系我们*/
+.titleNav span.contactUs{
+    display: inline-block;
+    width:0.34rem;
+    height:0.40rem;
+    /*  margin-top: 0.06rem;*/
+    background:url("../img/information/icon/icon_14.png")no-repeat center;
+    background-size:0.34rem 0.40rem;
+    vertical-align: sub;
+}
+
+/*联系我们*/
+#contact{
+    height:10rem;
+}
+
+#contact .map{
+    width: 6.7rem;
+    height: 3.6rem;
+    margin: 0 auto 0.8rem;
+}
+
+#contact .map div{
+    width: 6.7rem;
+    height: 3.1rem;
+    background:url("../img/information/map.png")no-repeat center;
+    background-size:6.7rem  3.1rem;
+}
+
+#contact .map p{
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #1A1A1A;
+    margin-top: 0.18rem;
+}
+
+#contact  .footerMsg{
+    width: 6.68rem;
+    height: auto;
+    margin: 0.4rem auto;
+}
+
+#contact  .footerMsg li{
+    width: 100%;
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    margin-bottom: 0.16rem;
+}
+
+#contact  .footerMsg li span{
+    display: inline-block;
+    float: left;
+    width:1.42rem;
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.28rem;
+    color: #9B9B9B;
+}
+
+#contact  .footerMsg li p{
+    display: inline-block;
+    width:5.26rem;
+    height:auto;
+}
+
+/*合规进程 start*/
+.titleNav span.compliance {
+    display: inline-block;
+    width: 0.42rem;
+    height: 0.46rem;
+    /* margin-top: 0.06rem; */
+    background: url(../img/information/icon/icon_16.png)no-repeat center;
+    background-size: 0.42rem 0.46rem;
+    vertical-align: sub;
+}
+
+#compliance  .compliancePro{
+    width:7.2rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+#compliance  .compliancePro  .to_greet{
+    width: 6.7rem;
+    height:auto;
+    margin: 0 auto;
+}
+#compliance  .compliancePro  .to_greet p{
+    display: inline-block;
+    width: 100%;
+    line-height: 0.44rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    text-align: justify;
+    margin-bottom: 0.2rem;
+}
+
+#compliance  .compliancePro .com_pub{
+    width: 7.06rem;
+    height: 2.18rem;
+    box-sizing: border-box;
+    padding: 0.22rem 0.18rem;
+    background: rgba(245,245,245,0.60);
+    line-height: 0.44rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    text-align: justify;
+    margin: 0.2rem auto 1rem;
+}
+
+#compliance  .compliancePro .com_tab{
+    width: 7.2rem;
+    height:auto;
+    margin: 0 auto 0.4rem;
+}
+#compliance  .compliancePro .com_tab table{
+    border: 1px solid #cccccc;
+    width: 100%;
+    /* overflow: hidden; */
+    border-collapse: collapse;
+}
+
+#compliance  .compliancePro .com_tab table thead tr {
+    height: 1rem;
+    background-color: #f8f8f8;
+    font-size: 0.28rem;
+    color: #333333;
+    /* font-weight: bold; */
+}
+
+#compliance  .compliancePro .com_tab table th{
+    border: 1px solid #cccccc;
+}
+
+#compliance  .compliancePro .com_tab table tbody tr td {
+   /* text-align: center;*/
+    vertical-align: middle;
+    height: 1rem;
+    padding: 0.1rem;
+    font-size:0.28rem;
+    color: #333333;
+}
+
+#compliance  .compliancePro .com_tab table td{
+    border: 1px solid #cccccc;
+}
+
+#compliance  .compliancePro .com_tab thead tr th:nth-child(1) {
+    width: 45%;
+}
+#compliance  .compliancePro .com_tab thead tr th:nth-child(2) {
+    width: 40%;
+}
+#compliance  .compliancePro .com_tab thead tr th:nth-child(3) {
+    width: 15%;
+}
+
+
+#compliance  .compliancePro .com_tab  tbody tr td:nth-child(1) {
+    width:45%;
+}
+#compliance  .compliancePro .com_tab  tbody tr td:nth-child(2) {
+    width: 40%;
+}
+#compliance  .compliancePro .com_tab  tbody tr td:nth-child(3) {
+    width: 15%;
+}
+
+
+
+
+
+
+
+
+    /*合规进程 end*/
+
+/*风控管理*/
+.titleNav span.blank{
+    display: inline-block;
+    width:0.34rem;
+    height:0.40rem;
+    /*  margin-top: 0.06rem;*/
+    background:url("../img/information/icon/icon_8.png")no-repeat center;
+    background-size:0.34rem 0.40rem;
+    vertical-align: sub;
+}
+
+#winControl .blankProcess{
+    width: 6.7rem;
+    height: 5.76rem;
+    background:url("../img/information/process.png")no-repeat center;
+    background-size:6.7rem  5.76rem;
+    margin: 0 auto 1.2rem;
+}
+
+.titleNav span.transaction{
+    display: inline-block;
+    width:0.46rem;
+    height:0.36rem;
+    /*  margin-top: 0.06rem;*/
+    background:url("../img/information/icon/icon_9.png")no-repeat center;
+    background-size:0.46rem 0.36rem;
+    vertical-align: sub;
+}
+
+#winControl .transactionMoney{
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+
+#winControl .transactionMoney .swiper-slide{
+    width: 6.5rem;
+    height:2.42rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px 0 rgba(146,173,189,0.35);
+    border-radius: 4px;
+   /* border:1px solid #ccc;*/
+}
+
+#winControl .transactionMoney .swiper-slide span{
+    display: inline-block;
+    float: left;
+    width: 1.72rem;
+    height: 2.42rem;
+  /*  line-height: 2.42rem;*/
+
+}
+
+#winControl .transactionMoney .swiper-slide span.division{
+    background:url("../img/information/1.png")no-repeat center;
+    background-size:1rem 1rem;
+}
+#winControl .transactionMoney .swiper-slide span.capital{
+    background:url("../img/information/2.png")no-repeat center;
+    background-size:1.04rem 1.04rem;
+}
+#winControl .transactionMoney .swiper-slide span.power{
+    background:url("../img/information/3.png")no-repeat center;
+    background-size:0.94rem 0.94rem;
+}
+#winControl .transactionMoney .swiper-slide span.supervise{
+    background:url("../img/information/4.png")no-repeat center;
+    background-size:0.98rem 0.92rem;
+}
+
+
+#winControl .transactionMoney .swiper-slide div{
+    display: inline-block;
+    width: 4.44rem;
+    float: left;
+    margin-top: 0.23rem;
+}
+
+#winControl .transactionMoney .swiper-slide div p:nth-child(1){
+    display: inline-block;
+    width: 100%;
+    height:0.4rem;
+    line-height:0.4rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+}
+
+#winControl .transactionMoney .swiper-slide div p:nth-child(2){
+    display: inline-block;
+    width: 100%;
+    height:0.36rem;
+    line-height:0.36rem;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+    margin-top: 0.12rem;
+}
+
+
+.titleNav span.transactionWind{
+    display: inline-block;
+    width:0.48rem;
+    height:0.44rem;
+    /*  margin-top: 0.06rem;*/
+    background:url("../img/information/icon/icon_10.png")no-repeat center;
+    background-size:0.48rem 0.44rem;
+    vertical-align: sub;
+}
+
+#winControl .winControlProcess{
+    width: 6.34rem;
+    height: 1.82rem;
+    background:url("../img/information/step.png")no-repeat center;
+    background-size:6.34rem  1.82rem;
+    margin: 0 auto 0.8rem;
+}
+
+.titleNav span.system{
+    display: inline-block;
+    width:0.46rem;
+    height:0.44rem;
+    background:url("../img/information/icon/icon_11.png")no-repeat center;
+    background-size:0.46rem 0.44rem;
+    vertical-align: sub;
+}
+
+#winControl .windPic{
+    width:5.9rem;
+    height:1.42rem;
+    margin: 0 auto 0.72rem;
+}
+
+#winControl .windPic li{
+    display: inline-block;
+    float: left;
+    width: 1.42rem;
+    height:1.42rem;
+    background: #6BA9FC;
+    border-radius: 4px;
+    margin-left: 0.82rem;
+}
+
+#winControl .windPic li:nth-child(1){
+    margin-left: 0rem;
+}
+
+#winControl .windPic li span ,#winControl .windPic li p{
+    display: inline-block;
+}
+
+#winControl .windPic li span{
+    margin: 0.16rem auto 0.06rem;
+}
+
+#winControl .windPic li:nth-child(1) span{
+    width:100%;
+    height:0.7rem;
+    background:url("../img/information/tools/1.png")no-repeat center;
+    background-size:0.56rem 0.70rem;
+}
+
+#winControl .windPic li:nth-child(2) span{
+    width:100%;
+    height:0.66rem;
+    background:url("../img/information/tools/2.png")no-repeat center;
+    background-size:0.64rem 0.66rem;
+}
+
+#winControl .windPic li:nth-child(3) span{
+    width:100%;
+    height:0.64rem;
+    background:url("../img/information/tools/3.png")no-repeat center;
+    background-size:0.64rem 0.64rem;
+}
+
+#winControl .windPic li p{
+    display: inline-block;
+    width: 100%;
+    height:0.34rem;
+    line-height:0.34rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #FFFFFF;
+}
+
+#winControl .industry{
+    width: 100%;
+    height:4rem;
+    margin-bottom: 1.94rem;
+}
+
+#winControl .industry  .swiper-slide{
+    width: 6.5rem;
+    height:4rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px 0 rgba(146,173,189,0.35);
+    border-radius: 4px;
+    /*border:1px solid #ccc;*/
+}
+
+#winControl .industry  .swiper-slide:nth-child(1){
+    background:url("../img/information/Front.png")no-repeat center;
+    background-size:5.66rem  3.42rem;
+}
+#winControl .industry  .swiper-slide:nth-child(2){
+    background:url("../img/information/middle.png")no-repeat center;
+    background-size:5.64rem  3.08rem;
+}
+#winControl .industry  .swiper-slide:nth-child(3){
+    background:url("../img/information/post.png")no-repeat center;
+    background-size:4.94rem  3.42rem;
+}
+
+/*大事记*/
+.titleNav span.honor{
+    display: inline-block;
+    width:0.42rem;
+    height:0.38rem;
+    background:url("../img/information/icon/icon_5.png")no-repeat center;
+    background-size:0.42rem 0.38rem;
+    vertical-align: sub;
+}
+
+#honor1{
+    height:10rem;
+}
+#honor1 .License{
+    width: 100%;
+    height:3.44rem;
+    margin-bottom: 0.8rem;
+}
+
+#honor1 .License .swiper-slide{
+    width: 2.36rem;
+    height:3.44rem;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    border:0.02rem solid #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#honor1 .License .swiper-slide img{
+    /*display: block;*/
+    width: 100%;
+    height:100%;
+}
+#honor1 .License .swiper-slide.pic2 img{
+    height:1.72rem;
+}
+.titleNav span.history{
+    display: inline-block;
+    width:0.34rem;
+    height:0.44rem;
+    background:url("../img/information/icon/icon_6.png")no-repeat center;
+    background-size:0.34rem 0.44rem;
+    vertical-align: sub;
+}
+
+#honor .developmentHistory{
+    position: relative;
+    width:6.5rem;
+    height:11rem;
+  /*  border:1px solid #ccc;*/
+    margin:  0 auto 0.8rem;
+}
+
+#honor .developmentHistory .line{
+    position: relative;
+    width:0.03rem;
+    height:11rem;
+    background-image: linear-gradient(-180deg, #6CA0E6 0%, #6CA0E6 100%);
+}
+
+#honor .developmentHistory .line li{
+    position: relative;
+    left: -0.09rem;
+    width:6.5rem;
+    height: 1.15rem;
+    background: url("../img/information/icon/point.png")no-repeat left top;
+    background-size:0.18rem 0.18rem;
+    box-sizing: border-box;
+    padding-left:0.44rem;
+}
+
+#honor .developmentHistory .line li p:nth-child(1){
+    height: 0.4rem;
+    font-size: 0.28rem;
+    color: #6CA0E6;
+}
+
+#honor .developmentHistory .line li p:nth-child(2),
+#honor .developmentHistory .line li p:nth-child(3){
+    height: 0.34rem;
+    line-height: 0.34rem;
+    font-size:0.24rem;
+    color: #4A4A4A;
+}
+
+/*法律法规*/
+.titleNav span.law{
+    display: inline-block;
+    width:0.32rem;
+    height:0.40rem;
+    background:url("../img/information/icon/icon_13.png")no-repeat center;
+    background-size:0.32rem 0.40rem;
+    vertical-align: sub;
+}
+
+#law  .seeLaw{
+    width: 6.84rem;
+    height: 1.32rem;
+    margin: 0 auto 0.6rem;
+   /* border:1px solid #ccc;*/
+}
+
+#law  .seeLaw li:nth-child(1){
+    width: 100%;
+    height:0.38rem;
+}
+
+#law  .seeLaw li:nth-child(1) p{
+    display: inline-block;
+    float: left;
+    width: 5.42rem;
+    height:0.38rem;
+    line-height:0.38rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
+}
+
+#law  .seeLaw li:nth-child(1) a{
+    display: inline-block;
+    float: right;
+}
+
+#law  .seeLaw li:nth-child(1) span{
+    display: inline-block;
+    width: 0.66rem;
+    height:0.38rem;
+    line-height:0.38rem;
+    background:url("../img/information/icon/seeMax.png")no-repeat right;
+    background-size:0.1rem 0.18rem;
+    vertical-align: sub;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+    cursor: pointer;
+}
+
+#law  .seeLaw li:nth-child(2) {
+    width: 6.84rem;
+    height:0.8rem;
+    line-height:0.38rem;
+    margin-top: 0.15rem;
+   /* text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;*/
+    font-size: 0.24rem;
+    color: #9B9B9B;
+}
+
+
+/*出借人教育*/
+.titleNav span.fxts{
+    display: inline-block;
+    width:0.4rem;
+    height:0.40rem;
+    background:url("../img/information/icon/icon_17.png")no-repeat center;
+    background-size:0.4rem 0.40rem;
+    vertical-align: sub;
+}
+#cjrjy .con p{
+    margin:0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.28rem;
+    color: #1A1A1A;
+    text-align:justify;
+
+}
+/*运营报告start*/
+#operational_data .oper_data{
+    display:block;
+    width:6.74rem;
+    height:3.94rem;
+    margin:0.4rem auto;
+}
+
+/*运营报告 详情页面*/
+.operationReport{
+    width:7.5rem;
+    height:auto;
+    margin:0.88rem auto 0;
+    overflow: hidden;
+}
+
+.titleNav span.history {
+    display: inline-block;
+    width: 0.42rem;
+    height: 0.36rem;
+    background: url(../img/information/icon/1.png)no-repeat center;
+    background-size: 0.42rem 0.36rem;
+    vertical-align: sub;
+}
+
+.operationReport .survey{
+    width:7.5rem;
+    height:auto;
+    margin:0.3rem auto 0;
+    overflow: hidden;
+}
+
+.operationReport .survey li{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height:1.4rem;
+    margin-bottom: 0.2rem;
+}
+
+.operationReport .survey li p,
+.operationReport .survey li span{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.operationReport .survey li p{
+    line-height:0.6rem;
+    font-size: 0.28rem;
+    color: #4A4A4A;
+}
+
+.operationReport .survey li span{
+    line-height:0.8rem;
+    font-size: 0.4rem;
+    color: #6299E7;
+}
+
+.titleNav span.loan {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../img/information/icon/2.png)no-repeat center;
+    background-size: 0.4rem 0.4rem;
+    vertical-align: sub;
+}
+
+.operationReport .survey_loan{
+    width: 7.06rem;
+    margin:0.3rem auto;
+    background: rgba(245,245,245,0.60);
+    padding-top: 0.2rem;
+}
+
+.operationReport .Percentage{width: 100%;height:auto;margin: 0.6rem auto}
+
+.operationReport .Percentage  .loading-circle {display:block;position: relative; width: 220px; height: 220px; margin: auto;}
+.operationReport .Percentage  .loading-circle>* {display: block; position: absolute; box-sizing: border-box; border-radius: 110px;}
+.operationReport .Percentage  .loading-circle>canvas.bg {z-index: 1; width: 100%; height: 100%; border: 16px solid rgba(245,105,35,0.2);}
+.operationReport .Percentage  .loading-circle>canvas.bgOne {border:16px solid rgba(140,121,247,0.2);}
+.operationReport .Percentage  .loading-circle>canvas.mask {z-index: 2; transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);}
+.operationReport .Percentage  .loading-circle>p {z-index: 3;  width: 100%; height: 100%; text-align: center; line-height: 220px; font-size: 14px; font-weight: lighter; color:#F56923;}
+.operationReport .Percentage  .loading-circle>p span{font-size: 30px;}
+
+.operationReport .Percentage  .loading-circle>p.One{
+    color:#8C79F7;
+}
+
+.operationReport .Percentage >p{
+    width: 100%;
+    height:0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    margin: 0.4rem  auto 0.8rem;
+    font-size: 0.28rem;
+    color: #4A4A4A;
+}
+
+.titleNav span.overdue {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../img/information/icon/3.png)no-repeat center;
+    background-size: 0.4rem 0.4rem;
+    vertical-align: sub;
+}
+
+.operationReport .Accumulative{
+    width: 7.5rem;
+    height:auto;
+    box-sizing: border-box;
+   margin: 0.6rem auto 0.8rem;
+}
+
+.operationReport .Accumulative li{
+    width:6.7rem;
+    height:3.08rem;
+    border-radius: 0.08rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding:0.88rem 0.92rem  0.86rem;
+    margin:0 auto;
+}
+
+.operationReport .Accumulative li:nth-child(1){
+    background-color: #76B8FD;
+}
+
+.operationReport .Accumulative  li:nth-child(2){
+    background-color: #9885FF;
+    margin-top: 0.4rem;
+}
+
+.operationReport .Accumulative li div{
+    display: inline-block;
+    float: left;
+}
+
+.operationReport .Accumulative li div.money{
+    width:1rem;
+    height:1.1rem;
+    background: url("../img/information/icon/images2.png")no-repeat center;
+    background-size:1rem 1.1rem;
+}
+
+.operationReport .Accumulative li div.pens{
+    width: 1rem;
+    height:1.22rem;
+    background: url("../img/information/icon/images3.png")no-repeat center;
+    background-size:1rem 1.22rem;
+}
+
+.operationReport .Accumulative li div:nth-child(2){
+  /*  width: 3.96rem;*/
+    height: 100%;
+    margin-left: 0.6rem;
+}
+
+.operationReport .Accumulative li div:nth-child(2) span,
+.operationReport .Accumulative li div:nth-child(2) p{
+    display: block;
+    text-align: center;
+}
+
+.operationReport .Accumulative li div:nth-child(2) span{
+    font-size:0.28rem;
+    color: #FFFFFF;
+    line-height: 0.4rem;
+}
+
+.operationReport .Accumulative li div:nth-child(2) p{
+    font-size: 0.6rem;
+    color: #FFFFFF;
+    line-height:0.84rem;
+}
+
+.titleNav span.charge {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.44rem;
+    background: url(../img/information/icon/4.png)no-repeat center;
+    background-size: 0.4rem 0.44rem;
+    vertical-align: sub;
+}
+
+.operationReport  .charge_list{
+    width: 6.9rem;
+    height:auto;
+    margin:0.4rem auto 1.5rem;
+}
+
+.operationReport  .charge_list ul{
+    width: 100%;
+    height: auto;
+}
+
+.operationReport  .charge_list ul li{
+    width: 100%;
+    height:0.72rem;
+    line-height: 0.72rem;
+    margin-bottom: 0.3rem;
+}
+
+.operationReport  .charge_list ul li:nth-of-type(odd){
+    background-color: rgba(108,160,230,0.2);
+}
+.operationReport  .charge_list ul li:nth-of-type(even){
+    background-color: rgba(108,160,230,0.08);
+}
+
+.operationReport  .charge_list ul li span{
+    display: inline-block;
+    height: 100%;
+    font-size:0.28rem;
+    color: #1A1A1A;
+}
+
+.operationReport  .charge_list ul li span:nth-child(1){
+    width: 40%;
+    box-sizing: border-box;
+    padding-left: 5%;
+}
+
+.operationReport  .charge_list ul li span:nth-child(2){
+    width:60%;
+   /* text-align: center;*/
+}
+
+
+
+
+
+
+
+
+
+/*运营报告end*/

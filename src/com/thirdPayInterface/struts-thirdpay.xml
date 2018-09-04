@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="thirdpayInterface" extends="struts-default" strict-method-invocation="false" namespace="/thirdPay">
+		<action name="*ThirdPayInterface" class="ThirdPayInterfaceAction" method="{1}">
+			<result >${successResultValue}</result>
+			<result name="back_msg">/WEB-INF/mobileJsp/back_msg.jsp</result>
+			<result name="error_message">/WEB-INF/mobileJsp/error_message.jsp</result>
+			<result name="back_msg1">/WEB-INF/mobileJsp/app/back_msg.jsp</result>
+			<result  name="freemarker" type="freemarker">${successResultValue}</result>
+		</action>
+	</package>
+</struts>

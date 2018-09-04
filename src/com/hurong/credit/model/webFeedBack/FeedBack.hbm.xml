@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+            name="com.hurong.credit.model.webFeedBack.FeedBack"
+            table="advice_feedback"
+            select-before-update="false"
+            dynamic-update="true"
+            dynamic-insert="true"
+            optimistic-lock="all"
+    >
+        <id
+                name="id"
+                column="id"
+                type="java.lang.Long"
+                length="20"
+        >
+            <generator class="native"/>
+        </id>
+        <!--<property-->
+                <!--name="userid"-->
+                <!--type="java.lang.Long"-->
+                <!--update="true"-->
+                <!--insert="true"-->
+                <!--access="property"-->
+                <!--column="userid"-->
+                <!--length="19"-->
+                <!--not-null="true"-->
+                <!--unique="false"-->
+        <!--/>-->
+        <property
+                name="content"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                access="property"
+                column="content"
+                not-null="true"
+                unique="false"
+        />
+        <property
+                name="createTime"
+                type="java.util.Date"
+                update="true"
+                insert="true"
+                access="property"
+                column="createTime"
+
+                not-null="false"
+                unique="false"
+        />
+        <property
+                name="contact"
+                type="java.lang.String"
+                update="true"
+                insert="true"
+                access="property"
+                column="contact"
+                not-null="true"
+                unique="false"
+        />
+    </class>
+</hibernate-mapping>

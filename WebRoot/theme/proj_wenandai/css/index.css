@@ -1,0 +1,1516 @@
+.divMore{
+	width:1160px;
+	height:20px;
+	line-height:20px;
+	margin:0 auto;
+	font-size:16px;
+	text-align:right;
+	padding:10px;
+}
+
+.invesAlink{
+	display:block;
+	width:110px;
+	text-align:center;
+	line-height:40px;
+	height:40px;
+	/*background:#ff6000;*/
+	color:#fff;
+	font-size:14px !important;
+	border-radius:2px;
+}
+
+.invesAlink:hover{
+	/*background:#ff873f;*/
+	color:#fff;
+}
+
+.invesAlink2{
+	background:#ccc;
+}
+
+.invesAlink2:hover{
+	background:#ccc;
+}
+
+
+body{
+	background:#f4f4f4;
+}
+
+b,i,em{
+	font-weight:100;
+	font-style:normal;
+}
+
+.banner{
+	height:380px;
+	position:relative;
+	overflow:hidden;
+}
+
+.banner #list{
+	width:300%;
+	position:absolute;
+	left:0;
+	top:0;
+	height:380px;
+
+}
+
+.banner #list a{
+	height:380px;
+	float:left;
+	display:block;
+	background-position:center 0;
+	background-repeat:no-repeat;
+	background-size:auto 380px;
+}
+
+.arrow{
+	display:none;
+}
+
+.sideNav{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	bottom:8px;
+	height:20px;
+}
+
+.sideNav span{
+	display:inline-block;
+	width:11px;
+	height:11px;
+	border:1px solid #359eff;
+	border-radius:11px;
+	margin:0 2px;
+	cursor:pointer;
+}
+
+.sideNav span.on{
+	background-color:#359eff
+}
+
+
+/*.Ilogin,.IloginBg{
+	position:absolute;
+	left:50%;
+	top:30px;
+	width:300px;
+	height:300px;
+	margin-left:280px;
+	color:#fff;
+	text-align:center;
+}*/
+
+.IloginBg{
+	background:#000;
+	filter:alpha(opacity=40);
+	opacity:0.4;
+}
+
+.Ilogin a.aBtn{
+	width:238px;
+	background:url(../../Images/index2/qb.png) no-repeat 35px center #ff6000;
+	text-indent:18px;
+}
+
+.Ilogin a.aBtns2{
+	background-position:65px center;
+}
+
+.Ilogin a.aBtn:hover{
+	background-color:#ff873f;
+	color:#fff;
+}
+
+.Iloginbefore{
+	padding:40px 0 20px;
+	font-size:26px;
+	font-weight:bold;
+}
+
+.Iloginbefore span{
+	display:block;
+	padding:20px 0 0;
+	font-size:50px;
+	color:#fff;
+	font-weight:100;
+}
+
+.Iloginbefore span font{
+	font-size:30px;
+}
+
+.Ilogin p{
+	padding:30px 0 0;
+	font-size:14px;
+}
+
+.Ilogin p a{
+	color:#ff5400;
+	text-decoration:underline;
+}
+
+.Statistics{
+	padding:12px 0 0;
+	height:46px;
+	color:#666;
+	font-size:14px;
+	background:#fff;
+	border-bottom:1px solid #e8e8e8;
+}
+
+.Statistics .box div{
+	float:left;
+	height:25px;
+	line-height:25px;
+	border-right:1px solid #e8e8e8;
+}
+
+.Statistics .box div img{
+	margin:0 5px -4px 0;
+	display:none;
+}
+
+.Statistics .box div span{
+	font-size:22px;
+	padding:0 0 0 10px;
+	color:#228ef1;
+}
+
+
+.Statistics2{
+	padding:0 0 0 22px;
+}
+.Statistics3{
+	padding:0 0 0 25px;
+}
+.Statistics .box div.Statistics4{
+	padding:0 0 0 25px;
+	border:0 none;
+}
+
+.Statistics .box .clear{
+	float:none;
+}
+
+.guarantee{
+	padding-top: 20px;
+    padding-bottom: 40px;
+	height:174px;
+	background:#fff;
+	border-bottom:1px solid #e8e8e8;
+}
+
+.guarantee dl{
+	width:25%;
+	float:left;
+	padding:5px 0 0;
+	text-align:center;
+}
+
+.guarantee dl dt{
+	height:80px;
+	overflow:hidden;
+}
+
+.guarantee dl dd b{
+	display:block;
+	font-size:18px;
+	color:#666;
+	padding:10px 0;
+}
+
+.guarantee dl dd{
+	font-size:12px;
+	line-height:18px;
+	color:#959595;
+}
+
+.Novice{
+	margin:30px auto 0;
+	background-color:#fff;
+}
+
+.Novice div.floatL{
+	width:248px;
+	position:relative;
+}
+
+.Novice div.floatL a{
+	disiplay:block;
+	width:100%;
+	height:38px;
+	line-height:38px;
+	font-size:14px;
+	color:#fff;
+	position:absolute;
+	bottom:0;
+	left:0;
+	text-align:center;
+	background:#1eb7f2;
+}
+
+.Novice div.floatL2 a{
+	background:#ff7a7a
+}
+.Novice div.floatL3 a{
+	background:#ffbd3d
+}
+.Novice div.floatL4 a{
+	background:#bb94ed
+}
+
+
+.Novice div.floatL img{
+	display:block;
+}
+
+.Novice div.floatR{
+	float:left;
+	width:475px;
+	height:498px;
+	overflow:hidden;
+	border-right:1px solid #e8e8e8;
+	border-top:1px solid #e8e8e8;
+	border-bottom:1px solid #e8e8e8;
+	position:relative;
+}
+
+.Novice div.NoviceAd{
+	padding:38px 0 0;
+	height:460px;
+	float:right;
+}
+
+.NoviceBox{
+	border-bottom:1px solid #e8e8e8;
+	padding:0 25px;
+	position:relative;
+	width:436px;
+
+}
+
+.indexJb{
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+/*.Novice div.floatR p{
+	width:444px;
+	height:76px;
+	line-height:76px;
+	position:relative;
+	border-bottom:1px solid #f5f5f5;
+	font-size:20px;
+
+}*/
+
+/*.Novice div.floatR p span{
+	color:#ff6000;
+	font-size:12px;
+	display:block;
+	position:absolute;
+	bottom:4px;
+	left:0;
+	line-height:20px;
+}*/
+
+.Novice div.floatR dl{
+/*	height:104px;*/
+	height: 140px;
+	padding:28px 0 0;
+}
+.my-Novice div.floatR dl{
+	height:128px;
+}
+.Novice div.floatR dl dt{
+	font-size: 28px;
+	/*width: 230px;*/
+	width: 220px;
+	height: 80px;
+	float: left;
+	color: #f65541;
+	position: relative;
+	margin-left: 10px;
+}
+
+.Novice div.floatR dl dt span{
+	font-size: 14px;
+}
+
+.Novice div.floatR dl dt font{
+	color:#333;
+	position:absolute;
+	right:0;
+	top: 10px;
+	font-size:34px;
+}
+
+.Novice div.floatR dl dt font em{
+	font-size: 18px;
+}
+
+.Novice div.floatR dl dt i,.Novice div.floatR dl dt b{
+	position:absolute;
+	left:0;
+	bottom:3px;
+	color:#333;
+	font-size:12px;
+}
+.my-Novice div.floatR .xydj {
+	display: inline-block;
+	background: url(../images/mypic/A.png) center no-repeat;
+	width: 70px;
+	height: 24px;
+	line-height: 24px;
+	text-align: right;
+	/*margin:0 auto;*/
+}
+.my-Novice div.floatR .xydj span{
+	/*margin-top:25px;*/
+}
+.Novice div.floatR .xydj span{
+	display: inline-block;
+	width: 44px;
+	text-align: center;
+	font-style: normal;
+	font-size: 14px;
+	color: #fff;
+	font-weight: normal;
+}
+.Novice div.floatR dl dt b{
+	right:0;
+	left:auto;
+}
+
+.Novice div.floatR dl dd{
+	/*width:150px;
+	float:right;*/
+	width: 110px;
+	float: left;
+}
+
+.Novice div  .sykcj{
+	padding-left: 10px;
+}
+
+.Novice div.floatR dl dd span,.some .floatR p.floatR span{
+	color:#fff;
+	font-size:12px;
+	display:block;
+	/*padding:5px 5px 0px;*/
+	clear:both;
+}
+
+.Novice div.floatR dl dd i,.Novice div.floatR dl dd b,.some .floatR p.floatR i,.some .floatR p.floatR b{
+	/*width:340px;*/
+	width:330px;
+	position:relative;
+	height:4px;
+	background:#e6e6e6;
+	display:block;
+	float:left;
+	margin:10px 0 0;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+
+.Novice div.floatR dl dd b,.some .floatR p.floatR b{
+	position:absolute;
+	left:0;
+	top:0;
+	background:#228ef1;
+	margin:0;
+}
+
+.Novice div.floatR dl dd em,.some .floatR p.floatR em{
+	float:right;
+	color:#999;
+	width:36px;
+	font-size:12px;
+	margin:3px 0 0;
+}
+
+.Novice div.floatR dl dd a ,.some .floatR p.floatR a{
+	clear:both;
+	margin:17px 0 0;
+	font-size:14px;
+}
+
+.Novice div.floatR dl dd a.linkDj{
+	font-size:12px;
+}
+
+.NoviceBox .label,.indexTyb .label{
+	height:28px;
+	padding:12px 0 0;
+	font-size:12px;
+	color:#228ef1;
+}
+.NoviceBox .label a{
+	height:28px;
+	padding:12px 0 0;
+	font-size:12px;
+	color:#228ef1;
+}
+.NoviceBox .label i {
+    display: inline-block;
+    height: 13px;
+    width: 74px;
+    background: url(../../Images/index2/pf_04.jpg) repeat-x;
+    margin: 0 4px 0 0;
+}
+.NoviceBox .label i em {
+    display: block;
+    height: 13px;
+    background: url(../../Images/index2/pf_03.jpg) repeat-x;
+}
+.NoviceBox .label img,.indexTyb .label img{
+	margin:0 5px -3px 0
+}
+
+.NoviceBox .label span{
+	display:inline-block;
+	padding:0 5px;
+	height:18px;
+	line-height:18px;
+	border-radius:3px;
+	border:1px solid #959595;
+	color:#959595;
+}
+
+
+
+
+/*liuyannan   start*/
+.NoviceBox>p{
+	width: 444px;
+	height: 76px;
+	line-height: 76px;
+	position: relative;
+	border-bottom: 1px solid #f5f5f5;
+	font-size: 20px;
+}
+
+
+.NoviceBox ul{
+	width: 444px;
+	height:300px;
+}
+
+.NoviceBox ul li{
+	display: inline-block;
+	float: left;
+	width: 100px;
+	height:100px;
+}
+
+.NoviceBox .Novice_ul .Novice_li p{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 34px;
+	color: #f66541;
+}
+
+.NoviceBox .Novice_ul .Novice_li p span{
+	font-size:14px;
+	color: #f66541;
+}
+.NoviceBox .Novice_ul .Novice_li span{
+	font-size: 14px;
+	color: #808080;
+}
+
+.NoviceBox .Novice_ul .Novice_li i{
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+.NoviceAd{
+	text-align:center;
+}
+
+
+.some{
+	border:1px solid #e8e8e8;
+	margin:30px auto 0;
+	background:#fff;
+	height:170px;
+}
+
+.brandCont{
+	height:160px;
+	border:1px solid #e8e8e8;
+	background:#fff;
+	margin:20px auto 0;
+}
+
+.brandCont h2{
+	font-size:18px;
+	color:#555;
+	line-height:55px;
+	border-bottom:1px solid #e8e8e8;
+	margin:0 20px 28px;
+	font-weight:bold;
+}
+
+
+
+.brandCont .floatL,.brandCont .floatR{
+	width:30px;
+	height:52px;
+	background:url(../../Images/index2/i_81.jpg) no-repeat 0 center;
+	cursor:pointer;
+	margin:5px 20px 0;
+}
+
+.brandCont .floatR{
+	background-position:right center;
+}
+
+.brandCenter img{
+	width:144px;
+	float:left;
+	margin:0 36px 0 0;
+}
+
+.brandCenter{
+	padding:0 0 0 3px;
+	height:90px;
+	width:1055px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+
+.brandCenter p{
+	width:400%;
+	margin-left:-180px;
+}
+
+.brand{
+	background:#fff;
+	padding:0 20px 10px;
+	width:1158px;
+	margin:20px auto 0;
+	border:1px solid #e8e8e8;
+}
+
+.brand h2{
+	line-height:55px;
+	font-size:18px;
+	position:relative;
+	font-weight:bold;
+	color:#555;
+	border-bottom:1px solid #e8e8e8;
+}
+
+.brand h2 a{
+	position:absolute;
+	font-weight:100;
+	right:0;
+	font-size:14px;
+	color:#666;
+	top:4px;
+}
+
+.brand .floatL{
+	width:550px;
+	float:left;
+	padding:15px 0 0;
+	font-size:14px;
+	line-height:24px;
+	color:#707070;
+}
+
+.brand .floatL img{
+	float:left;
+	padding:0 30px 0 0;
+}
+
+.brand .floatL b{
+	display:block;
+	font-size:16px;
+	color:#333;
+	margin:0 0 10px;
+	font-weight:bold;
+}
+
+.brand .floatL a{
+	color:#f8633b;
+	display:block;
+	font-size:14px;
+	margin:10px 0 0;
+}
+
+.brand .floatR{
+	width:584px;
+	padding:20px 0 0;
+}
+
+.brand .floatR img{
+	float:left;
+	margin:0 0 10px 24px;
+	border:1px solid #e8e8e8;
+}
+
+
+
+.noticeList{
+	margin:20px 0 0;
+	width:548px;
+	border:1px solid #e4e4e4;
+	background:#fff;
+	padding:0 20px;
+}
+
+.notceLtit{
+	height:55px;
+	line-height:55px;
+	font-weight:bold;
+	color:#555;
+	font-size:18px;
+	position:relative;
+	border-bottom:1px solid #e4e4e4;
+}
+
+.notceLtit a{
+	color:#666;
+	position:absolute;
+	right:0;
+	top:2px;
+	font-size:14px;
+	font-weight:100;
+}
+
+.notceLcont{
+	padding:10px 0 11px;
+}
+
+.notceLcont ul li{
+	line-height:30px;
+	height:30px;
+	color:#3b3b3b;
+	font-size:14px;
+	position:relative;
+}
+
+.notceLcont ul li a{
+	display:block;
+	width:420px;
+	white-space:nowrap;
+	overflow:hidden;
+	height:30px;
+	text-overflow:ellipsis;
+}
+
+.notceLcont ul li span{
+	position:absolute;
+	right:0;
+	color:#808080;
+	top:0;
+	font-size: 14px;
+}
+
+.notceLcont ul li a i {
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	background-color: #989898;
+	border-radius: 5px;
+	margin: 3px;
+}
+
+
+.indexTop{
+	border:1px solid #e8e8e8;
+	margin:30px auto 0;
+	background:#fff;
+}
+
+/* .indexTop h2{
+	height:55px;
+	line-height:55px;
+	border-bottom:1px solid #e8e8e8;
+	margin:0 20px;
+	font-size:18px;
+	color:#333;
+	font-weight:bold;
+	position:relative;
+}
+
+.indexTop h2 .rankTips{
+	background:#f8f8f8;
+	line-height:18px;
+	height:18px;
+	color:#888;
+	padding:0 5px 0 30px;
+	margin: 0 0 0 10px;
+	font-size:12px;
+	position:relative;
+	display: inline-block;
+	font-weight: normal;
+}
+.indexTop h2 .rankTips b{
+	color:#ff620a;
+}
+.indexTop h2 .rankTips:before{
+	content:"";
+	width:26px;
+	height:26px;
+	background:url(../../Images/index2/ph_iwant.png) no-repeat;
+	position:absolute;
+	left:0;
+	top:-5px;
+} */
+.indexTop h2 .iwant{
+	background:#ff6000;
+	color:#fff;
+	height:18px;
+	line-height:18px;
+	padding:1px 5px;
+	border-radius:2px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.indexTop h2 font{
+	position:absolute;
+	right:0px;
+	font-weight:100;
+	font-size:12px;
+	color:#e8e8e8;
+}
+
+.indexTop h2 font span{
+	padding:0 10px;
+	font-size:16px;
+	color:#888;
+	cursor:pointer;
+}
+
+.indexTop h2 font span.hover{
+	color:#333;
+}
+
+.indexFixed{
+	display:block;
+}
+
+.cticon{
+	position:fixed;
+	right:10px;
+	top:55%
+}
+
+
+/*20160819新版首页修改样式*/
+/*改动样式*/
+.indexTop h2 font span:hover, .notceLtit a:hover {
+	color: #359eff;
+}
+.sideNav span {
+	width: 36px;
+	height: 6px;
+	border-radius: 0;
+	background: #fff;
+	border: none;
+}
+/* .invesAlink {
+	background: #ff6000;
+	color: #fff;
+	border: 1px solid #ff6000;
+}
+.invesAlink:hover {
+	background: #ff6000;
+	color: #fff;
+	border-radius: 0;
+} */
+.invesAlink-active {
+	color: #fff;
+	background: #ff6000;
+}
+.Iloginbefore span {
+	color: #fff;
+}
+.Ilogin, .IloginBg {
+	/*margin-top: 30px;*/
+	height: 320px;
+	top: 0;
+	background: url(../../Images/index2/grey_56e4f24.png);
+}
+.Iloginbefore {
+	padding-top: 75px;
+	color: #fff;
+	font-size: 22px;
+	font-weight: normal;
+}
+.Ilogin a.aBtn {
+	margin: 0 auto;
+	padding: 10px 47px 10px 70px;
+	display: inline;
+}
+.Ilogin a.aBtn:hover {
+	border-radius: 5px;
+}
+.Ilogin p {
+	font-size: 14px;
+	color: #fff;
+}
+.Statistics .box div {
+	color: #999;
+	border-right: 2px solid #e8e8e8;
+	text-align: center;
+}
+.Statistics .box div span {
+	color: #ff6000;
+	font-size: 22px;
+}
+.Statistics1 {
+	/* width: 311px; */
+	width: none;
+	padding: 0 10px 0 0;
+}
+.Statistics2 {
+	/* width: 280px; */
+	padding: 0 10px;
+}
+.Statistics3 {
+	/* width: 272px; */
+	padding: 0 20px;
+}
+.Statistics .box div.Statistics4 {
+	width: none;
+	padding: 0 0 0 20px;
+}
+.guarantee {
+	border-bottom: none;
+}
+.guarantee .box {
+	overflow: hidden;
+	margin:0 auto;
+}
+.guarantee dl dd b {
+	color: #333;
+	font-weight: 500;
+	font-size: 18px;
+}
+.guarantee dl dd {
+	color: #888;
+	font-size: 12px;
+}
+.Novice {
+	width:1160px;
+	margin-top: 30px;
+	height: 513px;
+	overflow: hidden;
+}
+.Novice div.floatR dl dd b {
+/*	background: #ffb65f;*/
+	background: #f65541;
+
+}
+.Novice div.floatL {
+	padding: 80px 22px;
+	color: #fff;
+	width: 184px;
+	position: relative;
+}
+.NoviceBox p a {
+	font-size: 18px;
+	color: #666666;
+}
+.my-Novice .sd{
+	font-size:14px;
+	color:#fff;
+	margin: 0 10px;
+	display: inline-block;
+	width: 46px;
+	height: 22px;
+	padding: 0;
+	line-height: 22px;
+	text-align: center;
+	background: url(../images/mypic/Label.png) center no-repeat;
+}
+/* .Novice div.floatL img {
+	display: inline;
+} */
+.Novice div.new {
+	/*background: #01aef0 url(../../Images/index2/new.png) 50px 290px no-repeat;*/
+	/*background: #01aef0 url(../images/Xinshou.png) 50px 290px no-repeat;*/
+    background: url(../images/Xinshou.png)no-repeat;
+    background-size: cover;
+    height: 95px;
+
+}
+.Novice div.short {
+	/*background: #89d861 url(../../Images/index2/short.png) 50px 290px no-repeat;*/
+	/*background: #89d861 url(../images/Duanqi.png) 50px 290px no-repeat;*/
+    background: url(../images/Duanqi.png)no-repeat;
+    background-size: cover;
+    height: 355px;
+}
+.Novice div.middle {
+	/*background: #5fc5f1 url(../../Images/index2/middle.png) 50px 290px no-repeat;*/
+	/*background: #5fc5f1 url(../images/Zhongqi.png) 50px 290px no-repeat;*/
+
+    background: url(../images/Zhongqi.png)no-repeat;
+    background-size: cover;
+    height: 355px;
+}
+.Novice div.long {
+	/*background: #b588f0 url(../../Images/index2/long.png) 50px 290px no-repeat;*/
+	/*background: #b588f0 url(../images/Changqi.png) 50px 290px no-repeat;*/
+
+    background: url(../images/Changqi.png)no-repeat;
+    background-size: cover;
+    height: 355px;
+}
+.Novice div.floatR dl dd em {
+	font-size: 12px;
+}
+.Novice div.floatL h1 {
+	width: 144px;
+	margin: 0 auto;
+	font-size: 36px;
+	line-height: 31px;
+	margin-bottom: 20px;
+}
+.Novice div.floatL p {
+	line-height: 40px;
+	width: 170px;
+	margin: 0 auto;
+	border-radius: 5px;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 260px;
+}
+.Novice div.floatL a {
+	display: block;
+	width: 228px;
+	color: #fff;
+	line-height: 38px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 14px;
+}
+.Novice div.floatL a.new {
+	background-color: #1bb6f2;
+}
+.Novice div.floatL a.short {
+    background-color: #769dec;
+}
+.Novice div.floatL a.middle {
+    background-color: #8d90f7;
+}
+.Novice div.floatL a.long {
+	background-color: #bd94f2;
+}
+.Novice div.new p {
+	border: 1px solid #67cef6;
+}
+.Novice div.short p {
+	border: 1px solid #b8e8a0;
+}
+.Novice div.middle p {
+	border: 1px solid #9fdcf7;
+}
+.Novice div.long p {
+	border: 1px solid #d3b8f6;
+}
+.Novice div.floatR {
+	width: 465px;
+	height: 513px;
+	border-bottom: none;
+	border-top: none;
+}
+
+.Novice div.NoviceAd {
+	padding: 25px 0;
+	width: 466px;
+	border-right: 0;
+}
+.Novice div.NoviceAd a img:first-child{
+	margin-right:0;
+}
+.Novice div.NoviceAd img.nolink{
+	padding-left:8px;
+	padding-bottom:15px;
+}
+.NoviceBox {
+		height:256px;
+	/* padding-top: 10p; */
+	border-bottom: none;
+	float:left;
+}
+div:first-child.NoviceBox {
+	border-right:1px solid #ddd;
+	border-bottom: 1px solid #e8e8e9;
+}
+.Novice div.floatR dl {
+	/*padding: 0 15px;*/
+	padding-top: 7px;
+}
+.Novice div.floatR p {
+	border-bottom: none;
+}
+.Novice div.floatR p span {
+	/*color: #ff7a3f;*/
+}
+.Novice div.floatR p span.highlight {
+	color: #ff7a3f;
+}
+
+.NoviceBox .label,.indexTyb .label {
+	overflow: hidden;
+	padding: 16px 0 0;
+	margin-right: 15px;
+	width: 500px;
+	height: 20px;
+	margin-top: 21px;
+}
+.NoviceBox .label a,.indexTyb .label a{
+	display:block;
+	float:left;
+	padding:0;
+	margin:0;
+	font-size:12px;
+	color:#228ef1;
+}
+.NoviceBox .label a.aFirst{
+	min-width:170px;
+
+}
+
+.indexTyb .label span{
+	cursor:pointer;
+}
+
+.NoviceBox .label em, .NoviceBox .label i ,.indexTyb .label em,.indexTyb .label i{
+	float: left;
+	display: block;
+	height: 14px;
+	width: 70px;
+	background: url(../../Images/index2/star-gray.png) 0 0 repeat-x;
+	margin-right: 15px;
+}
+.NoviceBox .label i {
+	width: 91%;
+	background: url(../../Images/index2/star.png) 0 0 repeat-x;
+}
+.NoviceBox .label span {
+	margin-left: 10px;
+	display: block;
+	color: #6dacf4;
+	float: left;
+	margin-right: 10px;
+	padding: 0;
+	height: 16px;
+	line-height: 16px;
+	border: none;
+}
+.NoviceBox .label span:hover {
+	cursor: pointer;
+}
+.NoviceBox .label span img {
+	margin: 0 5px -3px 0
+}
+.NoviceBox .high {
+	color: #228ef1;
+}
+.NoviceAd a img {
+	margin: -2px 4px 15px;
+}
+.Novice div.floatR dl dd b, .some .floatR p.floatR b {
+	/*background-color: #ffb65f;*/
+	background-color: #f65541;
+	width:0;
+}
+.NoviceBox .label span:first-child {
+	margin-left: 10px !important;
+}
+.some {
+	width:1160px;
+	margin: 30px auto 0;
+	height: 134px;
+	overflow: hidden;
+	border: none;
+}
+.some .change {
+	padding: 30px 37px;
+	width: 154px;
+	background-color: #f96846;
+	float: left;
+}
+.some .change h1 {
+	margin: 0 auto;
+	font-size: 36px;
+	color: #fff;
+	width: 144px;
+	line-height: 31px;
+}
+.some .change p {
+	margin: 0 auto;
+	font-size: 18px;
+	color: #fff;
+	line-height: 31px;
+	border: 1px solid #fba490;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 20px;
+}
+.some .floatL {
+	overflow: hidden;
+	margin-top: 20px;
+}
+.some .floatL dl {
+	float: left;
+	background: url(../../Images/index2/line.png) left center no-repeat;
+}
+.some .floatL dl.first {
+	margin-top: 7px;
+	padding: 0 72px;
+	text-align: center;
+	background-image: none;
+}
+.some .floatL dl.first dt {
+	padding-top: 16px;
+}
+.some .floatL dl.middle {
+	text-align: center;
+	padding: 0 72px;
+}
+.some .floatL dl.middle dt {
+	padding-top: 30px;
+}
+.some .floatL dl.last {
+	text-align: center;
+	padding-left: 80px;
+}
+.some .floatL dl.last dt {
+	padding-top: 30px;
+}
+.some .floatL dl.first dt {
+	padding-bottom: 2px;
+	font-size: 34px;
+	color: #ff6000;
+}
+.some .floatL dl dt span {
+	font-size: 20px;
+}
+.some .floatL dl dd {
+	font-size: 12px;
+	color: #333;
+}
+.some .floatL dl dd span {
+	color: #313131;
+}
+.some .floatL dl dt {
+	padding-bottom: 7px;
+	font-size: 22px;
+	color: #313131;
+}
+.some .floatL dl dt a {
+	width: 200px;
+	margin: 0 24px;
+	border-radius: 5px;
+	font-size: 20px;
+	line-height: 46px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	background-color: #f96846;
+}
+.plat {
+	margin-top: -10px;
+}
+.some {
+	margin-top: 30px;
+}
+.brand {
+	border: none;
+	position: relative;
+	margin-top: 30px;
+}
+.brand h2 {
+	font-weight: 500;
+	border-color: #f8f8f8;
+	color: #333;
+}
+.brand h2 a {
+	font-size: 14px;
+	font-weight: 500;
+	color: #333;
+}
+.brand .floatR img {
+	border-color: #efefef;
+}
+.brand .floatL{
+	width:526px;
+}
+.brand .floatL a {
+	font-size: 12px;
+	color: #228ef1;
+}
+.brand .floatR {
+	width: 569px;
+}
+.brand .floatL b:hover, .notceLcont ul li a:hover {
+	color: #f65541;
+	cursor: pointer;
+}
+.noticeList {
+	width: 520px;
+	border: none;
+	margin-top:0;
+}
+.noticeList.floatR {
+	float: right;
+	margin-right: 0;
+}
+.notceLtit {
+	font-weight: 500;
+	color: #333;
+	border-color: #f8f8f8;
+	font-size: 18px;
+}
+.notceLtit a {
+	color: #808080;
+	font-size: 14px;
+	font-weight: 500;
+}
+.notceLcont ul li a {
+	color: #333333;
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+.indexTop {
+	width:1160px;
+	border: none;
+}
+.indexTop h2 {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #f8f8f8;
+	margin: 0 20px;
+	font-size: 18px;
+	color: #333;
+	font-weight: 500;
+	position: relative;
+}
+.indexTop h2 .iwant {
+	font-weight: normal;
+	margin-right: 13px;
+}
+.indexTop h2 font span {
+	font-size: 14px;
+	color: #333;
+	font-weight: 500;
+}
+.indexTop {
+	margin-top: 30px;
+	overflow: hidden;
+}
+.indexTop .list {
+	width: 386px;
+	float: left;
+	padding: 30px 25px 0;
+	box-sizing:border-box;
+	
+}
+.indexTop .list .title {
+	color: #ff6000;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.indexTop .list .content {
+	background: url(../../Images/index2/line2.png) right center no-repeat;
+	padding-right: 40px;
+}
+.indexTop .list:last-child .content {
+	background: none;
+	padding-right: 0;
+}
+.indexTop .list .content .order {
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+.indexTop .list .content .order .number {
+	overflow: hidden;
+	float: left;
+}
+.indexTop .list .content .order .number span {
+	float: left;
+}
+.indexTop .list .content .order .number span.highlight, .indexTop .list .content .order .number span.gray {
+	display: block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	background-color: #ffb65f;
+	color: #fff;
+	text-align: center;
+	margin-right: 30px;
+	border-radius: 3px;
+}
+.indexTop .list .content .order .number span.gray {
+	background-color: #adadad;
+}
+.indexTop .list .content .order span {
+	font-size: 14px;
+	color: #666;
+	float: right;
+}
+.indexTop .list .content .order span.bold {
+	font-weight: bold;
+}
+.box{
+	width:1160px;
+	margin-top:0px;
+	margin-bottom:30px;
+	border-radius: 4px;
+}
+
+.last_box{
+
+}
+
+
+.friends-box {
+	width: 1160px;
+	background-color: #fff;
+	margin: 30px auto 0;
+    padding-bottom: 10px;
+}
+.friends {
+	padding: 20px;
+	background-color: #fff;
+	width: 1120px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.friends .option p {
+	float: left;
+	font-size: 18px;
+	color: #555;
+	font-weight: 500;
+}
+.friends .option span {
+	display: block;
+	width: 26px;
+	height: 26px;
+	float: right;
+}
+.friends .option span.left {
+	cursor: pointer;
+	margin-right: 10px;
+	background: url(../../Images/index2/footer-left.png);
+}
+.friends .option span.right {
+	cursor: pointer;
+	background: url(../../Images/index2/footer-right.png);
+}
+.friends ul {
+	margin-top: 40px;
+	overflow: hidden;
+	width: 1930px;
+	height: 49px;
+}
+.friends ul li {
+	margin: 0 24px;
+	list-style: none;
+	float: left;
+}
+.friends ul li img {
+	width: 145px;
+}
+ #top-box{
+	margin-bottom:0;
+}
+.guarantee{
+	margin-bottom:30px;
+}
+
+
+
+.indexTyb{
+	position:relative;
+	padding:15px 15px 0;
+	text-align:center;
+	margin:0px 0 0;
+}
+
+.indexTyb div{
+	position:absolute;
+	left:0;
+	bottom:80px;
+	width:100%;
+	color:#fff;
+	font-size:40px;
+}
+
+.indexTyb div a{
+	position:absolute;
+	width:205px;
+	height:34px;
+	left:50%;
+	margin:0 0 0 -98px;
+	top:63px;
+	background:url(about:blank);
+}
+
+.tybBg{
+	background:url(../images/tybBg.jpg) no-repeat;
+	display:inline-block;
+	width:18px;
+	height:20px;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	float:left;
+	margin:27px 0 0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.Novice div.floatR .indexTyb p{
+	clear:both;
+	line-height:normal;
+}
+
+.Novice div.floatR .indexTyb dl dt{
+	font-size:35px
+}
+.Novice .floatR .NoviceBox dl dt span {
+	position:relative;
+}
+.floatR .addinterest {
+    position: absolute;
+    background:url(../images/reward.png) no-repeat;
+    top: -19px;
+    right: -37px !important;
+    width:38px;
+	height:23px;
+}
+.tzinfo{
+	background:url(../images/zlhb.png) center center no-repeat;
+	height:150px;
+	width:100%;
+	border-top:0 solid #e8e8e8;
+	margin-top: 30px;
+}

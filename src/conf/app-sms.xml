@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+   <bean id="smsService"
+		class="com.sms.impl.SmsServiceImpl">
+	</bean>
+	
+		<bean id="sendMesService" class="com.hurong.credit.service.sms.impl.SendMesServiceimpl"/>
+	<!-- 
+		彩云金融
+	-->
+	<bean id="cYJRMsgStrategy" class="com.hurong.credit.sms.impl.CYJRMsgStrategyImpl"/>
+	<bean id="dJMsgStrategy" class="com.hurong.credit.sms.impl.DJMsgStrategyImpl"/>
+	<!-- 商讯通短信接口 -->
+	<bean id="sxtMessageStrategy" class="com.hurong.credit.sms.impl.SXTMessageStrategyImpl"/>
+	<!-- 宇展盈讯短信接口 -->
+	<bean id="yzyxMessageStrategyImpl" class="com.hurong.credit.sms.impl.YZYXMessageStrategyImpl"/>
+	
+	<!-- 宇展盈讯短信接口  svn:songwj -->
+	<bean id="yZYXMessageStrategyService" class="com.hurong.credit.service.sms.impl.YZHTMessageStrategyImpl"/>
+	
+	<!--商讯通短信接口  svn:songwj -->
+	<bean id="sXTMessageService" class="com.hurong.credit.service.sms.impl.SXTMessageServiceImpl"/>
+	
+	<!--华兴软通短信接口  svn:songwj -->
+	<bean id="hXSmsManagerService" class="com.hurong.credit.service.sms.impl.HXSmsManagerServerImpl"/>
+	
+	<!-- 一信通短信接口  svn:songwj -->
+	<bean id="yXTessageService" class="com.hurong.credit.service.sms.impl.YXTessageServiceImpl"/>
+</beans>

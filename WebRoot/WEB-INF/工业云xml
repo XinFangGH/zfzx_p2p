@@ -1,0 +1,112 @@
+
+<!--工业云平台开始-->
+	<context-param>
+		<param-name>serverName</param-name>
+		<param-value>http://localhost:9099</param-value>
+	</context-param>
+
+  <!-- CAS退出url -->
+  <context-param>
+      <param-name>casServerLogoutUrl</param-name>
+      <param-value>http://casserver.sdcloud.net:8090/cas/logout</param-value>
+  </context-param>
+  
+  <!--单点退出配置-->
+  <listener>
+      <listener-class>org.jasig.cas.client.session.SingleSignOutHttpSessionListener</listener-class>
+      </listener>
+  <filter>
+  <filter-name>CAS Single Sign Out Filter</filter-name>
+      <filter-class>org.jasig.cas.client.session.SingleSignOutFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>CAS Single Sign Out Filter</filter-name>
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+<!-- CAS 客户端配置 -->
+	<filter>
+		<filter-name>CAS Authentication Filter</filter-name>
+		<filter-class>
+			org.jasig.cas.client.authentication.AuthenticationFilter
+		</filter-class>
+		<!-- CAS验证服务器地址，有域名填写域名 -->
+		<init-param>
+			<param-name>casServerLoginUrl</param-name>
+			<param-value>
+				https://casserver.sdcloud.net:8443/cas/login
+			</param-value>
+		</init-param>
+		<init-param>
+			<param-name>renew</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<init-param>
+			<param-name>gateway</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<!-- 客户端应用服务器地址-->
+		<init-param>
+			<param-name>serverName</param-name>
+			<param-value>http://localhost:9099</param-value>
+		</init-param>
+	</filter>
+
+	<!--负责Ticket校验-->
+	<filter>
+		<filter-name>CAS Validation Filter</filter-name>
+		<filter-class>
+			org.jasig.cas.client.validation.Cas20ProxyReceivingTicketValidationFilter
+		</filter-class>
+		<init-param>
+			<param-name>casServerUrlPrefix</param-name>
+			<param-value>https://casserver.sdcloud.net:8443/cas/</param-value>
+		</init-param>
+		<init-param>
+			<param-name>serverName</param-name>
+			<param-value>http://localhost:9099</param-value>
+		</init-param>
+		<init-param>
+			<param-name>useSession</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>redirectAfterValidation</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+		<filter-name>CAS HttpServletRequest Wrapper Filter</filter-name>
+		<filter-class>
+			org.jasig.cas.client.util.HttpServletRequestWrapperFilter
+		</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>CAS Assertion Thread Local Filter</filter-name>
+		<filter-class>
+			org.jasig.cas.client.util.AssertionThreadLocalFilter
+		</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>CAS Authentication Filter</filter-name>
+		<url-pattern>/login.do</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>CAS Validation Filter</filter-name>
+		<url-pattern>/login.do</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>CAS HttpServletRequest Wrapper Filter</filter-name>
+		<url-pattern>/login.do</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>CAS Assertion Thread Local Filter</filter-name>
+		<url-pattern>/login.do</url-pattern>
+	</filter-mapping>  
+	<!--工业云平台结束-->

@@ -1,0 +1,36 @@
+﻿
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+body {
+	font-size: 18px;
+	font-family:Arial;
+	text-align:left;
+	margin:20px 0 0 0;
+	padding:0
+}
+img{ border:0;}
+
+</style>
+</head>
+<body>
+
+  <div class="content">
+  <p>您好，${userName}</p>
+  
+<p>&nbsp;&nbsp;&nbsp;&nbsp;恭喜您，成功收到一张优惠券,激活码为： ${couponNumber}，优惠券有效期到：${endTime} ，请登录平台激活使用，如有疑问请致电：${phone}【${project}】
+</p>
+  </div>
+
+<div style="margin-top:50px; width:100%">
+
+<p>${subject}</p>
+<div style="border: 1px solid"></div>
+<p>注：此邮件由系统自动发送，请勿回复。</p>
+<p>如果您有任何疑问，请联系客服电话${phone}</p>
+</div>
+</body>
+</html>

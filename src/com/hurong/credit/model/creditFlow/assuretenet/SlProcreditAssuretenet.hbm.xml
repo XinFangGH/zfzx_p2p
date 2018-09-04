@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+        name="com.hurong.credit.model.creditFlow.assuretenet.SlProcreditAssuretenet"
+        table="sl_procredit_assuretenet"
+        select-before-update="false"
+        dynamic-update="false"
+        dynamic-insert="false"
+        optimistic-lock="version"
+    >
+		<id
+            name="assuretenetId"
+            column="assuretenetId"
+            type="java.lang.Long"
+            length="19"
+        >
+            <generator class="native"/>
+        </id>
+         <property
+            name="assuretenet"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="assuretenet"
+            length="255"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="businessmanageropinion"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="businessmanageropinion"
+            length="50"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="riskmanageropinion"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="riskmanageropinion"
+            length="50"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="projid"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="projid"
+            length="64"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="businessTypeKey"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="businessTypeKey"
+            length="30"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="sortvalue"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="sortvalue"
+            length="10"
+            not-null="false"
+            unique="false"
+        />
+     </class>
+</hibernate-mapping>

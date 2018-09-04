@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+body {
+	font-size: 18px;
+	font-family:Arial;
+	text-align:left;
+	margin:20px 0 0 0;
+	padding:0
+}
+img{ border:0;}
+
+</style>
+</head>
+<body>
+
+  <div class="content">
+  <p>您好，${mailData.userName}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;您于${mailData.time} 申请找回密码，您本次的验证码为：${mailData.code} 请返回平台网站输入以完成验证。
+</p>
+   <p>&nbsp;&nbsp;&nbsp;&nbsp;为保障您的账号安全，请在30分钟内完成验证。若您没有申请过验证邮箱，请您忽略此邮件，由此给您带来的不便请谅解。</p>
+  </div>
+
+<div style="margin-top:50px; width:100%">
+<div id="logo"><a href="${mailData.website}" target="_blank"><img src="${mailData.website}/theme/${mailData.proj_them}/images/logo.gif" height="70" /></a></div>
+<p>${mailData.description}</p>
+<div style="border: 1px solid"></div>
+<p>注：此邮件由系统自动发送，请勿回复。</p>
+<p>如果您有任何疑问，请联系客服电话${mailData.phone}</p>
+</div>
+
+
+</body>
+</html>

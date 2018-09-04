@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+        name="com.hurong.credit.model.customer.MaliciousRecord"
+        table="malicious_record"
+        select-before-update="false"
+        dynamic-update="false"
+        dynamic-insert="false"
+        optimistic-lock="version"
+    >
+		<id
+            name="mrid"
+            column="mrid"
+            type="java.lang.Long"
+            length="19"
+        >
+            <generator class="native"/>
+        </id>
+        <property
+            name="mrmac"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="mrmac"
+            length="30"
+            not-null="true"
+            unique="false"
+        />
+         <property
+            name="mrip"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="mrip"
+            length="30"
+            not-null="true"
+            unique="false"
+        />
+        <property
+            name="mrhttpheader"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="mrhttpheader"
+            length="1000"
+            not-null="true"
+            unique="false"
+        />
+     </class>
+</hibernate-mapping>

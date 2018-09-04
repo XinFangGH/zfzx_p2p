@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.hurong.credit.model.materials.WebFinanceApplyUploads" table="web_finance_apply_uploads">
+  <id column="id" length="10" name="id" type="java.lang.Long">
+   <generator class="native"/>
+  </id>
+  <property column="userID" generated="never" insert="true" lazy="false"
+   length="10" name="userID" not-null="true" type="java.lang.Long" update="true"/>
+   
+  <property column="materialstype" generated="never" insert="true"
+   lazy="false" length="20" name="materialstype" type="java.lang.String" update="true"/>
+   
+  <property column="files" generated="never" insert="true" lazy="false"
+   length="1000" name="files" type="java.lang.String" update="true"/>
+   
+  <property column="status" generated="never" insert="true" lazy="false"
+   length="5" name="status" not-null="true" type="java.lang.Integer" update="true"/>
+   
+  <property column="lastuploadtime" generated="never" insert="true"
+   lazy="false" length="19" name="lastuploadtime" type="java.util.Date" update="true"/>
+   
+  <property column="rejectReason" generated="never" insert="true"
+   lazy="false" length="2000" name="rejectReason" type="java.lang.String" update="true"/>
+   
+  <property column="materialId" generated="never" insert="true"
+   lazy="false" length="20" name="materialId" type="java.lang.Long" update="true"/>
+  <property column="conditionId" generated="never" insert="true"
+   lazy="false" length="20" name="conditionId" type="java.lang.Long" update="true"/>
+   
+ </class>
+</hibernate-mapping>

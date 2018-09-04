@@ -1,0 +1,74 @@
+.main_content{
+    width: 160px;
+    margin:0 auto;
+    height: 220px;
+}
+#image_area{
+    margin:20px auto;
+    width: 200px;
+    height: 200px;
+}
+#image_area #biuuu{
+    width : 200px;
+    height : 200px;
+}
+#image_area #view{
+    width : 0px;
+    height : 0px;
+}
+#image_area span{
+    line-height: 30px;
+    font-size: 12px;
+}
+#upload_area{
+    margin:30px auto;
+    clear: both;
+    padding:10px 0;
+    overflow:hidden;
+    width:266px;
+   
+}
+#upload_area a{display:inline-block; margin:0 20px;}
+#upload_area #picpath{
+    width: 10px;
+    height: 10px;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+#upload_area input{
+    height: 22px;
+}
+#submit_button{
+  /*  clear: both;*/
+    float:left;
+    width: 100px;
+    height: 32px;
+    margin: 0px auto;
+}
+.button{
+    display: block;
+    font-size: 14px;
+    font-weight: bolder;
+    float: left;
+    margin-left: 30px;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    background: #5BB75B;
+    text-decoration: none;
+    font-family: verdana;
+    text-align: center;
+    box-shadow: 5px 5px 5px lightgray;
+    color: white;
+}
+.button:hover{
+    height: 34px;
+    margin-top: -2px;
+    line-height: 31px;
+}
+a{
+    outline: none;
+}

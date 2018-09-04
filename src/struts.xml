@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <constant name="struts.action.extension" value="do"/>
+    <constant name="struts.devMode" value="false"/>
+    <constant name="struts.ui.theme" value="xhtml"/>
+    <!-- 国际化资源文件名称 -->
+    <constant name="struts.custom.i18n.resources" value="i18n"/>
+    <!-- 是否自动加载国际化资源文件  -->
+    <constant name="struts.i18n.reload" value="false"/>
+    <!-- convention类重新加载 -->
+    <constant name="struts.convention.classes.reload" value="false"/>
+    <constant name="struts.convention.action.mapallmatches" value="true"/>
+    <!-- 浏览器是否缓存静态内容 -->
+    <constant name="struts.serve.static.browserCache" value="true"/>
+    <!-- 编码 -->
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <!-- 文件上传，这个是控制struts2文件上传大小的最终地方 -->
+    <constant name="struts.multipart.maxSize" value="10485760000000"/>
+    <package name="publicInterceptor" extends="struts-default" strict-method-invocation="false">
+        <interceptors>
+            <interceptor name="Login" class="com.hurong.credit.action.system.LoginInterceptor"></interceptor>
+            <interceptor-stack name="myInterceptor">
+                <interceptor-ref name="Login"></interceptor-ref><!-- session失效拦截 -->
+                <interceptor-ref name="defaultStack"></interceptor-ref><!-- 必须引入这个，否则request不会再往下传 -->
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="myInterceptor"></default-interceptor-ref>
+        <global-results>
+            <result name="tologin">/WEB-INF/template/proj_wenandai/changeLogin.jsp</result>
+            <result name="toIndex">/WEB-INF/template/proj_wenandai/changeIndex.jsp</result>
+        </global-results>
+    </package>
+
+
+    <package name="system" extends="publicInterceptor" strict-method-invocation="false" namespace="/system">
+        <action name="*BuildHtml" class="BuildHtmlAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*Global" class="GlobalAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*SystemProperties" class="SystemPropertiesAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="article" extends="publicInterceptor" strict-method-invocation="false" namespace="/article">
+        <action name="*Article" class="ArticleAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!--start: Generated for ArticleCategory From Template: struts-ent.xml.vm-->
+        <action name="*ArticleCategory" class="ArticleCategoryAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!--end: Generated for ArticleCategory From Template: struts-ent.xml.vm	-->
+        <!--start: Generated for P2pFriendlink From Template: struts-ent.xml.vm	-->
+        <action name="*P2pFriendlink" class="P2pFriendlinkAction" method="{1}">
+            <result type="freemarker">${successResultValue}</result>
+        </action>
+        <!--end: Generated for P2pFriendlink From Template: struts-ent.xml.vm-->
+    </package>
+
+    <package name="material" extends="publicInterceptor" strict-method-invocation="false" namespace="/material">
+        <action name="*Material" class="UploadMaterial" method="{1}">
+            <result type="freemarker">${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="p2p" extends="publicInterceptor" strict-method-invocation="false" namespace="/p2p">
+        <!-- start: Generated for P2pFriendlink From Template: struts-ent.xml.vm-->
+        <action name="*P2pFriendlink" class="P2pFriendlinkAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <!--end: Generated for P2pFriendlink From Template: struts-ent.xml.vm-->
+        <action name="*PlatDataPublish" class="PlatDataPublishAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="default" extends="publicInterceptor" strict-method-invocation="false">
+        <default-action-ref name="defaultAction"/>
+        <action name="defaultAction" class="BaseAction">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*reg" class="RegAction" method="{1}">
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+            <result>${successResultValue}</result>
+            <result name="bindEmail">/WEB-INF/mobileJsp/bindEmail.jsp</result>
+            <result name="login">/WEB-INF/mobileJsp/reg_log.jsp</result>
+        </action>
+        <action name="*login" class="LoginAction" method="{1}">
+            <result name="111">/WEB-INF/mobileJsp/lawArticle.jsp</result>
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!-- 恒安财富单点登录使用 -->
+        <action name="login" class="LoginAction" method="yunpingtai">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <action name="index" class="LoginAction" method="index">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <action name="*create" class="CreateRandomRemate" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*Code" class="ImageCodeAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="train" extends="struts-default" strict-method-invocation="false" namespace="/train">
+
+    </package>
+
+
+    <package name="user" extends="publicInterceptor" strict-method-invocation="false" namespace="/user">
+
+        <action name="*BpCustMember" class="BpCustMemberAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="message" type="freemarker">${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+            <result name="freemarker2" type="redirect">
+                ${base}/loan/getNodeP2pLoanProduct.do?productId=${financeApplyUser.productId}
+            </result>
+        </action>
+        <action name="*Area" class="BpDicAreaAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="html" extends="publicInterceptor" strict-method-invocation="false" namespace="/html">
+        <action name="*Single" class="SingleAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="financePurchase" extends="publicInterceptor" strict-method-invocation="false"
+             namespace="/financePurchase">
+        <action name="*FinancePurchase" class="FinancePurchaseAction" method="{1}">
+            <result type="freemarker">${successResultValue}</result>
+            <result name="finance" type="freemarker">${successResultValue}</result>
+            <result name="message" type="freemarker">${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+            <result name="capital_details">/WEB-INF/mobileJsp/capital_details.jsp</result>
+            <result name="error_message">/WEB-INF/mobileJsp/error_message.jsp</result>
+            <result name="login">/WEB-INF/mobileJsp/reg_log.jsp</result>
+            <result name="loanAuthorize" type="freemarker">/WEB-INf/template/${projstr}/user/loanAuthorize.ftl</result>
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*Area" class="BpDicAreaAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*applyUser" class="BpFinanceApplyUserAction" method="{1}">
+            <result name="finance" type="freemarker">${successResultValue}</result>
+            <result name="message" type="freemarker">${successResultValue}</result>
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="investment" extends="publicInterceptor" strict-method-invocation="false" namespace="/investment">
+        <action name="*Investment" class="InvestmentAction" method="{1}">
+            <result type="freemarker">${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="about" extends="publicInterceptor" strict-method-invocation="false" namespace="/about">
+        <action name="*About" class="AboutAction" method="{1}">
+            <result type="freemarker">${successResultValue}</result>
+            <result name="toLinks" type="freemarker">/WEB-INF/template/${projstr}/single/links.ftl</result>
+            <result name="toPartners" type="freemarker">/WEB-INF/template/${projstr}/single/partners.ftl</result>
+        </action>
+    </package>
+
+    <package name="thirdInterface" extends="publicInterceptor" strict-method-invocation="false"
+             namespace="/thirdInterface">
+        <action name="*WebBankCode" class="WebBankCodeAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*WebBankcard" class="WebBankcardAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="pay" extends="publicInterceptor" strict-method-invocation="false" namespace="/pay">
+        <!--投标转账信息-->
+        <action name="*BpBidLoan" class="BpBidLoanAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <action name="*Pay" class="PayAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <action name="*Back" class="BackAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*Font" class="FontAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <action name="*FontHuiFu" class="FontHuiFuAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <action name="*BkHuiFu" class="BkHuiFuAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!-- start:  Generated for BankCode From Template: struts-ent.xml.vm  -->
+        <action name="*BankCode" class="BankCodeAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for BankCode From Template: struts-ent.xml.vm  -->
+    </package>
+
+    <package name="financingAgency" extends="publicInterceptor" strict-method-invocation="false"
+             namespace="/creditFlow/financingAgency">
+        <!-- start:  Generated for PlBidInfo From Template: struts-ent.xml.vm  -->
+        <action name="*PlBidInfo" class="PlBidInfoAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for PlBidInfo From Template: struts-ent.xml.vm  -->
+        <action name="*PlManageMoneyPlanBuyinfo" class="PlManageMoneyPlanBuyinfoAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!-- start:  Generated for PlBidPlan From Template: struts-ent.xml.vm  -->
+        <action name="*PlBidPlan" class="PlBidPlanAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">/WEB-INF/template/${projstr}/bid/bid_list.ftl</result>
+            <result name="bidPlan" type="freemarker">${successResultValue}</result>
+            <result name="showNull" type="freemarker">/WEB-INF/template/${projstr}/bid/bid_list_null.ftl</result>
+            <!--<result name="mobileBidPlan">/WEB-INF/mobileJsp/financeLease.jsp</result>-->
+        </action>
+        <!-- end:  Generated for PlBidPlan From Template: struts-ent.xml.vm  -->
+        <!-- 理财计划 -->
+        <action name="*PlManageMoneyPlan" class="PlManageMoneyPlanAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+            <result name="moneyPlan" type="freemarker">${successResultValue}</result>
+            <!--<result name="freemarker" type="freemarker">/WEB-INF/template/${projstr}/bid/mmplan_list.ftl</result>
+            <result name="treasure" type="freemarker">/WEB-INF/template/${projstr}/bid/tybplan_list.ftl</result> -->
+        </action>
+        <action name="*PlBidAuto" class="PlBidAutoAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+            <result name="moneyPlan" type="freemarker">${successResultValue}</result>
+        </action>
+        <action name="*PlBidSale" class="PlBidSaleAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="financingAgencyBusiness" extends="publicInterceptor" strict-method-invocation="false"
+             namespace="/creditFlow/financingAgency/business">
+        <!-- start:  Generated for BpBusinessDirPro From Template: struts-ent.xml.vm  -->
+        <action name="*BpBusinessDirPro" class="BpBusinessDirProAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for BpBusinessDirPro From Template: struts-ent.xml.vm  -->
+        <!-- start:  Generated for BpBusinessOrPro From Template: struts-ent.xml.vm  -->
+        <action name="*BpBusinessOrPro" class="BpBusinessOrProAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for BpBusinessOrPro From Template: struts-ent.xml.vm  -->
+        <!-- start:  Generated for PlBusinessDirProKeep From Template: struts-ent.xml.vm  -->
+        <action name="*PlBusinessDirProKeep" class="PlBusinessDirProKeepAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for PlBusinessDirProKeep From Template: struts-ent.xml.vm  -->
+    </package>
+
+    <package name="financingAgencyPersion" extends="publicInterceptor" strict-method-invocation="false"
+             namespace="/creditFlow/financingAgency/persion">
+        <!-- start:  Generated for PlPersionDirProKeep From Template: struts-ent.xml.vm  -->
+        <action name="*PlPersionDirProKeep" class="PlPersionDirProKeepAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for PlPersionDirProKeep From Template: struts-ent.xml.vm  -->
+        <!-- start:  Generated for BpPersionDirPro From Template: struts-ent.xml.vm  -->
+        <action name="*BpPersionDirPro" class="BpPersionDirProAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for BpPersionDirPro From Template: struts-ent.xml.vm  -->
+        <!-- start:  Generated for BpPersionOrPro From Template: struts-ent.xml.vm  -->
+        <action name="*BpPersionOrPro" class="BpPersionOrProAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for BpPersionOrPro From Template: struts-ent.xml.vm  -->
+    </package>
+
+    <!--消息 -->
+    <package name="message" extends="publicInterceptor" strict-method-invocation="false" namespace="/message">
+        <!-- start:  Generated for OaNewsMessage From Template: struts-ent.xml.vm  -->
+        <action name="*OaNewsMessage" class="OaNewsMessageAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+            <result name="my_news">/WEB-INF/mobileJsp/my_news.jsp</result>
+            <result name="myMessage_details">/WEB-INF/mobileJsp/myMessage_details.jsp</result>
+            <result name="reg_log">/WEB-INF/mobileJsp/reg_log.jsp</result>
+        </action>
+        <action name="*OaNewsMessagerinfo" class="OaNewsMessagerinfoAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for OaNewsMessage From Template: struts-ent.xml.vm  -->
+    </package>
+
+    <package name="financingAgencyTypeManger" extends="publicInterceptor" strict-method-invocation="false"
+             namespace="/creditFlow/financingAgency/typeManger">
+        <action name="*PlBiddingType" class="PlBiddingTypeAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*PlKeepCreditlevel" class="PlKeepCreditlevelAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*PlKeepGtorz" class="PlKeepGtorzAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*PlKeepProtype" class="PlKeepProtypeAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="mobile" extends="publicInterceptor" strict-method-invocation="false" namespace="/mobile">
+        <action name="*Mobile" class="MobileAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="mobilegather" extends="publicInterceptor" strict-method-invocation="false" namespace="/mobilegather">
+        <action name="*_BGAction" class="BorrowerGatherAction" method="{1}">
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="mobileProduct" extends="publicInterceptor" strict-method-invocation="false"
+             namespace="/mobileProduct">
+        <action name="*_PDAction" class="ProductDetailsAction" method="{1}">
+            <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="token"/>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="bonusSystem" extends="publicInterceptor" strict-method-invocation="false" namespace="/bonusSystem">
+        <action name="*WebBonusRecord" class="WebBonusRecordAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="BpActivityManage" extends="publicInterceptor" strict-method-invocation="false" namespace="/activity">
+        <action name="*BpActivityManage" class="BpActivityManageAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="BpCustRed" extends="publicInterceptor" strict-method-invocation="false" namespace="/bpCustRed">
+        <action name="*BpCustRedEnvelope" class="BpCustRedEnvelopeAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+        <action name="*BpCustRedMember" class="BpCustRedMemberAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="loan" extends="publicInterceptor" strict-method-invocation="false" namespace="/loan">
+        <!-- start:  Generated for P2pLoanProduct From Template: struts-ent.xml.vm  -->
+        <action name="*P2pLoanProduct" class="P2pLoanProductAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+
+            <interceptor-ref name="fileUpload">
+                <!-- application/vnd.openxmlformats-officedocument.wordprocessingml.document  这是.docx 格式的allowedTypes -->
+                <!-- application/vnd.openxmlformats-officedocument.spreadsheetml.sheet  这是.xlsx 格式的allowedTypes -->
+                <!-- text/xml  这是.xls 格式的allowedTypes -->
+                <param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param><!-- 文件过滤 -->
+                <param name="maximumSize">1572864</param><!-- 文件大小, 以字节为单位 -->
+            </interceptor-ref>
+            <!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+            <interceptor-ref name="defaultStack"/>
+
+        </action>
+        <!-- end:  Generated for P2pLoanProduct From Template: struts-ent.xml.vm  -->
+        <!-- start:  Generated for P2pLoanConditionOrMaterial From Template: struts-ent.xml.vm  -->
+        <action name="*P2pLoanConditionOrMaterial" class="P2pLoanConditionOrMaterialAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for P2pLoanConditionOrMaterial From Template: struts-ent.xml.vm  -->
+        <!-- start:  Generated for P2pLoanRate From Template: struts-ent.xml.vm  -->
+        <action name="*P2pLoanRate" class="P2pLoanRateAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for P2pLoanRate From Template: struts-ent.xml.vm  -->
+        <!-- start:  Generated for P2pLoanApplyStep From Template: struts-ent.xml.vm  -->
+        <action name="*P2pLoanApplyStep" class="P2pLoanApplyStepAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for P2pLoanApplyStep From Template: struts-ent.xml.vm  -->
+        <!-- start:  Generated for P2pLoanBasisMaterial From Template: struts-ent.xml.vm  -->
+        <action name="*P2pLoanBasisMaterial" class="P2pLoanBasisMaterialAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+        </action>
+        <!-- end:  Generated for P2pLoanBasisMaterial From Template: struts-ent.xml.vm  -->
+    </package>
+
+    <package name="Android" extends="publicInterceptor" strict-method-invocation="false" namespace="/webPhone">
+
+        <interceptors>
+            <!-- 配置mySimple拦截器 -->
+            <interceptor name="mySimple" class="com.hurong.credit.model.mobile.MobileInterceptor">
+                <!--&lt;!&ndash; 为拦截器指定参数值 &ndash;&gt;-->
+                <!--<param name="name">拦截方法的拦截器</param>-->
+            </interceptor>
+        </interceptors>
+        <global-results>
+            <result name="reg_log">/WEB-INF/mobileJsp/reg_log.jsp</result>
+        </global-results>
+        <action name="*homePage" class="WebPhoneAction" method="{1}">
+            <!--&lt;!&ndash; 配置系统的默认拦截器 &ndash;&gt;
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            &lt;!&ndash; 应用自定义的mySimple拦截器 &ndash;&gt;
+            <interceptor-ref name="mySimple">
+                &lt;!&ndash; 指定execute方法不需要被拦截 &ndash;&gt;
+                <param name="excludeMethods">mobileIndex,mobileEntry,planList,regLog,checkPhone</param>
+            </interceptor-ref>-->
+            <result>${successResultValue}</result>
+            <result name="888">/WEB-INF/mobileJsp/app/error_message.jsp</result>
+            <result name="changeTel">/WEB-INF/mobileJsp/changeTel.jsp</result>
+            <result name="homePage">/WEB-INF/mobileJsp/homePage.jsp</result>
+            <result name="Lend">/WEB-INF/mobileJsp/Lend.jsp</result>
+            <result name="reg_log">/WEB-INF/mobileJsp/reg_log.jsp</result>
+            <result name="reg">/WEB-INF/mobileJsp/register.jsp</result>
+            <result name="login">/WEB-INF/mobileJsp/login.jsp</result>
+            <result name="message_center">/WEB-INF/mobileJsp/message_center.jsp</result>
+            <result name="information">/WEB-INF/mobileJsp/information.jsp</result>
+            <!--登陆注册-->
+            <result name="lists_1">/WEB-INF/mobileJsp/app/help_center_lists_1.jsp</result>
+            <!--绑定银行卡-->
+            <result name="lists_2">/WEB-INF/mobileJsp/app/help_center_lists_2.jsp</result>
+            <!--充值提现-->
+            <result name="lists_3">/WEB-INF/mobileJsp/app/help_center_lists_3.jsp</result>
+            <!--标的类-->
+            <result name="lists_4">/WEB-INF/mobileJsp/app/help_center_lists_4.jsp</result>
+            <!--资金存管-->
+            <result name="lists_5">/WEB-INF/mobileJsp/app/help_center_lists_5.jsp</result>
+            <!--帮助中心-->
+            <result name="helpInfo">/WEB-INF/mobileJsp/app/help_center.jsp</result>
+            <!--信息披露-->
+            <result name="infoView">/WEB-INF/mobileJsp/app/information.jsp</result>
+            <!--安全保障-->
+            <result name="securityInfo">/WEB-INF/mobileJsp/app/safety_guarantee.jsp</result>
+            <!--媒体报道-->
+            <result name="mediaInfo">/WEB-INF/mobileJsp/app/media_detail.jsp</result>
+            <!--消息详情-->
+            <result name="msgInfo">/WEB-INF/mobileJsp/app/message_details.jsp</result>
+            <!--运营数据-->
+            <result name="appOperation">/WEB-INF/mobileJsp/app/operation.jsp</result>
+            <!--服务协议-->
+            <result name="agreementInfo">/WEB-INF/mobileJsp/app/service_agreement.jsp</result>
+            <!--媒体报道列表-->
+            <result name="mediaInfoList">/WEB-INF/mobileJsp/app/media_list.jsp</result>
+            <!--支持的银行卡列表-->
+            <result name="supportCard">/WEB-INF/mobileJsp/app/bankCard1.jsp</result>
+            <!--公告-->
+            <result name="platform_bulletin_app">/WEB-INF/mobileJsp/app/platform_bulletin.jsp</result>
+            <result name="message_details">/WEB-INF/mobileJsp/message_details.jsp</result>
+            <result name="safety_guarantee">/WEB-INF/mobileJsp/safety_guarantee.jsp</result>
+            <result name="platform_bulletin">/WEB-INF/mobileJsp/platform_bulletin.jsp</result>
+            <result name="media_list">/WEB-INF/mobileJsp/media_list.jsp</result>
+            <result name="service_agreement">/WEB-INF/mobileJsp/service_agreement.jsp</result>
+            <result name="mediaist">/WEB-INF/mobileJsp/media_list.jsp</result>
+            <result name="bankCard1">/WEB-INF/mobileJsp/bankCard1.jsp</result>
+            <result name="help_center">/WEB-INF/mobileJsp/help_center.jsp</result>
+            <result name="media_detail">/WEB-INF/mobileJsp/media_detail.jsp</result>
+            <result name="risk_agreement">/WEB-INF/mobileJsp/app/risk_agreement.jsp</result>
+            <result name="finacingLease_agreement">/WEB-INF/mobileJsp/finacingLease_agreement.jsp</result>
+            <result name="newFinacingLease_agreement">/WEB-INF/mobileJsp/app/finacingLease_agreement.jsp</result>
+            <result name="account_detail">/WEB-INF/mobileJsp/capital_details.jsp</result>
+            <result name="help_center_lists_1">/WEB-INF/mobileJsp/help_center_lists_1.jsp</result>
+            <result name="help_center_lists_2">/WEB-INF/mobileJsp/help_center_lists_2.jsp</result>
+            <result name="help_center_lists_3">/WEB-INF/mobileJsp/help_center_lists_3.jsp</result>
+            <result name="help_center_lists_4">/WEB-INF/mobileJsp/help_center_lists_4.jsp</result>
+            <result name="help_center_lists_5">/WEB-INF/mobileJsp/help_center_lists_5.jsp</result>
+            <result name="coupon">/WEB-INF/mobileJsp/coupon.jsp</result>
+            <result name="invite_reg">/WEB-INF/mobileJsp/invite_reg.jsp</result>
+            <result name="invite">/WEB-INF/mobileJsp/invite.jsp</result>
+            <result name="android">/WEB-INF/mobileJsp/androidApp.jsp</result>
+            <result name="error_message">/WEB-INF/mobileJsp/error_message.jsp</result>
+            <result name="success_message">/WEB-INF/mobileJsp/success_message.jsp</result>
+            <result name="getBpcustmem" type="dispatcher">userValidWebPhoneCustMember.do</result>
+          <!-- 法律法规-->
+            <result name="lawArticle_1">/WEB-INF/mobileJsp/lawArticle_1.jsp</result>
+            <result name="lawArticle_2">/WEB-INF/mobileJsp/lawArticle_2.jsp</result>
+            <result name="lawArticle_3">/WEB-INF/mobileJsp/lawArticle_3.jsp</result>
+            <result name="lawArticle_4">/WEB-INF/mobileJsp/lawArticle_4.jsp</result>
+            <result name="lawArticle_5">/WEB-INF/mobileJsp/lawArticle_5.jsp</result>
+
+            <!-- app法律法规-->
+            <result name="lawArticle_1app">/WEB-INF/mobileJsp/app/lawArticle_1.jsp</result>
+            <result name="lawArticle_2app">/WEB-INF/mobileJsp/app/lawArticle_2.jsp</result>
+            <result name="lawArticle_3app">/WEB-INF/mobileJsp/app/lawArticle_3.jsp</result>
+            <result name="lawArticle_4app">/WEB-INF/mobileJsp/app/lawArticle_4.jsp</result>
+            <result name="lawArticle_5app">/WEB-INF/mobileJsp/app/lawArticle_5.jsp</result>
+            <result name="operation">/WEB-INF/mobileJsp/operation.jsp</result>
+        </action>
+
+        <action name="*WebPhoneEmailAction" class="WebPhoneEmailAction" method="{1}">
+            <!--&lt;!&ndash; 配置系统的默认拦截器 &ndash;&gt;
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            &lt;!&ndash; 应用自定义的mySimple拦截器 &ndash;&gt;
+            <interceptor-ref name="mySimple">
+                &lt;!&ndash; 指定execute方法不需要被拦截 &ndash;&gt;
+                <param name="excludeMethods"></param>
+            </interceptor-ref>-->
+            <result>${successResultValue}</result>
+            <result name="appcode">appcodecreate.do</result>
+            <result name="bindEmail1">/WEB-INF/mobileJsp/bindEmail1.jsp</result>
+            <result name="changeTel1">/WEB-INF/mobileJsp/changeTel1.jsp</result>
+            <result name="login">/WEB-INF/mobileJsp/reg_log.jsp</result>
+        </action>
+
+        <action name="*WebChangePhoneAction" class="WebChangePhoneAction" method="{1}">
+            <!--&lt;!&ndash; 配置系统的默认拦截器 &ndash;&gt;
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            &lt;!&ndash; 应用自定义的mySimple拦截器 &ndash;&gt;
+            <interceptor-ref name="mySimple">
+                &lt;!&ndash; 指定execute方法不需要被拦截 &ndash;&gt;
+                <param name="excludeMethods"></param>
+            </interceptor-ref>-->
+            <result>${successResultValue}</result>
+            <result name="appcode">appcodecreate.do</result>
+            <result name="reg_log">/WEB-INF/mobileJsp/reg_log.jsp</result>
+            <result name="changeTel1">/WEB-INF/mobileJsp/changeTel1.jsp</result>
+            <result name="success_message">/WEB-INF/mobileJsp/success_message.jsp</result>
+            <result name="success_mes">/WEB-INF/mobileJsp/app/success_message.jsp</result>
+            <result name="error_message">/WEB-INF/mobileJsp/error_message.jsp</result>
+            <result name="error_mes">/WEB-INF/mobileJsp/app/error_message.jsp</result>
+        </action>
+
+        <action name="*WebPhoneThirdAction" class="WebPhoneThirdAction" method="{1}">
+            <!--&lt;!&ndash; 配置系统的默认拦截器 &ndash;&gt;
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            &lt;!&ndash; 应用自定义的mySimple拦截器 &ndash;&gt;
+            <interceptor-ref name="mySimple">
+                &lt;!&ndash; 指定execute方法不需要被拦截 &ndash;&gt;
+                <param name="excludeMethods"></param>
+            </interceptor-ref>-->
+			<result>${successResultValue}</result>
+            <result name="freemarker" type="freemarker">${successResultValue}</result>
+            <result name="error_message">/WEB-INF/mobileJsp/error_message.jsp</result>
+            <result name="allBank">/WEB-INF/mobileJsp/bankCard1.jsp</result>
+            <result name="back_msg">/WEB-INF/mobileJsp/app/back_msg.jsp</result>
+            <result name="back_msgApp">/WEB-INF/mobileJsp/back_msg.jsp</result>
+            <result name="error_mes">/WEB-INF/mobileJsp/app/error_message.jsp</result>
+		</action>
+
+		<action name="*WebConditionAction" class="WebConditionAction" method="{1}">
+            <!--&lt;!&ndash; 配置系统的默认拦截器 &ndash;&gt;
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            &lt;!&ndash; 应用自定义的mySimple拦截器 &ndash;&gt;
+            <interceptor-ref name="mySimple">
+                &lt;!&ndash; 指定execute方法不需要被拦截 &ndash;&gt;
+                <param name="excludeMethods"></param>
+            </interceptor-ref>-->
+            <result>${successResultValue}</result>
+            <result name="capital_details">/WEB-INF/mobileJsp/capital_details.jsp</result>
+        </action>
+
+        <action name="*list" class="WebPhoneBidListAction" method="{1}">
+            <!--&lt;!&ndash; 配置系统的默认拦截器 &ndash;&gt;
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            &lt;!&ndash; 应用自定义的mySimple拦截器 &ndash;&gt;
+            <interceptor-ref name="mySimple">
+                &lt;!&ndash; 指定execute方法不需要被拦截 &ndash;&gt;
+                <param name="excludeMethods">checkPlanList+</param>
+            </interceptor-ref>-->
+            <result>${successResultValue}</result>
+        </action>
+
+		<action name="*WebPhoneCustMember" class="WebPhoneCustMember" method="{1}">
+            <!--&lt;!&ndash; 配置系统的默认拦截器 &ndash;&gt;
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            &lt;!&ndash; 应用自定义的mySimple拦截器 &ndash;&gt;
+            <interceptor-ref name="mySimple">
+                &lt;!&ndash; 指定execute方法不需要被拦截 &ndash;&gt;
+                <param name="excludeMethods">userValid,feedBackJsp,forget_pwd,feedBack,forget_pwd1,appResetPassword</param>
+            </interceptor-ref>-->
+			<result>${successResultValue}</result>
+			<result name="account">/WEB-INF/mobileJsp/account.jsp</result>
+			<result name ="login">/WEB-INF/mobileJsp/reg_log.jsp</result>
+			<result name="account_overview">/WEB-INF/mobileJsp/account_overview.jsp</result>
+            <result name="evaluate">/WEB-INF/mobileJsp/risk_assessment.jsp</result>
+			<result name="testRisk">/WEB-INF/mobileJsp/immediate_test.jsp</result>
+			<result name="invite">/WEB-INF/mobileJsp/invite.jsp</result>
+			<result name="invite_reg">/WEB-INF/mobileJsp/invite_reg.jsp</result>
+			<result name="immediateConfirm">/WEB-INF/mobileJsp/immediate_test_confirm.jsp</result>
+            <!--风险评估-->
+            <result name="testRiskApp">/WEB-INF/mobileJsp/app/risk_assessment.jsp</result>
+            <!--风险评估 测试问题-->
+            <result name="riskTest">/WEB-INF/mobileJsp/app/immediate_test.jsp</result>
+            <!--风险评估 提交-->
+            <result name="riskCofirm">/WEB-INF/mobileJsp/app/immediate_test_confirm.jsp</result>
+			<result name="bankCard">/WEB-INF/mobileJsp/bankCard.jsp</result>
+			<result name="my_bankCard">/WEB-INF/mobileJsp/my_bankCard.jsp</result>
+			<result name="feedback">/WEB-INF/mobileJsp/feedback.jsp</result>
+			<result name="userValid" type="redirect">userValidWebPhoneCustMember.do</result>
+			<result name="register" >/WEB-INF/mobileJsp/register.jsp</result>
+			<result name="forget_pwd" >/WEB-INF/mobileJsp/forget_pwd.jsp</result>
+			<result name="forget_pwd1" >/WEB-INF/mobileJsp/forget_pwd1.jsp</result>
+			<result name="changePwd">/WEB-INF/mobileJsp/changePwd.jsp</result>
+			<result name="account_set">/WEB-INF/mobileJsp/account_set.jsp</result>
+            <result name="error_mes">/WEB-INF/mobileJsp/app/error_message.jsp</result>
+            <result name="invitations_list">/WEB-INF/mobileJsp/invitations_list.jsp</result>
+            <result name="loan_details">/WEB-INF/mobileJsp/loan_details.jsp</result>
+            <result name="lend_search">/WEB-INF/mobileJsp/lend_search.jsp</result>
+			<result name="test">/WEB-INF/mobileJsp/app/test.jsp</result>
+
+        </action>
+
+        <action name="*WebPhoneRegAction" class="WebPhoneRegAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="getBpCustMember" type="dispatcher">getBpCustMember</result>
+            <result name="register">/WEB-INF/mobileJsp/register.jsp</result>
+            <result name="open_bankDepository">/WEB-INF/mobileJsp/open_bankDepository.jsp</result>
+            <result name="service_agreement">/WEB-INF/mobileJsp/service_agreement.jsp</result>
+        </action>
+
+        <action name="*WebBidPlanAction" class="WebBidPlanAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="combination">/WEB-INF/mobileJsp/combination.jsp</result>
+            <result name="combination_person">/WEB-INF/mobileJsp/combination_person.jsp</result>
+            <result name="agreement">/WEB-INF/mobileJsp/risk_agreement.jsp</result>
+            <result name="service">/WEB-INF/mobileJsp/service_agreement.jsp</result>
+        </action>
+
+        <action name="*WebBidInfoAction" class="WebBidInfoAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="error_message">/WEB-INF/mobileJsp/error_message.jsp</result>
+            <result name="error_mes">/WEB-INF/mobileJsp/app/error_message.jsp</result>
+        </action>
+        <action name="*WebFinancePurchaseAction" class="WebFinancePurchaseAction" method="{1}">
+            <!--&lt;!&ndash; 配置系统的默认拦截器 &ndash;&gt;
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            &lt;!&ndash; 应用自定义的mySimple拦截器 &ndash;&gt;
+            <interceptor-ref name="mySimple">
+                &lt;!&ndash; 指定execute方法不需要被拦截 &ndash;&gt;
+                <param name="excludeMethods"></param>
+            </interceptor-ref>-->
+            <result>${successResultValue}</result>
+            <result name="scatterdLend">/WEB-INF/mobileJsp/scattered_lend.jsp</result>
+            <result name="reg_log">/WEB-INF/mobileJsp/reg_log.jsp</result>
+            <result name="rechargeMoney">/WEB-INF/mobileJsp/rechargeMoney.jsp</result>
+            <result name="recharge">/WEB-INF/mobileJsp/recharge.jsp</result>
+            <result name="putForWard">/WEB-INF/mobileJsp/putForward.jsp</result>
+            <result name ="login">/WEB-INF/mobileJsp/reg_log.jsp</result>
+            <result name ="bankCard1">/WEB-INF/mobileJsp/bankCard1.jsp</result>
+        </action>
+
+        <action name="*WebBpCustAction" class="WebBpCustAction" method="{1}">
+            <result>${successResultValue}</result>
+            <result name="collection">/WEB-INF/mobileJsp/collection_schedule.jsp</result>
+        </action>
+
+
+
+        <action name="*WebInfo" class="WebPhoneStaticInfoAction" method="{1}">
+            <!--&lt;!&ndash; 配置系统的默认拦截器 &ndash;&gt;
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            &lt;!&ndash; 应用自定义的mySimple拦截器 &ndash;&gt;
+            <interceptor-ref name="mySimple">
+                &lt;!&ndash; 指定execute方法不需要被拦截 &ndash;&gt;
+                <param name="excludeMethods"></param>
+            </interceptor-ref>-->
+            <result>${successResultValue}</result>
+            <!--信息披露-->
+            <result name="infoView">/WEB-INF/mobileJsp/app/information.jsp</result>
+            <!--安全保障-->
+            <result name="securityInfo">/WEB-INF/mobileJsp/app/safety_guarantee.jsp</result>
+            <!--服务协议-->
+            <result name="agreementInfo">/WEB-INF/mobileJsp/app/service_agreement.jsp</result>
+            <!--帮助中心列表-->
+            <result name="helpList">/WEB-INF/mobileJsp/app/help_center_lists.jsp</result>
+            <!--帮助中心-->
+            <result name="helpInfo">/WEB-INF/mobileJsp/app/help_center_lists.jsp</result>
+            <!--媒体报道-->
+            <result name="mediaInfo">/WEB-INF/mobileJsp/app/media_detail.jsp</result>
+            <!--媒体报道列表-->
+            <result name="mediaInfoList">/WEB-INF/mobileJsp/app/media_list.jsp</result>
+            <!--消息详情-->
+            <result name="msgInfo">/WEB-INF/mobileJsp/app/message_details.jsp</result>
+        </action>
+    </package>
+
+
+    <include file="com/zhiwei/credit/action/creditFlow/creditAssignment/xmls/struts-creditAssignment.xml"></include>
+    <include file="com/hurong/credit/action/pay/EasyPay/xmls/struts-easypay.xml"></include>
+    <include file="com/hurong/credit/action/pay/AllinPay/struts-allinpay.xml"></include>
+
+    <include file="com/hurong/credit/action/pay/YeePay/struts-yeepay.xml"></include>
+    <!--	<include file="com/thirdPayInteface/struts-thirdpay.xml"></include>-->
+    <include file="com/thirdPayInterface/struts-thirdpay.xml"></include>
+    <include file="com/hurong/credit/action/coupon/xmls/struts-coupon.xml"></include>
+    <!--站岗资金使用的struts配置文件 -->
+    <include file="com/hurong/credit/action/financeProduct/xmls/struts-financeProducts.xml"></include>
+    <include file="com/hurong/credit/action/creditFlow/finance/compensatory/xmls/appcompensatory-struts.xml"></include>
+</struts>
